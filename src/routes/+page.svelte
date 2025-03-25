@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<svelte:head>
+	<!-- Page title -->
+	<title>Lorem ipsum</title>
+	<meta property="og:title" content="Jack Gledhill" />
+	<meta name="twitter:title" content="Jack Gledhill">
+
+	<!-- Page description -->
+	<meta name="description" content="" />
+	<meta name="twitter:description" content="">
+	<meta property="og:description" content="" />
+</svelte:head>
+
+<h1>Hello and welcome!</h1>
