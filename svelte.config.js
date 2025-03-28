@@ -1,11 +1,13 @@
-import { mdsvex } from 'mdsvex';
-import adapter from '@sveltejs/adapter-auto';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import adapter from '@sveltejs/adapter-static';
 
-const config = {
-	preprocess: [vitePreprocess(), mdsvex()],
-	kit: { adapter: adapter() },
-	extensions: ['.svelte', '.svx']
+export default {
+	kit: {
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: undefined,
+			precompress: false,
+			strict: true
+		})
+	}
 };
-
-export default config;
