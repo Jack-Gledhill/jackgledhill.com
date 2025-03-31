@@ -17,7 +17,7 @@
         <img class="rounded-lg" src={src} alt={alt} />
     </div>
 
-    <div class="col-span-3 content-center">
+    <div class="col-span-4 md:col-span-3 content-center">
         {#if draft}
             <span class="bg-red-500 text-white text-base px-2 rounded-full">DRAFT</span>
         {/if}
