@@ -1,17 +1,5 @@
 <script>
-	import { onMount } from 'svelte';
-	import { dev } from '$app/environment';
-
-	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
-	import {
-		faEnvelope,
-		faPrint,
-		faEarthEurope,
-		faBook, faScrewdriverWrench, faGraduationCap, faHelmetSafety, faGlobe
-	} from '@fortawesome/free-solid-svg-icons';
-	import { faGithub, faLinkedin, faOrcid, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
-	import { config } from '@fortawesome/fontawesome-svg-core';
-
+	import { isDevelopment } from '$lib';
 	import Event from '$lib/event.svelte';
 	import Project from '$lib/project.svelte';
 	import Volunteering from '$lib/volunteering.svelte';
@@ -27,8 +15,26 @@
 	import ssu from '$lib/images/ssu.png';
 	import tsc from '$lib/images/tsc.png';
 
-	import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS
-	config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
+	import { onMount } from 'svelte';
+
+	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
+	import {
+		faEnvelope,
+		faPrint,
+		faEarthEurope,
+		faBook,
+		faScrewdriverWrench,
+		faGraduationCap,
+		faHelmetSafety,
+		faGlobe
+	} from '@fortawesome/free-solid-svg-icons';
+	import {
+		faGithub,
+		faLinkedin,
+		faOrcid,
+		faInstagram,
+		faDiscord
+	} from '@fortawesome/free-brands-svg-icons';
 
 	// Email obfuscation - converts a base64 encoded address into a utf-8 address and then updates the relevant tags
 	onMount(() => {
@@ -54,7 +60,7 @@
 	<meta property="og:description" content="" />
 </svelte:head>
 
-{#if dev}
+{#if isDevelopment()}
 	<div class="bg-black text-white w-full py-2 px-16">
 		⚠️ You're currently accessing a live development version of this website. If you're here by mistake, please <a class="text-blue-600 hover:text-blue-400 underline" href="https://jackgledhill.com">click here</a>.
 	</div>
@@ -94,7 +100,7 @@
 				</div>
 			</div>
 
-			<div class="col-span-2 p-8 leading-8 xl:leading-16 text-sm xl:text-xl bg-slate-800">
+			<div class="col-span-2 p-8 leading-8 2xl:leading-16 text-sm 2xl:text-xl bg-slate-800">
 				<h2 class="uppercase font-bold text-2xl text-slate-400">Positions</h2>
 				<p><FontAwesomeIcon icon={faGlobe} fixedWidth /> Webmaster @ <a class="underline hover:text-slate-400" href="https://noddsoc.co.uk">NoDDSoc</a></p>
 				<p><FontAwesomeIcon icon={faScrewdriverWrench} fixedWidth /> Technical Officer @ <a class="underline hover:text-slate-400" href="https://slugsoc.co.uk">SLUGSoc</a></p>

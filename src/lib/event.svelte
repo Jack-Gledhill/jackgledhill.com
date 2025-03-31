@@ -1,7 +1,7 @@
 <script>
-	import { dev } from '$app/environment';
+	import { isDevelopment } from '$lib';
 
-    let {
+    const {
 	    name,        // Name of the event
         date,        // The date the event occurred
         src,         // A logo for the event
@@ -11,7 +11,7 @@
 	} = $props();
 </script>
 
-{#if !draft || dev}
+{#if !draft || isDevelopment()}
 <div class="grid grid-cols-4 gap-4">
     <div class="col-span-1 hidden md:block">
         <img class="rounded-lg" src={src} alt={alt} />

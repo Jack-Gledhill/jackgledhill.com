@@ -1,8 +1,9 @@
 <script>
-	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
-    import { dev } from '$app/environment';
+	import { isDevelopment } from '$lib';
 
-    let {
+	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
+
+    const {
         title,      // Job title during the volunteering
         company,    // Name of the company or organisation
         src,        // Path to the company's logo
@@ -14,7 +15,7 @@
     } = $props();
 </script>
 
-{#if !draft || dev}
+{#if !draft || isDevelopment()}
 <div class="col-span-1 hidden xl:block">
     <img class="rounded-lg 2xl:rounded-2xl" src={src} alt={alt} />
 </div>

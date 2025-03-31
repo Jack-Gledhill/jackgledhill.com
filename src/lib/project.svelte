@@ -1,8 +1,9 @@
 <script>
-	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
-    import { dev } from '$app/environment';
+	import { isDevelopment } from '$lib';
 
-    let {
+	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
+
+    const {
 		name,                      // Name of the project
         client="Personal project", // Name of the client the project was for
 		src,                       // Splash image for the project, approximately 16:9
@@ -13,7 +14,7 @@
 	} = $props();
 </script>
 
-{#if !draft || dev}
+{#if !draft || isDevelopment()}
 <div class="bg-slate-700 border-1 border-slate-600 rounded-lg">
     <div class="flex justify-center h-78 overflow-y-hidden">
         <img class="rounded-t-lg w-full object-cover" src={src} alt={alt} />
@@ -36,7 +37,7 @@
 
         <p>{@render children?.()}</p>
 
-        {#if dev}
+        {#if isDevelopment()}
         <p class="leading-12 hover:text-blue-600 text-blue-400 underline">
             <a href="https://jackgledhill.com">Read more...</a>
         </p>
