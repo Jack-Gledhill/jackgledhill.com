@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true # Will cancel ongoing jobs if two jobs end up running simultaneously
 
 jobs:
   build:
