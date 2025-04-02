@@ -1,0 +1,22 @@
+name: Run a series of tests on the codebase
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "23.x.x"
+
+      - run: npm install
+      - run: npm run build
