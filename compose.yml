@@ -1,0 +1,7 @@
+services:
+  website:
+    container_name: jackgledhill.com
+    build: .
+    ports:
+      - "4173:4173" # Change this if you want a different port
+    restart: unless-stopped
