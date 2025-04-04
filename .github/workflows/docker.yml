@@ -34,9 +34,9 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      # Only triggered on a commit to main
-      # Creates images for the commit's hash and the dev tag
-      - name: Push to commit hash and dev
+      # Triggered by every commit
+      # Creates images for the commit's hash and branch name
+      - name: Push to commit hash and branch name
         uses: docker/build-push-action@v6
         with:
           context: .
