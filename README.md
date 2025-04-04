@@ -38,6 +38,7 @@ I've used this repository as a good excuse to dip my feet into CI/CD pipelines. 
 - Every Pull Request will be published to a staging website via Cloudflare Pages (please see each individual PR for the URL)
 - New releases will trigger a Docker image to be published to `latest`
 - A Docker image is built for every tag with that tag's name
-- Every push to the `main` branch will have a Docker image generated, using that commit's hash as the tag
+- Every push will have a Docker image generated, using that commit's hash as the tag
+- Each branch will have a Docker image with the tag equal to the branch name, using the latest commit to that branch
 - Dependabot will watch for potential dependency updates and automatically make Pull Requests when updates are found
 - Dependabot will report potential security vulnerabilities in dependencies to contributors
