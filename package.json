@@ -37,7 +37,7 @@
 		"globals": "^16.1.0",
 		"mdsvex": "^0.12.6",
 		"prettier": "^3.4.2",
-		"prettier-plugin-svelte": "^3.3.3",
+		"prettier-plugin-svelte": "^3.4.0",
 		"svelte": "^5.34.7",
 		"svelte-check": "^4.2.2",
 		"tailwindcss": "^4.1.5",
