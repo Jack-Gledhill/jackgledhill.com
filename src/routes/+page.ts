@@ -83,6 +83,7 @@ export const load: LayoutLoad = () => {
 						slug: "noddsoc",
 						start: "Mar 2025",
 						end: "present",
+						logo: "/images/noddsoc.png",
 						draft: false
 					},
 					{
@@ -91,22 +92,25 @@ export const load: LayoutLoad = () => {
 						slug: "shefesh",
 						start: "Mar 2025",
 						end: "present",
+						logo: "/images/shefesh.png",
 						draft: false
 					},
 					{
 						role: "Technical Officer",
 						society: "SLUGSoc",
 						slug: "slugsoc",
-						start: "Feb 2025",
+						start: "Mar 2025",
 						end: "present",
+						logo: "/images/slugsoc.png",
 						draft: false
 					},
 					{
-						role: "First Year Representative",
+						role: "First Year Rep",
 						society: "CompSoc",
 						slug: "compsoc",
 						start: "Oct 2024",
 						end: "Feb 2025",
+						logo: "/images/compsoc.png",
 						draft: false
 					},
 				],
