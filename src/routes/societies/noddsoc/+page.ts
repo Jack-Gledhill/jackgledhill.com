@@ -2,7 +2,7 @@ import type { LayoutLoad } from './$types';
 
 export const load: LayoutLoad = () => {
 	return {
-		name: "Not Only Dungeons and Dragons Society",
+		name: "Sheffield NoDDSoc",
 		joined: "March 2025",
 		left: "present",
 		position: "Webmaster",

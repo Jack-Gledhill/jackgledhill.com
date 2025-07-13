@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Announcement from '$lib/components/announcement.svelte';
+	import Committee from '$lib/components/committee.svelte';
 	import Event from '$lib/components/event.svelte';
 	import Footer from '$lib/components/footer.svelte';
 	import IconArray from '$lib/components/icons/array.svelte';
@@ -79,8 +80,18 @@
 
 	<div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-y-4 lg:gap-8">
 		<div class="col-span-1 bg-slate-800 rounded-lg border-1 border-slate-700 p-8">
-			<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold">Volunteering</h2>
+			<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold">Committees</h2>
+			{#each data.committees as com (com.society)}
+				<Committee
+					society={com.society}
+					draft={com.draft}
+					role={com.role}
+					startDate={com.start}
+					endDate={com.end}
+					slug={com.slug} />
+			{/each}
 
+			<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold">Volunteering</h2>
 			{#each data.volunteering as vol (vol.company)}
 				<Volunteering
 					title={vol.title}
