@@ -47,10 +47,8 @@
         </p>
 
         <p>
-            You can read more about my time at HackSheffield 9 <a href="/events/hs9">here</a>.
+            You can read more about my time at HackSheffield 9 <a href="/">here</a>.
         </p>
-
-        <!-- Under this new role, I took responsibility for the event's technical needs. This included automating hacker registration on Discord, arranging AV equipment for the opening and closing ceremonies,  -->
     </TimelineEvent>
 
     <TimelineEvent
@@ -92,12 +90,12 @@
         icon={faDharmachakra}
         colour="bg-blue-400">
         <p>
-            I spent the summer of 2024 learning Kubernetes and applying it to a real-life project: <a href="/project/constellation">Constellation</a>.
+            I spent the summer of 2024 learning Kubernetes and applying it to a real-life project: <a href="/">Constellation</a>.
             In October 2024, I decided I wanted to help others learn Kubernetes, without the steep learning curve I had to overcome.
         </p>
 
         <p>
-            Read more about the workshop <a href="/events/k8s-workshop">here</a>.
+            Read more about the workshop <a href="/">here</a>.
         </p>
     </TimelineEvent>
 </Timeline>

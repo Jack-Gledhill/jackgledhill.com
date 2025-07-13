@@ -49,7 +49,7 @@
         </p>
 
         <p>
-            In light of this, I decided to rebuild the website from the ground up! You can read more about the project and the decisions I made <a href="/projects/noddsoc.co.uk">here</a>!
+            In light of this, I decided to rebuild the website from the ground up! You can read more about the project and the decisions I made <a href="/">here</a>!
         </p>
     </TimelineEvent>
 
