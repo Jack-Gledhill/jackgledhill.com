@@ -48,7 +48,7 @@
 
 			<div class="col-span-2 p-8 bg-slate-800">
 				<h1 class="font-bold text-3xl md:text-5xl">Jack Gledhill</h1>
-				<p class="text-xl lg:text-2xl pb-8">DevOps Engineer</p>
+				<p class="text-xl lg:text-2xl pb-8">Software Engineer</p>
 
 				<div class="text-3xl lg:text-2xl grid grid-cols-3 md:grid-cols-6 gap-8">
 					<IconArray links={data.links} />
@@ -120,8 +120,8 @@
 						name={event.name}
 						draft={event.draft}
 						date={event.date}
-						src={event.image.src}
-						alt={event.image.alt}>
+						src={event.logo}
+						slug={event.slug}>
 						{@html event.summary}
 					</Event>
 				{/each}

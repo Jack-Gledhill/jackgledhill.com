@@ -22,7 +22,7 @@
     <div class="col-span-4 lg:col-span-3 content-center">
         <DraftBadge {draft} />
         <h3 class="text-xl lg:text-2xl font-bold">
-            <a class="underline hover:text-slate-400" href={`/societies/${slug}`}>{society}</a>
+            <a class="underline hover:text-slate-400" href={`/about/${slug}`}>{society}</a>
         </h3>
 
         <p class="text-lg lg:text-xl">{role}</p>

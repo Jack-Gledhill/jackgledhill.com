@@ -3,8 +3,8 @@ import type { LayoutLoad } from './$types';
 export const load: LayoutLoad = () => {
 	return {
 		name: "Sheffield Ethical Hackers",
-		joined: "March 2025",
-		left: "present",
+		start: "March 2025",
+		end: "present",
 		position: "Inclusions Officer",
 		banner: "/images/shefesh-banner.jpg",
 		logo: "/images/shefesh.png",

@@ -16,6 +16,8 @@
         faLinkedin
     } from '@fortawesome/free-brands-svg-icons';
 
+    import Footer from '$lib/components/footer.svelte';
+
     let { children }: LayoutProps = $props();
 </script>
 
@@ -68,8 +70,13 @@
         </div>
 
         <div class="md:col-span-1">
-            <p><FontAwesomeIcon icon={faCalendarDays} fixedWidth /> {page.data.joined} - {page.data.left}</p>
-            <p><FontAwesomeIcon icon={faUserTie} fixedWidth /> {page.data.position}</p>
+            <p><FontAwesomeIcon icon={faCalendarDays} fixedWidth />
+                {page.data.start} {#if page.data.end} - {page.data.end} {/if}
+            </p>
+
+            {#if page.data.position}
+                <p><FontAwesomeIcon icon={faUserTie} fixedWidth /> {page.data.position}</p>
+            {/if}
 
             {#if page.data.links.discord}
                 <p class="truncate"><FontAwesomeIcon icon={faDiscord} fixedWidth />
@@ -124,3 +131,5 @@
         </article>
     </div>
 </div>
+
+<Footer />
