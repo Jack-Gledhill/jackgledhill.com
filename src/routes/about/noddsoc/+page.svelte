@@ -44,12 +44,12 @@
         icon={faGlobe}
         colour="bg-green-400">
         <p>
-            In years past, NoDDSoc had a website at <a href="https://noddsoc.co.uk">noddsoc.co.uk</a> that they used to share information with their members and advertise the society.
+            In years past, NoDDSoc had a website at <a href="https://noddsoc.co.uk" target="_blank">noddsoc.co.uk</a> that they used to share information with their members and advertise the society.
             Unfortunately, it's been inactive for a few years, and the source code has been lost.
         </p>
 
         <p>
-            In light of this, I decided to rebuild the website from the ground up! You can read more about the project and the decisions I made <a href="/">here</a>!
+            In light of this, I decided to rebuild the website from the ground up! You can read more about the project and the decisions I made <a href="/" target="_blank">here</a>!
         </p>
     </TimelineEvent>
 

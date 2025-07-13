@@ -8,20 +8,16 @@ export const load: LayoutLoad = () => {
                 name: "Kubernetes Workshop",
                 draft: false,
                 date: "May 2025",
-                image: {
-                    src: "/images/kubernetes.png",
-                    alt: "Kubernetes logo"
-                },
+                logo: "/images/kubernetes.png",
+							  slug: "k8s",
                 summary: "An introductory workshop on Kubernetes, covering the basics of container orchestration and deployment."
             },
             {
                 name: "HackSheffield 9",
                 draft: false,
                 date: "Nov 2024",
-                image: {
-                    src: "/images/hacksheffield9.png",
-                    alt: "HackSheffield 9 logo"
-                },
+                logo: "/images/hacksheffield9.png",
+							  slug: "hs9",
                 summary: "University of Sheffield's ninth annual Hackathon, organised by Sheffield CompSoc."
             }
         ],

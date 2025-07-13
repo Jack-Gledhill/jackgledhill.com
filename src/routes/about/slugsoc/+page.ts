@@ -3,8 +3,8 @@ import type { LayoutLoad } from './$types';
 export const load: LayoutLoad = () => {
 	return {
 		name: "Sheffield LAN Gaming Society",
-		joined: "March 2025",
-		left: "present",
+		start: "March 2025",
+		end: "present",
 		position: "Technical Officer",
 		banner: "/images/slugsoc-banner.jpg",
 		logo: "/images/slugsoc.png",

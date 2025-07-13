@@ -3,8 +3,8 @@ import type { LayoutLoad } from './$types';
 export const load: LayoutLoad = () => {
 	return {
 		name: "Sheffield NoDDSoc",
-		joined: "March 2025",
-		left: "present",
+		start: "March 2025",
+		end: "present",
 		position: "Webmaster",
 		banner: "/images/noddsoc-banner.jpg",
 		logo: "/images/noddsoc.png",
