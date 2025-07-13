@@ -54,6 +54,16 @@ export const load: LayoutLoad = () => {
                 href: "https://noddsoc.co.uk",
                 summary: "NoDDSoc's new knowledge base for everything to do with their society and TTRPGs."
             },
+						{
+							name: "Wanderlust",
+							client: "HackUPC 2025",
+							image: {
+								src: "/images/hackupc.png",
+								alt: "HackUPC logo"
+							},
+							href: "https://devpost.com/software/wanderlust-24eodz",
+							summary: "A full-stack web app written in Flask that helps groups find their ideal holiday destination based on their preferences. It uses the Gemini API to suggest a destination, the Skyscanner API to find flights and MongoDB as a backend."
+						},
             {
                 name: "Constellation",
                 draft: false,
