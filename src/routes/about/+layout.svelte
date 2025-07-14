@@ -42,6 +42,10 @@
             @apply text-2xl leading-20;
         }
 
+        article h3 {
+            @apply text-xl leading-16;
+        }
+
         article > p {
             @apply text-justify my-4;
         }

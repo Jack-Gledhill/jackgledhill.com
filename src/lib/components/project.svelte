@@ -5,9 +5,8 @@
     const {
 		name,
         client,
-		src,
-		alt,
-        href,
+		logo,
+        slug,
         draft=false,
 		children
 	} = $props();
@@ -15,9 +14,9 @@
 
 {#if !draft || isDevelopment()}
 <div class="bg-slate-700 border-1 border-slate-600 rounded-lg transition-transform duration-300 hover:-translate-y-4">
-    <a {href} target="_blank">
+    <a href={`/about/${slug}`}>
         <div class="flex justify-center h-78 overflow-y-hidden">
-            <img class="rounded-t-lg w-full object-cover" src={src} alt={alt} />
+            <img class="rounded-t-lg w-full object-cover" src={logo} alt={`${name} logo`} />
         </div>
 
         <div class="p-4 md:p-8">

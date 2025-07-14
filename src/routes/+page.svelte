@@ -133,9 +133,8 @@
 						name={project.name}
 						draft={project.draft}
 						client={project.client}
-						href={project.href}
-						src={project.image.src}
-						alt={project.image.alt}>
+						slug={project.slug}
+						logo={project.logo}>
 						{@html project.summary}
 					</Project>
 				{/each}

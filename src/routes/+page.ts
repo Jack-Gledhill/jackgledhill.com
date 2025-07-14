@@ -41,35 +41,27 @@ export const load: LayoutLoad = () => {
         projects: [
             {
                 name: "noddsoc.co.uk",
-                draft: false,
-                client: "Sheffield NoDDSoc",
-                image: {
-                    src: "/images/noddsoc.png",
-                    alt: "NoDDSoc logo"
-                },
-                href: "https://noddsoc.co.uk",
-                summary: "NoDDSoc's new knowledge base for everything to do with their society and TTRPGs."
+								client: "Sheffield NoDDSoc",
+								summary: "NoDDSoc's new knowledge base for everything to do with their society and TTRPGs.",
+                logo: "/images/noddsoc-co-uk-banner.png",
+                slug: "noddsoc.co.uk",
+								draft: false,
             },
 						{
-							name: "Wanderlust",
-							client: "HackUPC 2025",
-							image: {
-								src: "/images/hackupc.png",
-								alt: "HackUPC logo"
-							},
-							href: "https://devpost.com/software/wanderlust-24eodz",
-							summary: "A full-stack web app written in Flask that helps groups find their ideal holiday destination based on their preferences. It uses the Gemini API to suggest a destination, the Skyscanner API to find flights and MongoDB as a backend."
+								name: "Wanderlust",
+								client: "HackUPC 2025",
+								summary: "A full-stack web app written in Flask that helps groups find their ideal holiday destination based on their preferences. It uses the Gemini API to suggest a destination, the Skyscanner API to find flights and MongoDB as a backend.",
+								logo: "/images/hackupc-banner.png",
+								slug: "wanderlust",
+								draft: false
 						},
             {
                 name: "Constellation",
-                draft: false,
                 client: "Personal project",
-                image: {
-                    src: "/images/nebula.jpg",
-                    alt: "Stock image of a Nebulous"
-                },
-                href: "https://github.com/constellation-net",
-                summary: "Constellation is my homelab. It includes a Highly Available k3s cluster, a Proxmox cluster and a TrueNAS server."
+								summary: "Constellation is my homelab. It includes a Highly Available k3s cluster, a Proxmox cluster and a TrueNAS server.",
+                logo: "/images/nebula.jpg",
+                slug: "constellation",
+								draft: false
             }
         ],
 			  committees: [
