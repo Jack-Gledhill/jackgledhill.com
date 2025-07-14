@@ -73,74 +73,61 @@ export const load: LayoutLoad = () => {
             }
         ],
 			  committees: [
-					{
-						role: "Webmaster",
-						society: "NoDDSoc",
-						slug: "noddsoc",
-						start: "Mar 2025",
-						end: "present",
-						logo: "/images/noddsoc.png",
-						draft: false
-					},
-					{
-						role: "Inclusions Officer",
-						society: "ShefESH",
-						slug: "shefesh",
-						start: "Mar 2025",
-						end: "present",
-						logo: "/images/shefesh.png",
-						draft: false
-					},
-					{
-						role: "Technical Officer",
-						society: "SLUGSoc",
-						slug: "slugsoc",
-						start: "Mar 2025",
-						end: "present",
-						logo: "/images/slugsoc.png",
-						draft: false
-					},
-					{
-						role: "First Year Rep",
-						society: "CompSoc",
-						slug: "compsoc",
-						start: "Oct 2024",
-						end: "Feb 2025",
-						logo: "/images/compsoc.png",
-						draft: false
-					},
+						{
+								role: "Webmaster",
+								society: "NoDDSoc",
+								slug: "noddsoc",
+								start: "Mar 2025",
+								end: "present",
+								logo: "/images/noddsoc.png",
+								draft: false
+						},
+						{
+								role: "Inclusions Officer",
+								society: "ShefESH",
+								slug: "shefesh",
+								start: "Mar 2025",
+								end: "present",
+								logo: "/images/shefesh.png",
+								draft: false
+						},
+						{
+								role: "Technical Officer",
+								society: "SLUGSoc",
+								slug: "slugsoc",
+								start: "Mar 2025",
+								end: "present",
+								logo: "/images/slugsoc.png",
+								draft: false
+						},
+						{
+								role: "First Year Rep",
+								society: "CompSoc",
+								slug: "compsoc",
+								start: "Oct 2024",
+								end: "Feb 2025",
+								logo: "/images/compsoc.png",
+								draft: false
+						},
+						{
+								role: "Academic Representative",
+								society: "SSLCom",
+								slug: "sslcom",
+								start: "Sep 2024",
+								end: "present",
+								logo: "/images/ssu.png",
+								draft: true
+						}
 				],
         volunteering: [
             {
-                title: "Junior Crew Member",
-                draft: false,
-                company: "Technical Services Committee",
-                start: "Dec 2024",
+                role: "Junior Crew Member",
+								company: "Technical Services Committee",
+                slug: "tsc",
+								start: "Dec 2024",
                 end: "present",
-                image: {
-                    src: "/images/tsc.png",
-                    alt: "TSC logo"
-                },
-                links: {
-                    website: "https://tsc.sites.sheffield.ac.uk",
-                    linkedin: "tsc-sheffield",
-                    instagram: "tsc_sheffield"
-                }
-            },
-            {
-                title: "Academic Representative",
-                draft: false,
-                company: "Sheffield Students' Union",
-                start: "Sep 2024",
-                end: "present",
-                image: {
-                    src: "/images/ssu.png",
-                    alt: "Sheffield Students' Union logo"
-                },
-                links: {
-                    website: "https://su.sheffield.ac.uk",
-                    linkedin: "sheffield-students'-union"
-                }
+                logo: "/images/tsc.png",
+								draft: false
             }
         ]
     };
