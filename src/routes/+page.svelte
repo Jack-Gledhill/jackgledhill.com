@@ -41,12 +41,12 @@
 
 <div class="p-4 lg:p-16">
 	<div class="w-full bg-slate-800 rounded-lg border-1 border-slate-700 py-4 mb-4 lg:mb-8">
-		<div class="bg-slate-700 grid grid-cols-1 lg:grid-cols-5 gap-y-[1px] lg:gap-y-0 lg:gap-x-[1px]">
+		<div class="bg-slate-700 grid grid-cols-1 lg:grid-cols-5 2xl:grid-cols-9 gap-y-[1px] lg:gap-y-0 lg:gap-x-[1px]">
 			<div class="col-span-1 p-8 bg-slate-800">
-				<img class="rounded-full shadow-xl" src="/images/portrait.png" alt="Jack surrounded by greenery" />
+				<img class="rounded-full shadow-xl md:max-lg:w-1/2 md:max-lg:mx-auto" src="/images/portrait.png" alt="Jack surrounded by greenery" />
 			</div>
 
-			<div class="col-span-2 p-8 bg-slate-800">
+			<div class="col-span-2 2xl:col-span-4 p-8 bg-slate-800">
 				<h1 class="font-bold text-3xl md:text-5xl">Jack Gledhill</h1>
 				<p class="text-xl lg:text-2xl pb-8">Software Engineer</p>
 
@@ -55,7 +55,7 @@
 				</div>
 			</div>
 
-			<div class="col-span-2 p-8 leading-8 text-sm bg-slate-800">
+			<div class="col-span-2 2xl:col-span-4 p-8 leading-8 text-sm bg-slate-800">
 				<h2 class="uppercase font-bold text-2xl text-slate-400">Positions</h2>
 				<ul class="list-disc list-outside pl-4">
 					{#each data.positions as pos (pos.title)}
