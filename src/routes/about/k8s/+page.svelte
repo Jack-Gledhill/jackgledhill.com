@@ -4,7 +4,7 @@
     It's a highly sought-after skill in the industry, in part because of its steep learning curve that challenges almost everyone that tries to learn it.
 </p>
 <p>
-    Having self-taught Kubernetes in Summer 2024, using my homelab <a href="/" target="_blank">Constellation</a>, I decided I wanted to share my knowledge with others.
+    Having self-taught Kubernetes in Summer 2024, using my homelab <a href="/about/constellation" target="_blank">Constellation</a>, I decided I wanted to share my knowledge with others.
 </p>
 
 <h2>What the Workshop Covers</h2>

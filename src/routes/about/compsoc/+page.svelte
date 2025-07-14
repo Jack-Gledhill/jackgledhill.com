@@ -47,7 +47,7 @@
         </p>
 
         <p>
-            You can read more about my time at HackSheffield 9 <a href="/" target="_blank">here</a>.
+            You can read more about my time at HackSheffield 9 <a href="/about/hs9" target="_blank">here</a>.
         </p>
     </TimelineEvent>
 
@@ -90,7 +90,7 @@
         icon={faDharmachakra}
         colour="bg-blue-400">
         <p>
-            I spent the summer of 2024 learning Kubernetes and applying it to a real-life project: <a href="/" target="_blank">Constellation</a>.
+            I spent the summer of 2024 learning Kubernetes and applying it to a real-life project: <a href="/about/constellation" target="_blank">Constellation</a>.
             In October 2024, I decided I wanted to help others learn Kubernetes, without the steep learning curve I had to overcome.
         </p>
 
