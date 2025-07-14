@@ -98,14 +98,13 @@
 				<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold">Volunteering</h2>
 				{#each data.volunteering as vol (vol.company)}
 					<Volunteering
-						title={vol.title}
+						role={vol.role}
 						draft={vol.draft}
 						company={vol.company}
 						startDate={vol.start}
 						endDate={vol.end}
-						src={vol.image.src}
-						alt={vol.image.alt}
-						links={vol.links} />
+						logo={vol.logo}
+						slug={vol.slug} />
 				{/each}
 			</div>
 		</div>
