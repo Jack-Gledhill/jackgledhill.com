@@ -11,8 +11,8 @@ export const load: LayoutLoad = () => {
 		start: "Sep 2024",
 		end: "present",
 		position: "Academic Representative",
-		banner: "/images/sslcom-banner.webp",
-		logo: "/images/ssu.webp",
+		banner: "/images/su/banner.webp",
+		logo: "/images/su/logo.webp",
 		links: {}
 	};
 };

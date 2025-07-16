@@ -21,8 +21,8 @@ export const load: LayoutLoad = () => {
         name: "Wanderlust",
         position: "HackUPC 2025",
         start: "May 2025",
-        banner: "/images/hackupc-banner.webp",
-        logo: "/images/hackupc.webp",
+        banner: "/images/hackupc25/banner.webp",
+        logo: "/images/hackupc25/logo.webp",
         links: {
             github: "thejmfc/hackupc25",
             website: "devpost.com/software/wanderlust-24eodz"

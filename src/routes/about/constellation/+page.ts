@@ -22,8 +22,8 @@ export const load: LayoutLoad = () => {
 		position: "Personal project",
 		start: "July 2024",
 		end: "present",
-		banner: "/images/nebula.webp",
-		logo: "/images/constellation.webp",
+		banner: "/images/constellation/banner.webp",
+		logo: "/images/constellation/logo.webp",
 		links: {
 			github: "constellation-net",
 			website: "starsystem.dev"

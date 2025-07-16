@@ -16,8 +16,8 @@ export const load: LayoutLoad = () => {
 		start: "March 2025",
 		end: "present",
 		position: "Technical Officer",
-		banner: "/images/slugsoc-banner.webp",
-		logo: "/images/slugsoc.webp",
+		banner: "/images/slugsoc/banner.webp",
+		logo: "/images/slugsoc/logo.webp",
 		links: {
 			discord: "VvUCXCT",
 			github: "SLUGSoc",

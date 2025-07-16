@@ -19,8 +19,8 @@ export const load: LayoutLoad = () => {
         },
 		name: "Kubernetes Workshop",
 		start: "April 2025",
-		banner: "/images/k8s-banner.webp",
-		logo: "/images/kubernetes.webp",
+		banner: "/images/kubernetes/banner.webp",
+		logo: "/images/kubernetes/logo.webp",
 		links: {
 			github: "shefcompsoc/k8s-workshop"
 		}
