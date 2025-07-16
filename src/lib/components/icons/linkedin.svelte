@@ -6,4 +6,4 @@
 	const { href } = $props();
 </script>
 
-<Icon icon={faLinkedin} href={`https://www.linkedin.com/company/${href}`} />
+<Icon icon={faLinkedin} href={`https://www.linkedin.com/company/${href}`} ariaLabel="LinkedIn" />

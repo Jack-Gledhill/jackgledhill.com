@@ -19,8 +19,8 @@ export const load: LayoutLoad = () => {
 		position: "NoDDSoc",
 		start: "May 2025",
 		end: "present",
-		banner: "/images/noddsoc-co-uk-banner.png",
-		logo: "/images/noddsoc.png",
+		banner: "/images/noddsoc-co-uk-banner.webp",
+		logo: "/images/noddsoc.webp",
 		links: {
 			github: "Sheffield-NoDDSoc/noddsoc.co.uk",
 			website: "noddsoc.co.uk"

@@ -20,8 +20,8 @@ export const load: LayoutLoad = () => {
 		start: "Dec 2024",
 		end: "present",
 		position: "Junior Crew Member",
-		banner: "/images/tsc-banner.jpg",
-		logo: "/images/tsc.png",
+		banner: "/images/tsc-banner.webp",
+		logo: "/images/tsc.webp",
 		links: {
 			instagram: "tsc_sheffield",
 			linkedin: "tsc-sheffield",

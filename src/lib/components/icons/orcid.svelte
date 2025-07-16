@@ -6,4 +6,4 @@
 	const { href } = $props();
 </script>
 
-<Icon icon={faOrcid} href={`https://orcid.org/${href}`} />
+<Icon icon={faOrcid} href={`https://orcid.org/${href}`} ariaLabel="OrcID" />
