@@ -6,4 +6,4 @@
 	const { href } = $props();
 </script>
 
-<Icon icon={faDiscord} href={`https://discord.gg/${href}`} />
+<Icon icon={faDiscord} href={`https://discord.gg/${href}`} ariaLabel="Discord" />

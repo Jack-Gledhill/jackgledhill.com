@@ -6,4 +6,4 @@
 	const { href } = $props();
 </script>
 
-<Icon icon={faInstagram} href={`https://www.instagram.com/${href}`} />
+<Icon icon={faInstagram} href={`https://www.instagram.com/${href}`} ariaLabel="Discord" />

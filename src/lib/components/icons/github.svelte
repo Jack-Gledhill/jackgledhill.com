@@ -6,4 +6,4 @@
     const { href } = $props();
 </script>
 
-<Icon icon={faGithub} href={`https://github.com/${href}`} />
+<Icon icon={faGithub} href={`https://github.com/${href}`} ariaLabel="GitHub" />

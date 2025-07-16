@@ -6,4 +6,4 @@
 	const { href } = $props();
 </script>
 
-<Icon icon={faEarthEurope} href={href} />
+<Icon icon={faEarthEurope} href={href} ariaLabel="Website" />

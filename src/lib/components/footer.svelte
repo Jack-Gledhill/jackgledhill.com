@@ -13,15 +13,15 @@
     </p>
 
     <p class="text-center md:text-right tracking-[1em]">
-        <a class="hover:text-slate-400" href="https://github.com/Jack-Gledhill/jackgledhill.com">
+        <a class="hover:text-slate-400" href="https://github.com/Jack-Gledhill/jackgledhill.com" aria-label="Source code">
             <FontAwesomeIcon icon={faGithub} />
         </a>
 
-        <a class="hover:text-slate-400" href="/sitemap.xml">
+        <a class="hover:text-slate-400" href="/sitemap.xml" aria-label="Sitemap">
             <FontAwesomeIcon icon={faSitemap} />
         </a>
 
-        <a class="hover:text-slate-400" href="/robots.txt">
+        <a class="hover:text-slate-400" href="/robots.txt" aria-label="Robots.txt">
             <FontAwesomeIcon icon={faRobot} />
         </a>
     </p>
