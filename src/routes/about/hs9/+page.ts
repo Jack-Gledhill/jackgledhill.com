@@ -15,8 +15,8 @@ export const load: LayoutLoad = () => {
         },
 		name: "HackSheffield 9",
 		start: "November 2024",
-		banner: "/images/hs9-banner.jpg",
-		logo: "/images/hacksheffield9.png",
+		banner: "/images/hs9-banner.webp",
+		logo: "/images/hacksheffield9.webp",
 		links: {
 			website: "hacksheffield.uk"
 		}

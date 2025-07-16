@@ -18,8 +18,8 @@ export const load: LayoutLoad = () => {
 		start: "March 2025",
 		end: "present",
 		position: "Webmaster",
-		banner: "/images/noddsoc-banner.jpg",
-		logo: "/images/noddsoc.png",
+		banner: "/images/noddsoc-banner.webp",
+		logo: "/images/noddsoc.webp",
 		links: {
 			discord: "E6F7Unz",
 			github: "Sheffield-NoDDSoc",
