@@ -32,7 +32,7 @@ export const load: LayoutLoad = () => {
                 name: "Kubernetes Workshop",
                 draft: false,
                 date: "May 2025",
-                logo: "/images/kubernetes.webp",
+                logo: "/images/kubernetes/logo.webp",
                 slug: "k8s",
                 summary: "An introductory workshop on Kubernetes, covering the basics of container orchestration and deployment."
             },
@@ -40,7 +40,7 @@ export const load: LayoutLoad = () => {
                 name: "HackSheffield 9",
                 draft: false,
                 date: "Nov 2024",
-                logo: "/images/hacksheffield9.webp",
+                logo: "/images/hacksheffield9/logo.webp",
                 slug: "hs9",
                 summary: "University of Sheffield's ninth annual Hackathon, organised by Sheffield CompSoc."
             }
@@ -67,7 +67,7 @@ export const load: LayoutLoad = () => {
                 name: "noddsoc.co.uk",
                 client: "Sheffield NoDDSoc",
                 summary: "NoDDSoc's new knowledge base for everything to do with their society and TTRPGs.",
-                logo: "/images/noddsoc-co-uk-banner.webp",
+                logo: "/images/noddsoc/website-banner.webp",
                 slug: "noddsoc.co.uk",
 								draft: false,
             },
@@ -75,7 +75,7 @@ export const load: LayoutLoad = () => {
                 name: "Wanderlust",
                 client: "HackUPC 2025",
                 summary: "A full-stack web app written in Flask that helps groups find their ideal holiday destination based on their preferences. It uses the Gemini API to suggest a destination, the Skyscanner API to find flights and MongoDB as a backend.",
-                logo: "/images/hackupc-banner.webp",
+                logo: "/images/hackupc25/banner.webp",
                 slug: "wanderlust",
                 draft: false
             },
@@ -83,7 +83,7 @@ export const load: LayoutLoad = () => {
                 name: "Constellation",
                 client: "Personal project",
                 summary: "Constellation is my homelab. It includes a Highly Available k3s cluster, a Proxmox cluster and a TrueNAS server.",
-                logo: "/images/nebula.webp",
+                logo: "/images/constellation/banner.webp",
                 slug: "constellation",
                 draft: false
             }
@@ -95,7 +95,7 @@ export const load: LayoutLoad = () => {
                 slug: "noddsoc",
                 start: "Mar 2025",
                 end: "present",
-                logo: "/images/noddsoc.webp",
+                logo: "/images/noddsoc/logo.webp",
                 draft: false
             },
             {
@@ -104,7 +104,7 @@ export const load: LayoutLoad = () => {
                 slug: "shefesh",
                 start: "Mar 2025",
                 end: "present",
-                logo: "/images/shefesh.webp",
+                logo: "/images/shefesh/logo.webp",
                 draft: false
             },
             {
@@ -113,7 +113,7 @@ export const load: LayoutLoad = () => {
                 slug: "slugsoc",
                 start: "Mar 2025",
                 end: "present",
-                logo: "/images/slugsoc.webp",
+                logo: "/images/slugsoc/logo.webp",
                 draft: false
             },
             {
@@ -122,7 +122,7 @@ export const load: LayoutLoad = () => {
                 slug: "compsoc",
                 start: "Oct 2024",
                 end: "Feb 2025",
-                logo: "/images/compsoc.webp",
+                logo: "/images/compsoc/logo.webp",
                 draft: false
             },
             {
@@ -131,7 +131,7 @@ export const load: LayoutLoad = () => {
                 slug: "sslcom",
                 start: "Sep 2024",
                 end: "present",
-                logo: "/images/ssu.webp",
+                logo: "/images/su/logo.webp",
                 draft: true
             }
         ],
@@ -142,7 +142,7 @@ export const load: LayoutLoad = () => {
                 slug: "tsc",
                 start: "Dec 2024",
                 end: "present",
-                logo: "/images/tsc.webp",
+                logo: "/images/tsc/logo.webp",
                 draft: false
             }
         ]

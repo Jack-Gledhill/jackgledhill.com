@@ -17,8 +17,8 @@ export const load: LayoutLoad = () => {
 		start: "Oct 2024",
 		end: "May 2025",
 		position: "First Year Representative",
-		banner: "/images/compsoc-banner.webp",
-		logo: "/images/compsoc.webp",
+		banner: "/images/compsoc/banner.webp",
+		logo: "/images/compsoc/logo.webp",
 		links: {
 			discord: "3e9GMgc",
 			github: "shefcompsoc",

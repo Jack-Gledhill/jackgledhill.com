@@ -17,8 +17,8 @@ export const load: LayoutLoad = () => {
 		start: "March 2025",
 		end: "present",
 		position: "Inclusions Officer",
-		banner: "/images/shefesh-banner.webp",
-		logo: "/images/shefesh.webp",
+		banner: "/images/shefesh/banner.webp",
+		logo: "/images/shefesh/logo.webp",
 		links: {
 			discord: "rhfnwgphdx",
 			github: "ShefESH",
