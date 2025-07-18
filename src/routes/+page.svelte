@@ -2,9 +2,8 @@
 	import Announcement from '$lib/components/announcement.svelte';
 	import DraftBadge from '$lib/components/draft.svelte';
 	import Footer from '$lib/components/footer.svelte';
-	import { decodeEmail, isDevelopment } from '$lib/utils';
 
-	import { onMount } from 'svelte';
+	import { isDevelopment } from '$lib/utils';
 	import type { PageProps } from './$types';
 
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
