@@ -188,9 +188,9 @@
 				{#each data.projects as project (project.name)}
 					{#if !project.draft || isDevelopment()}
 						<div class="bg-slate-700 border-1 border-slate-600 rounded-lg transition-transform duration-300 hover:-translate-y-4">
-							<a href={`/about/${project.slug}`}>
-								<div class="flex justify-center h-78 overflow-y-hidden">
-									<img class="rounded-t-lg w-full object-cover" src={project.logo} alt={`${project.name} logo`} />
+							<a href={project.href}>
+								<div class="xl:h-46 overflow-y-hidden rounded-t-lg">
+									<img class="w-full object-contain" src={project.logo} alt={`${project.name} logo`} />
 								</div>
 
 								<div class="p-4 md:p-8">
