@@ -11,7 +11,8 @@
 	import {
 		faEarthEurope,
 		faEnvelope,
-		faPrint
+		faPrint,
+		faRss
 	} from '@fortawesome/free-solid-svg-icons';
 	import {
 		faDiscord,
@@ -92,12 +93,15 @@
 					{/each}
 				</ul>
 
-				<div class="pt-4 grid md:grid-cols-2 gap-8 text-center text-sm">
-					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href="/cv.pdf">
+				<div class="pt-4 grid md:grid-cols-3 gap-8 text-center text-sm">
+					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href="/cv.pdf" target="_blank">
 						<FontAwesomeIcon icon={faPrint} fixedWidth /> Download my CV
 					</a>
-					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" aria-label="email" id="email">
+					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" aria-label="email" id="email" target="_blank">
 						<FontAwesomeIcon icon={faEnvelope} fixedWidth /> Send me an email
+					</a>
+					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href="https://blog.jackgledhill.com" target="_blank">
+						<FontAwesomeIcon icon={faRss} fixedWidth /> Read my blog
 					</a>
 				</div>
 			</div>
