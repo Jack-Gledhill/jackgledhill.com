@@ -16,6 +16,7 @@
         faLinkedin
     } from '@fortawesome/free-brands-svg-icons';
 
+    import Announcement from '$lib/components/announcement.svelte';
     import Footer from '$lib/components/footer.svelte';
 
     let { children }: LayoutProps = $props();
@@ -63,6 +64,8 @@
         }
     }
 </style>
+
+<Announcement />
 
 <div class="w-full h-72 bg-center bg-no-repeat bg-cover border-b-1 border-slate-600" style={`background-image: url(${page.data.banner});`}></div>
 
