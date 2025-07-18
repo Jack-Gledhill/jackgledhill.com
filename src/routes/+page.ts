@@ -64,19 +64,27 @@ export const load: LayoutLoad = () => {
         ],
         projects: [
             {
+                name: "The Unfiltered Blog",
+                client: "Personal project",
+                summary: "A blog that discusses various interests I have. It is so named because the topics aren't filtered by any particular theme, and tend to follow my tone of voice rather than a formal writing style.",
+                logo: "/images/unfiltered-blog.webp",
+                href: "https://blog.jackgledhill.com",
+                draft: false
+            },
+            {
                 name: "noddsoc.co.uk",
                 client: "Sheffield NoDDSoc",
                 summary: "NoDDSoc's new knowledge base for everything to do with their society and TTRPGs.",
                 logo: "/images/noddsoc/website-banner.webp",
-                slug: "noddsoc.co.uk",
-								draft: false,
+                href: "/about/noddsoc.co.uk",
+                draft: false
             },
             {
                 name: "Wanderlust",
                 client: "HackUPC 2025",
                 summary: "A full-stack web app written in Flask that helps groups find their ideal holiday destination based on their preferences. It uses the Gemini API to suggest a destination, the Skyscanner API to find flights and MongoDB as a backend.",
                 logo: "/images/hackupc25/banner.webp",
-                slug: "wanderlust",
+                href: "/about/wanderlust",
                 draft: false
             },
             {
@@ -84,7 +92,7 @@ export const load: LayoutLoad = () => {
                 client: "Personal project",
                 summary: "Constellation is my homelab. It includes a Highly Available k3s cluster, a Proxmox cluster and a TrueNAS server.",
                 logo: "/images/constellation/banner.webp",
-                slug: "constellation",
+                href: "/about/constellation",
                 draft: false
             }
         ],
