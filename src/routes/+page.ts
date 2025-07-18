@@ -26,7 +26,7 @@ export const load: LayoutLoad = () => {
                 "Docker"
             ]
         },
-        email: "bWVAamFja2dsZWRoaWxsLmNvbQ==",
+        email: "me@jackgledhill.com",
         events: [
             {
                 name: "Kubernetes Workshop",

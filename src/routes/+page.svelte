@@ -2,9 +2,8 @@
 	import Announcement from '$lib/components/announcement.svelte';
 	import DraftBadge from '$lib/components/draft.svelte';
 	import Footer from '$lib/components/footer.svelte';
-	import { decodeEmail, isDevelopment } from '$lib/utils';
 
-	import { onMount } from 'svelte';
+	import { isDevelopment } from '$lib/utils';
 	import type { PageProps } from './$types';
 
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
@@ -23,11 +22,6 @@
 	} from '@fortawesome/free-brands-svg-icons';
 
 	let { data }: PageProps = $props();
-
-	// Email obfuscation
-	onMount(() => {
-		decodeEmail(data.email, "email");
-	});
 </script>
 
 <Announcement />
@@ -97,7 +91,7 @@
 					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href="/cv.pdf" target="_blank">
 						<FontAwesomeIcon icon={faPrint} fixedWidth /> Download my CV
 					</a>
-					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" aria-label="email" id="email" target="_blank">
+					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href={`mailto:${data.email}`} target="_blank">
 						<FontAwesomeIcon icon={faEnvelope} fixedWidth /> Send me an email
 					</a>
 					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href="https://blog.jackgledhill.com" target="_blank">
