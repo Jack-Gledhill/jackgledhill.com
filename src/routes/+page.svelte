@@ -1,21 +1,25 @@
 <script lang="ts">
 	import Announcement from '$lib/components/announcement.svelte';
-	import Committee from '$lib/components/committee.svelte';
-	import Event from '$lib/components/event.svelte';
+	import DraftBadge from '$lib/components/draft.svelte';
 	import Footer from '$lib/components/footer.svelte';
-	import IconArray from '$lib/components/icons/array.svelte';
-	import Project from '$lib/components/project.svelte';
-	import Volunteering from '$lib/components/volunteering.svelte';
-	import { decodeEmail } from '$lib/utils';
+	import { decodeEmail, isDevelopment } from '$lib/utils';
 
 	import { onMount } from 'svelte';
 	import type { PageProps } from './$types';
 
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 	import {
+		faEarthEurope,
 		faEnvelope,
 		faPrint
 	} from '@fortawesome/free-solid-svg-icons';
+	import {
+		faDiscord,
+		faGithub,
+		faInstagram,
+		faLinkedin,
+		faOrcid
+	} from '@fortawesome/free-brands-svg-icons';
 
 	let { data }: PageProps = $props();
 
@@ -39,7 +43,41 @@
 				<p class="text-xl lg:text-2xl pb-8">Software Engineer</p>
 
 				<div class="text-3xl lg:text-2xl grid grid-cols-3 md:grid-cols-6 gap-8">
-					<IconArray links={data.links} />
+					{#if data.links.discord}
+						<a class="hover:text-slate-400" href={`https://discord.gg/${data.links.discord}`} target="_blank" aria-label="Discord">
+							<FontAwesomeIcon icon={faDiscord} fixedWidth />
+						</a>
+					{/if}
+
+					{#if data.links.github}
+						<a class="hover:text-slate-400" href={`https://github.com/${data.links.github}`} target="_blank" aria-label="GitHub">
+							<FontAwesomeIcon icon={faGithub} fixedWidth />
+						</a>
+					{/if}
+
+					{#if data.links.instagram}
+						<a class="hover:text-slate-400" href={`https://www.instagram.com/${data.links.instagram}`} target="_blank" aria-label="Instagram">
+							<FontAwesomeIcon icon={faInstagram} fixedWidth />
+						</a>
+					{/if}
+
+					{#if data.links.linkedin}
+						<a class="hover:text-slate-400" href={`https://www.linkedin.com/company/${data.links.linkedin}`} target="_blank" aria-label="LinkedIn">
+							<FontAwesomeIcon icon={faLinkedin} fixedWidth />
+						</a>
+					{/if}
+
+					{#if data.links.orcid}
+						<a class="hover:text-slate-400" href={`https://orcid.org/${data.links.orcid}`} target="_blank" aria-label="OrcID">
+							<FontAwesomeIcon icon={faOrcid} fixedWidth />
+						</a>
+					{/if}
+
+					{#if data.links.website}
+						<a class="hover:text-slate-400" href={`${data.links.website}`} target="_blank" aria-label="Website">
+							<FontAwesomeIcon icon={faEarthEurope} fixedWidth />
+						</a>
+					{/if}
 				</div>
 			</div>
 
@@ -71,28 +109,46 @@
 			<div class="md:max-lg:col-span-1">
 				<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold">Committees</h2>
 				{#each data.committees as com (com.society)}
-					<Committee
-						society={com.society}
-						draft={com.draft}
-						role={com.role}
-						startDate={com.start}
-						endDate={com.end}
-						slug={com.slug}
-						src={com.logo} />
+					{#if !com.draft || isDevelopment()}
+						<div class="grid grid-cols-4 gap-8 lg:py-4">
+							<div class="col-span-1 hidden xl:block">
+								<img class="rounded-lg 2xl:rounded-2xl" src={com.logo} alt={`${com.society} logo`} />
+							</div>
+
+							<div class="col-span-4 lg:col-span-3 content-center">
+								<DraftBadge draft={com.draft} />
+								<h3 class="text-xl lg:text-2xl font-bold">
+									<a class="underline hover:text-slate-400" href={`/about/${com.slug}`}>{com.society}</a>
+								</h3>
+
+								<p class="text-lg lg:text-xl">{com.role}</p>
+								<p class="italic text-sm mb-8 lg:mb-0">{com.start} - {com.end}</p>
+							</div>
+						</div>
+					{/if}
 				{/each}
 			</div>
 
 			<div class="md:max-lg:col-span-1 md:pt-0 lg:pt-8">
 				<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold">Volunteering</h2>
 				{#each data.volunteering as vol (vol.company)}
-					<Volunteering
-						role={vol.role}
-						draft={vol.draft}
-						company={vol.company}
-						startDate={vol.start}
-						endDate={vol.end}
-						logo={vol.logo}
-						slug={vol.slug} />
+					{#if !vol.draft || isDevelopment()}
+						<div class="grid grid-cols-4 gap-8 py-4">
+							<div class="col-span-1 hidden xl:block">
+								<img class="rounded-lg 2xl:rounded-2xl" src={vol.logo} alt={`${vol.company} logo`} />
+							</div>
+
+							<div class="col-span-4 lg:col-span-3 content-center">
+								<DraftBadge draft={vol.draft} />
+								<h3 class="text-xl lg:text-2xl font-bold">
+									<a class="underline hover:text-slate-400" href={`/about/${vol.slug}`}>{vol.company}</a>
+								</h3>
+
+								<p class="text-lg lg:text-xl">{vol.role}</p>
+								<p class="italic text-sm mb-8 lg:mb-0">{vol.start} - {vol.end}</p>
+							</div>
+						</div>
+					{/if}
 				{/each}
 			</div>
 		</div>
@@ -103,28 +159,46 @@
 			</h2>
 			<div class="grid lg:grid-cols-2 gap-y-8 lg:gap-8">
 				{#each data.events as event (event.name)}
-					<Event
-						name={event.name}
-						draft={event.draft}
-						date={event.date}
-						src={event.logo}
-						slug={event.slug}>
-						{@html event.summary}
-					</Event>
+					{#if !event.draft || isDevelopment()}
+						<div class="grid grid-cols-4 gap-4">
+							<div class="col-span-1 hidden md:block">
+								<img class="rounded-lg" src={event.logo} alt={`${event.name} logo`} />
+							</div>
+
+							<div class="col-span-4 md:col-span-3 content-center">
+								<DraftBadge draft={event.draft} />
+								<h3 class="text-lg md:text-2xl font-bold">
+									<a class="underline hover:text-slate-400" href={`/about/${event.slug}`}>{event.name}</a>
+								</h3>
+								<p class="italic text-sm">{event.date}</p>
+
+								<p>{@html event.summary}</p>
+							</div>
+						</div>
+					{/if}
 				{/each}
 			</div>
 
 			<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold my-8">Projects</h2>
 			<div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-y-8 lg:gap-8">
 				{#each data.projects as project (project.name)}
-					<Project
-						name={project.name}
-						draft={project.draft}
-						client={project.client}
-						slug={project.slug}
-						logo={project.logo}>
-						{@html project.summary}
-					</Project>
+					{#if !project.draft || isDevelopment()}
+						<div class="bg-slate-700 border-1 border-slate-600 rounded-lg transition-transform duration-300 hover:-translate-y-4">
+							<a href={`/about/${project.slug}`}>
+								<div class="flex justify-center h-78 overflow-y-hidden">
+									<img class="rounded-t-lg w-full object-cover" src={project.logo} alt={`${project.name} logo`} />
+								</div>
+
+								<div class="p-4 md:p-8">
+									<DraftBadge draft={project.draft} />
+									<h3 class="text-slate-400 font-bold uppercase text-xl lg:text-2xl">{project.name}</h3>
+									<p class="text-lg lg:text-xl">{project.client}</p>
+
+									<p class="pt-4">{@html project.summary}</p>
+								</div>
+							</a>
+						</div>
+					{/if}
 				{/each}
 			</div>
 		</div>
