@@ -1,6 +1,8 @@
 # jackgledhill.com
 
-This here is my portfolio website. Currently, it is just a single-page website that introduces me and the work I've done throughout my time in industry and at University.
+This is my portfolio website. It lists all the projects, professional experience and volunteering work that I have done.
+
+This website was my introduction to Svelte, along with more in-depth CI/CD pipelines via GitHub Actions and Cloudflare Pages.
 
 ## Docker
 
