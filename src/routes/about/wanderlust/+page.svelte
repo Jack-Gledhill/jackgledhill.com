@@ -42,17 +42,6 @@
 <h2>Project Progression</h2>
 <Timeline>
     <TimelineEvent
-        title="Landing in BCN"
-        subtitle="Wednesday Evening"
-        icon={faPlaneArrival}
-        colour="bg-yellow-500">
-        <p>
-            We decided to fly down to Barca a few days early - we wanted to see the city and enjoy some of the delish Spanish cuisine while we had the chance.
-            We spent the next few days touring the city's attractions, tasting the food and, in general, being tourists.
-        </p>
-    </TimelineEvent>
-
-    <TimelineEvent
         title="Project kickoff"
         subtitle="Friday"
         icon={faFlagCheckered}
@@ -77,21 +66,6 @@
             I needed to decide how we were going to structure our data and how that would affect our inputs on the frontend.
             However, I was already very familiar with MongoDB by this point, so I wanted a challenge.
             Instead of using the tried-and-true <a href="https://www.mongodb.com/docs/languages/python/pymongo-driver/current/" target="_blank">pymongo</a>, I would instead use <a href="https://mongoengine.org" target="_blank">mongoengine</a>, which brought the classic ORM features of SQL to MongoDB.
-        </p>
-    </TimelineEvent>
-
-    <TimelineEvent
-        title="Find the Biene"
-        subtitle="Friday Evening"
-        icon={faBug}
-        colour="bg-blue-400">
-        <p>
-            After we had our plan, we decided to take a break and enjoy some of the activities that were available during the hackathon.
-            One of the activities was a scavenger hunt called "Find the Biene", where we had to find all 24 hidden bees around the venue.
-        </p>
-        <p>
-            It took a good few hours, and a lot of questing, but we eventually found them all!
-            We were rewarded for our efforts with a Biene keychain, and a sticker on our activity card (which we could use to get other prizes if we got three in a row).
         </p>
     </TimelineEvent>
 
@@ -126,21 +100,6 @@
         </ul>
         <p>
             While we didn't win any prizes, we had lots of great feedback from the judges, and had an amazing weekend of fun and hacking.
-        </p>
-    </TimelineEvent>
-
-    <TimelineEvent
-        title="Home and Away"
-        subtitle="Sunday Evening"
-        icon={faPlaneDeparture}
-        colour="bg-yellow-500">
-        <p>
-            With HackUPC now over, it was time to head home.
-            We'd been in Barcelona since Wednesday, enjoying the beautiful sights and culture of the city.
-        </p>
-        <p>
-            Naturally, our flight home was delayed by about 2 hours, so we decided to pass the time trying out <a href="https://www.vueling.com/en" target="_blank">Vueling's</a> bananas (inflatable banana-shaped beds that you can relax on while you wait for a flight).
-            Needless to say, the other passengers seemed very amused by our antics.
         </p>
     </TimelineEvent>
 </Timeline>
