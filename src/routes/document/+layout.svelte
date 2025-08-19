@@ -55,7 +55,7 @@
 <Announcement />
 
 <div class="p-4 md:p-16 lg:px-48">
-    <a href="/static">
+    <a href="/">
         <FontAwesomeIcon icon={faArrowLeft} fixedWidth />
         <span class="underline hover:text-slate-400">Back home</span>
     </a>
