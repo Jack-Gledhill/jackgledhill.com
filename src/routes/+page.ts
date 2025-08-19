@@ -64,6 +64,14 @@ export const load: LayoutLoad = () => {
         ],
         projects: [
             {
+                name: "smtp2gotify",
+                client: "Personal project",
+                summary: "SMTP server that forwards emails to Gotify, a self-hosted push notification service.",
+                logo: "/images/gotify/banner.webp",
+                href: "https://github.com/Jack-Gledhill/smtp2gotify",
+                draft: false
+            },
+            {
                 name: "The Unfiltered Blog",
                 client: "Personal project",
                 summary: "A blog that discusses various interests I have. It is so named because the topics aren't filtered by any particular theme, and tend to follow my tone of voice rather than a formal writing style.",
