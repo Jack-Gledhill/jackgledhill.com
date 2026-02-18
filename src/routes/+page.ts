@@ -65,7 +65,42 @@ export const load: LayoutLoad = () => {
                 href: 'https://sheffield.ac.uk'
             }
         ],
+        research: [
+            {
+                title: 'An Analysis of Load Balancing Algorithms in Web Applications',
+                authors: ['J. Gledhill'],
+                date: 'May 2024',
+                journal: 'University of Sheffield',
+                links: {
+                    docx: '/research/fce001.docx',
+                    pdf: '/research/fce001.pdf'
+                },
+                description: 'An individual research project undertaken as part of the Science & Engineering Foundation Year at the University of Sheffield. The project analysed various load balancing algorithms used in industry and evaluated the circumstances where an engineering team may favour them.',
+                draft: false
+            },
+            {
+                title: 'To What Extent Will the Use of Artifical Intelligence Disrupt the UK Workforce?',
+                authors: ['J. Gledhill'],
+                date: 'Nov 2022',
+                journal: 'Scarborough Sixth Form College',
+                links: {
+                    docx: '/research/epq.docx',
+                    pdf: '/research/epq.pdf'
+                },
+                description: 'An EPQ undertaken as part of my A-Level studies. This paper investigates the potential impact of Artificial Intelligence on jobs in the UK based on an analysis of current trends and industry projections.',
+                draft: false
+            }
+        ],
         projects: [
+            {
+                name: 'Constellation',
+                client: 'Personal project',
+                summary:
+                    'Constellation is my homelab. It includes a Highly Available k3s cluster, a Proxmox cluster and a TrueNAS server.',
+                logo: '/images/constellation/banner.webp',
+                href: '/about/constellation',
+                draft: false
+            },
             {
                 name: 'smtp2gotify',
                 client: 'Personal project',
@@ -82,33 +117,6 @@ export const load: LayoutLoad = () => {
                     "A blog that discusses various interests I have. It is so named because the topics aren't filtered by any particular theme, and tend to follow my tone of voice rather than a formal writing style.",
                 logo: '/images/unfiltered-blog.webp',
                 href: 'https://blog.jackgledhill.com',
-                draft: false
-            },
-            {
-                name: 'noddsoc.co.uk',
-                client: 'Sheffield NoDDSoc',
-                summary:
-                    "NoDDSoc's new knowledge base for everything to do with their society and TTRPGs.",
-                logo: '/images/noddsoc/website-banner.webp',
-                href: '/about/noddsoc.co.uk',
-                draft: false
-            },
-            {
-                name: 'Wanderlust',
-                client: 'HackUPC 2025',
-                summary:
-                    'A full-stack web app written in Flask that helps groups find their ideal holiday destination based on their preferences. It uses the Gemini API to suggest a destination, the Skyscanner API to find flights and MongoDB as a backend.',
-                logo: '/images/hackupc25/banner.webp',
-                href: '/about/wanderlust',
-                draft: false
-            },
-            {
-                name: 'Constellation',
-                client: 'Personal project',
-                summary:
-                    'Constellation is my homelab. It includes a Highly Available k3s cluster, a Proxmox cluster and a TrueNAS server.',
-                logo: '/images/constellation/banner.webp',
-                href: '/about/constellation',
                 draft: false
             }
         ],

@@ -177,6 +177,37 @@
 				{/each}
 			</div>
 
+			<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold my-8">
+				Research
+			</h2>
+			<div class="flex flex-col gap-y-8">
+				{#each data.research as paper (paper.title)}
+					{#if !paper.draft || isDevelopment()}
+						<div class="bg-slate-700 border-1 border-slate-600 rounded-xl p-4">
+							<DraftBadge draft={paper.draft} />
+							<h3 class="text-lg md:text-xl font-bold">{paper.title}</h3>
+							<p>{paper.authors.join(", ")}</p>
+							<p class="italic text-sm text-slate-400 pb-2">{paper.journal}, {paper.date}</p>
+
+							<div class="flex flex-row gap-2 text-xs">
+								<a class="bg-slate-600 hover:bg-blue-500 rounded-lg px-2 py-1 transition duration-200" href={paper.links.docx}>
+									DOCX
+								</a>
+								<a class="bg-slate-600 hover:bg-blue-500 rounded-lg px-2 py-1 transition duration-200" href={paper.links.pdf}>
+									PDF
+								</a>
+							</div>
+
+							<hr class="my-4 border-slate-600" />
+
+							<p class="text-sm">
+								{@html paper.description}
+							</p>
+						</div>
+					{/if}
+				{/each}
+			</div>
+
 			<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold my-8">Projects</h2>
 			<div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-y-8 lg:gap-8">
 				{#each data.projects as project (project.name)}
