@@ -52,9 +52,9 @@ export const load: LayoutLoad = () => {
         },
         positions: [
             {
-                title: "Web Developer Intern",
-                company: "b:friend",
-                href: "https://letsbfriend.org.uk"
+                title: "Web Developer",
+                company: "Sheffield Students' Union",
+                href: "https://su.sheffield.ac.uk"
             },
             {
                 title: "MEng Software Engineering",
@@ -70,6 +70,14 @@ export const load: LayoutLoad = () => {
                 logo: "/images/gotify/banner.webp",
                 href: "https://github.com/Jack-Gledhill/smtp2gotify",
                 draft: false
+            },
+            {
+                name: "Genesis",
+                client: "Personal project",
+                summary: "",
+                logo: "/images/genesis.webp",
+                href: "https://github.com/Jack-Gledhill/genesis",
+                draft: true
             },
             {
                 name: "The Unfiltered Blog",
