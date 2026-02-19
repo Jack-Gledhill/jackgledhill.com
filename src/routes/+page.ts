@@ -123,7 +123,7 @@ export const load: LayoutLoad = () => {
         committees: [
             {
                 role: 'Webmaster',
-                society: 'NoDDSoc',
+                name: 'NoDDSoc',
                 slug: 'noddsoc',
                 start: 'Mar 2025',
                 end: 'present',
@@ -132,7 +132,7 @@ export const load: LayoutLoad = () => {
             },
             {
                 role: 'Inclusions Officer',
-                society: 'ShefESH',
+                name: 'ShefESH',
                 slug: 'shefesh',
                 start: 'Mar 2025',
                 end: 'present',
@@ -141,7 +141,7 @@ export const load: LayoutLoad = () => {
             },
             {
                 role: 'Technical Officer',
-                society: 'SLUGSoc',
+                name: 'SLUGSoc',
                 slug: 'slugsoc',
                 start: 'Mar 2025',
                 end: 'present',
@@ -150,7 +150,7 @@ export const load: LayoutLoad = () => {
             },
             {
                 role: 'First Year Rep',
-                society: 'CompSoc',
+                name: 'CompSoc',
                 slug: 'compsoc',
                 start: 'Oct 2024',
                 end: 'Feb 2025',
@@ -159,7 +159,7 @@ export const load: LayoutLoad = () => {
             },
             {
                 role: 'Academic Representative',
-                society: 'SSLCom',
+                name: 'SSLCom',
                 slug: 'sslcom',
                 start: 'Sep 2024',
                 end: 'present',
@@ -170,7 +170,7 @@ export const load: LayoutLoad = () => {
         volunteering: [
             {
                 role: 'Junior Crew Member',
-                company: 'Technical Services Committee',
+                name: 'Technical Services Committee',
                 slug: 'tsc',
                 start: 'Dec 2024',
                 end: 'present',
