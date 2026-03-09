@@ -165,12 +165,10 @@ export const load: LayoutLoad = () => {
                 end: 'present',
                 logo: '/images/su/logo.webp',
                 draft: true
-            }
-        ],
-        volunteering: [
+            },
             {
                 role: 'Junior Crew Member',
-                company: 'Technical Services Committee',
+                society: 'Technical Services Committee',
                 slug: 'tsc',
                 start: 'Dec 2024',
                 end: 'present',

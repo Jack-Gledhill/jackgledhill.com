@@ -1,9 +1,11 @@
 <script lang="ts">
 	import Announcement from '$lib/components/announcement.svelte';
-	import DraftBadge from '$lib/components/draft.svelte';
+	import Committee from '$lib/components/home/committee.svelte';
+	import Event from '$lib/components/home/event.svelte';
 	import Footer from '$lib/components/footer.svelte';
+	import Paper from '$lib/components/home/paper.svelte';
+	import Project from '$lib/components/home/project.svelte';
 
-	import { isDevelopment } from '$lib/utils';
 	import type { PageProps } from './$types';
 
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
@@ -107,46 +109,13 @@
 			<div class="md:max-lg:col-span-1">
 				<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold">Committees</h2>
 				{#each data.committees as com (com.society)}
-					{#if !com.draft || isDevelopment()}
-						<div class="grid grid-cols-4 gap-8 lg:py-4">
-							<div class="col-span-1 hidden xl:block">
-								<img class="rounded-lg 2xl:rounded-2xl" src={com.logo} alt={`${com.society} logo`} />
-							</div>
-
-							<div class="col-span-4 lg:col-span-3 content-center">
-								<DraftBadge draft={com.draft} />
-								<h3 class="text-xl lg:text-2xl font-bold">
-									<a class="underline hover:text-slate-400" href={`/about/${com.slug}`}>{com.society}</a>
-								</h3>
-
-								<p class="text-lg lg:text-xl">{com.role}</p>
-								<p class="italic text-sm mb-8 lg:mb-0">{com.start} - {com.end}</p>
-							</div>
-						</div>
-					{/if}
-				{/each}
-			</div>
-
-			<div class="md:max-lg:col-span-1 md:pt-0 lg:pt-8">
-				<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold">Volunteering</h2>
-				{#each data.volunteering as vol (vol.company)}
-					{#if !vol.draft || isDevelopment()}
-						<div class="grid grid-cols-4 gap-8 py-4">
-							<div class="col-span-1 hidden xl:block">
-								<img class="rounded-lg 2xl:rounded-2xl" src={vol.logo} alt={`${vol.company} logo`} />
-							</div>
-
-							<div class="col-span-4 lg:col-span-3 content-center">
-								<DraftBadge draft={vol.draft} />
-								<h3 class="text-xl lg:text-2xl font-bold">
-									<a class="underline hover:text-slate-400" href={`/about/${vol.slug}`}>{vol.company}</a>
-								</h3>
-
-								<p class="text-lg lg:text-xl">{vol.role}</p>
-								<p class="italic text-sm mb-8 lg:mb-0">{vol.start} - {vol.end}</p>
-							</div>
-						</div>
-					{/if}
+					<Committee name={com.society}
+							   src={com.logo}
+							   href={"/about/" + com.slug}
+							   role={com.role}
+							   start={com.start}
+							   end={com.end}
+							   draft={com.draft} />
 				{/each}
 			</div>
 		</div>
@@ -157,23 +126,12 @@
 			</h2>
 			<div class="grid lg:grid-cols-2 gap-y-8 lg:gap-8">
 				{#each data.events as event (event.name)}
-					{#if !event.draft || isDevelopment()}
-						<div class="grid grid-cols-4 gap-4">
-							<div class="col-span-1 hidden md:block">
-								<img class="rounded-lg" src={event.logo} alt={`${event.name} logo`} />
-							</div>
-
-							<div class="col-span-4 md:col-span-3 content-center">
-								<DraftBadge draft={event.draft} />
-								<h3 class="text-lg md:text-2xl font-bold">
-									<a class="underline hover:text-slate-400" href={`/about/${event.slug}`}>{event.name}</a>
-								</h3>
-								<p class="italic text-sm">{event.date}</p>
-
-								<p>{@html event.summary}</p>
-							</div>
-						</div>
-					{/if}
+					<Event name={event.name}
+						   src={event.logo}
+						   href={"/about/" + event.slug}
+						   date={event.date}
+						   summary={event.summary}
+						   draft={event.draft} />
 				{/each}
 			</div>
 
@@ -182,52 +140,25 @@
 			</h2>
 			<div class="flex flex-col gap-y-8">
 				{#each data.research as paper (paper.title)}
-					{#if !paper.draft || isDevelopment()}
-						<div class="bg-slate-700 border-1 border-slate-600 rounded-xl p-4">
-							<DraftBadge draft={paper.draft} />
-							<h3 class="text-lg md:text-xl font-bold">{paper.title}</h3>
-							<p>{paper.authors.join(", ")}</p>
-							<p class="italic text-sm text-slate-400 pb-2">{paper.journal}, {paper.date}</p>
-
-							<div class="flex flex-row gap-2 text-xs">
-								<a class="bg-slate-600 hover:bg-blue-500 rounded-lg px-2 py-1 transition duration-200" href={paper.links.docx}>
-									DOCX
-								</a>
-								<a class="bg-slate-600 hover:bg-blue-500 rounded-lg px-2 py-1 transition duration-200" href={paper.links.pdf}>
-									PDF
-								</a>
-							</div>
-
-							<hr class="my-4 border-slate-600" />
-
-							<p class="text-sm">
-								{@html paper.description}
-							</p>
-						</div>
-					{/if}
+					<Paper title={paper.title}
+						   journal={paper.journal}
+						   authors={paper.authors}
+						   date={paper.date}
+						   links={paper.links}
+						   description={paper.description}
+						   draft={paper.draft} />
 				{/each}
 			</div>
 
 			<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold my-8">Projects</h2>
 			<div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-y-8 lg:gap-8">
 				{#each data.projects as project (project.name)}
-					{#if !project.draft || isDevelopment()}
-						<div class="bg-slate-700 border-1 border-slate-600 rounded-lg transition-transform duration-300 hover:-translate-y-4">
-							<a href={project.href}>
-								<div class="xl:h-46 overflow-y-hidden rounded-t-lg">
-									<img class="w-full object-contain" src={project.logo} alt={`${project.name} logo`} />
-								</div>
-
-								<div class="p-4 md:p-8">
-									<DraftBadge draft={project.draft} />
-									<h3 class="text-slate-400 font-bold uppercase text-xl lg:text-2xl">{project.name}</h3>
-									<p class="text-lg lg:text-xl">{project.client}</p>
-
-									<p class="pt-4">{@html project.summary}</p>
-								</div>
-							</a>
-						</div>
-					{/if}
+					<Project name={project.name}
+							 client={project.client}
+							 summary={project.summary}
+							 src={project.logo}
+							 href={project.href}
+							 draft={project.draft} />
 				{/each}
 			</div>
 		</div>
