@@ -1,45 +1,60 @@
+---
+title: Wanderlust
+description: A full-stack web app written in Flask that helps groups find their ideal holiday destination based on their preferences. It uses the Gemini API to suggest a destination, the Skyscanner API to find flights and MongoDB as a backend.
+keywords:
+  - HackUPC
+  - HackUPC 2025
+  - Hackathon
+  - MongoDB
+  - Python
+  - Flask
+  - Skyscanner
+  - Google Gemini
+  - Twilio
+  - DevPost
+position: HackUPC 2025
+start: May 2025
+banner: /images/hackupc25/banner.webp
+logo: /images/hackupc25/logo.webp
+links:
+  github: thejmfc/hackupc25
+  website: devpost.com/software/wanderlust-24eodz
+---
+
 <script>
-	import {
-		faFlagCheckered,
+    import {
+        faFlagCheckered,
         faCode,
-        faGavel,
-        faBug,
-        faPlaneDeparture,
-        faPlaneArrival
+        faGavel
     } from '@fortawesome/free-solid-svg-icons';
 
     import Timeline from '$lib/components/timeline/timeline.svelte';
     import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
 
-<h1>About the Project</h1>
-<p>
-    Wanderlust was a group project created by me and three friends from university.
-    The project was submitted for judging at HackUPC 2025, Europe's largest hackathon held at the Universitat Politècnica de Catalunya in Barcelona, Spain.
-</p>
-<p>
-    The hackathon had a number of sponsors, including Revolut, Skyscanner, Siemens, Grafana, Vueling, JetBrains, and more.
-    A number of these sponsors also offered unique challenges and prizes for the best solutions that were made.
-    My team chose to go with Skyscanner's challenge: making the best use of their API.
-</p>
+# About the Project
 
-<p>
-    Our project was a travel planning app that allowed everyone in a group to add their travel preferences, interests and dates.
-    The app would then use the Google Gemini and Skyscanner APIs to generate a travel itinerary that would suit the entire group.
-</p>
+Wanderlust was a group project created by me and three friends from university.
+The project was submitted for judging at HackUPC 2025, Europe's largest hackathon held at the Universitat Politècnica de Catalunya in Barcelona, Spain.
 
-<h2>Project Members</h2>
-<p>
-    Wanderlust was created by a team of four students from the University of Sheffield, all studying Computer Science:
-</p>
-<ul>
-    <li>Me (1st year)</li>
-    <li><a href="https://www.linkedin.com/in/harry-clayton-123799231/" target="_blank">Harry Clayton</a> (1st year)</li>
-    <li><a href="https://euanjones.com" target="_blank">Euan Jones</a> (1st year)</li>
-    <li><a href="https://www.linkedin.com/in/adam-drummond/?originalSubdomain=uk" target="_blank">Adam Drummond</a> (Master's year)</li>
-</ul>
+The hackathon had a number of sponsors, including Revolut, Skyscanner, Siemens, Grafana, Vueling, JetBrains, and more.
+A number of these sponsors also offered unique challenges and prizes for the best solutions that were made.
+My team chose to go with Skyscanner's challenge: making the best use of their API.
 
-<h2>Project Progression</h2>
+Our project was a travel planning app that allowed everyone in a group to add their travel preferences, interests and dates.
+The app would then use the Google Gemini and Skyscanner APIs to generate a travel itinerary that would suit the entire group.
+
+## Project Members
+
+Wanderlust was created by a team of four students from the University of Sheffield, all studying Computer Science:
+
+- Me (1st year)
+- [Harry Clayton](https://www.linkedin.com/in/harry-clayton-123799231/) (1st year)
+- [Euan Jones](https://euanjones.com) (1st year)
+- [Adam Drummond](https://www.linkedin.com/in/adam-drummond/?originalSubdomain=uk) (Master's year)
+
+## Project Progression
+
 <Timeline>
     <TimelineEvent
         title="Project kickoff"
@@ -104,14 +119,12 @@
     </TimelineEvent>
 </Timeline>
 
-<h2>What I Learnt</h2>
-<p>
-    Wanderlust was my first hackathon project, and a great learning experience.
-    My key takeaways were:
-</p>
-<ul>
-    <li>Interacting with the Gemini and Skyscanner APIs</li>
-    <li>Using a MongoDB client in an Object-Oriented manner</li>
-    <li>Working in a team under high time-pressure</li>
-    <li>Hackathons are exhausting (but also fun!)</li>
-</ul>
+## What I Learnt
+
+Wanderlust was my first hackathon project, and a great learning experience.
+My key takeaways were:
+
+- Interacting with the Gemini and Skyscanner APIs
+- Using a MongoDB client in an Object-Oriented manner
+- Working in a team under high time-pressure
+- Hackathons are exhausting (but also fun!)

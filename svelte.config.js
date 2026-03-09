@@ -12,5 +12,5 @@ export default {
         })
     },
     extensions: ['.svelte', '.svx', '.md'],
-    preprocess: mdsvex({ extensions: ['.svx', '.md'] })
+    preprocess: [mdsvex({ extensions: ['.svx', '.md'] }), mdsvex()]
 };
