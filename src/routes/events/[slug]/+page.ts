@@ -2,12 +2,7 @@ import { error } from '@sveltejs/kit';
 
 export async function load({ params }) {
     try {
-        const event = await import(`../../../content/events/${params.slug}.md`);
-
-        return {
-            content: event.default,
-            meta: event.metadata
-        };
+        return await import(`/src/content/events/${params.slug}.md`);
     } catch {
         error(404, `Could not find ${params.slug}`);
     }

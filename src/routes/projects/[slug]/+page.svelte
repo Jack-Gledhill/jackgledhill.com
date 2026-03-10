@@ -64,60 +64,60 @@
 
 <Announcement />
 
-<div class="w-full h-72 bg-center bg-no-repeat bg-cover border-b-1 border-slate-600" style={`background-image: url(${data.meta.banner});`}></div>
+<div class="w-full h-72 bg-center bg-no-repeat bg-cover border-b-1 border-slate-600" style={`background-image: url(${data.metadata.banner});`}></div>
 
 <div class="lg:grid lg:grid-cols-4 lg:min-h-screen">
     <div class="lg:col-span-1 p-12 border-b-1 lg:border-b-0 lg:border-r-1 border-slate-600 leading-loose md:max-lg:grid md:max-lg:grid-cols-2 md:max-lg:gap-4">
         <div class="md:col-span-1">
-            <img class="w-1/2 mx-auto rounded-3xl" src={data.meta.logo} alt={`${data.meta.title} logo`} />
-            <p class="text-center font-bold text-xl max-md:py-8 md:max-lg:pt-8 lg:py-8">{data.meta.title}</p>
+            <img class="w-1/2 mx-auto rounded-3xl" src={data.metadata.logo} alt={`${data.metadata.title} logo`} />
+            <p class="text-center font-bold text-xl max-md:py-8 md:max-lg:pt-8 lg:py-8">{data.metadata.title}</p>
         </div>
 
         <div class="md:col-span-1">
             <p><FontAwesomeIcon icon={faCalendarDays} fixedWidth />
-                {data.meta.start} {#if data.meta.end} - {data.meta.end} {/if}
+                {data.metadata.start} {#if data.metadata.end} - {data.metadata.end} {/if}
             </p>
 
-            {#if data.meta.position}
-                <p><FontAwesomeIcon icon={faUserTie} fixedWidth /> {data.meta.position}</p>
+            {#if data.metadata.position}
+                <p><FontAwesomeIcon icon={faUserTie} fixedWidth /> {data.metadata.position}</p>
             {/if}
 
-            {#if data.meta.links.discord}
+            {#if data.metadata.links.discord}
                 <p class="truncate"><FontAwesomeIcon icon={faDiscord} fixedWidth />
-                    <a class="underline hover:text-slate-400" href={`https://discord.gg/${data.meta.links.discord}`} target="_blank">
-                        discord.gg/{data.meta.links.discord}
+                    <a class="underline hover:text-slate-400" href={`https://discord.gg/${data.metadata.links.discord}`} target="_blank">
+                        discord.gg/{data.metadata.links.discord}
                     </a>
                 </p>
             {/if}
 
-            {#if data.meta.links.instagram}
+            {#if data.metadata.links.instagram}
                 <p class="truncate"><FontAwesomeIcon icon={faInstagram} fixedWidth />
-                    <a class="underline hover:text-slate-400" href={`https://www.instagram.com/${data.meta.links.instagram}`} target="_blank">
-                        {data.meta.links.instagram}
+                    <a class="underline hover:text-slate-400" href={`https://www.instagram.com/${data.metadata.links.instagram}`} target="_blank">
+                        {data.metadata.links.instagram}
                     </a>
                 </p>
             {/if}
 
-            {#if data.meta.links.linkedin}
+            {#if data.metadata.links.linkedin}
                 <p class="truncate"><FontAwesomeIcon icon={faLinkedin} fixedWidth />
-                    <a class="underline hover:text-slate-400" href={`https://www.linkedin.com/company/${data.meta.links.linkedin}`} target="_blank">
-                        {data.meta.links.linkedin}
+                    <a class="underline hover:text-slate-400" href={`https://www.linkedin.com/company/${data.metadata.links.linkedin}`} target="_blank">
+                        {data.metadata.links.linkedin}
                     </a>
                 </p>
             {/if}
 
-            {#if data.meta.links.github}
+            {#if data.metadata.links.github}
                 <p class="truncate"><FontAwesomeIcon icon={faGithub} fixedWidth />
-                    <a class="underline hover:text-slate-400" href={`https://github.com/${data.meta.links.github}`} target="_blank">
-                        {data.meta.links.github}
+                    <a class="underline hover:text-slate-400" href={`https://github.com/${data.metadata.links.github}`} target="_blank">
+                        {data.metadata.links.github}
                     </a>
                 </p>
             {/if}
 
-            {#if data.meta.links.website}
+            {#if data.metadata.links.website}
                 <p class="truncate"><FontAwesomeIcon icon={faGlobeEurope} fixedWidth />
-                    <a class="underline hover:text-slate-400" href={`https://${data.meta.links.website}`} target="_blank">
-                        {data.meta.links.website}
+                    <a class="underline hover:text-slate-400" href={`https://${data.metadata.links.website}`} target="_blank">
+                        {data.metadata.links.website}
                     </a>
                 </p>
             {/if}
@@ -131,7 +131,7 @@
         </a>
 
         <article>
-            {@render data.content()}
+            {@render data.default()}
         </article>
     </div>
 </div>

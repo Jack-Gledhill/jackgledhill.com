@@ -10,7 +10,7 @@ export async function load() {
         const projects = await getAllProjects();
 
         return {
-            meta: page.metadata,
+            metadata: page.metadata,
             committees: committees,
             events: events,
             papers: papers,
