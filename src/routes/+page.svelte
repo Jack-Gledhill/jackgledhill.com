@@ -106,14 +106,8 @@
 		<div class="col-span-1 bg-slate-800 rounded-lg border-1 border-slate-700 p-8 md:max-lg:grid md:max-lg:grid-cols-2 md:max-lg:gap-4">
 			<div class="md:max-lg:col-span-1">
 				<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold">Committees</h2>
-				{#each data.committees as com (com.society)}
-					<Committee name={com.society}
-							   src={com.logo}
-							   href={"/about/" + com.slug}
-							   role={com.role}
-							   start={com.start}
-							   end={com.end}
-							   draft={com.draft} />
+				{#each data.committees as c (c.metadata.title)}
+					<Committee metadata={c.metadata} slug={c.slug} />
 				{/each}
 			</div>
 		</div>
@@ -123,13 +117,8 @@
 				Events & Workshops
 			</h2>
 			<div class="grid lg:grid-cols-2 gap-y-8 lg:gap-8">
-				{#each data.events as event (event.name)}
-					<Event name={event.name}
-						   src={event.logo}
-						   href={"/about/" + event.slug}
-						   date={event.date}
-						   summary={event.summary}
-						   draft={event.draft} />
+				{#each data.events as e (e.metadata.title)}
+					<Event metadata={e.metadata} slug={e.slug} />
 				{/each}
 			</div>
 
@@ -137,26 +126,15 @@
 				Research
 			</h2>
 			<div class="flex flex-col gap-y-8">
-				{#each data.papers as paper (paper.title)}
-					<Paper title={paper.title}
-						   journal={paper.journal}
-						   authors={paper.authors}
-						   date={paper.date}
-						   links={paper.links}
-						   description={paper.description}
-						   draft={paper.draft} />
+				{#each data.papers as p (p.metadata.title)}
+					<Paper metadata={p.metadata} />
 				{/each}
 			</div>
 
 			<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold my-8">Projects</h2>
 			<div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-y-8 lg:gap-8">
-				{#each data.projects as project (project.name)}
-					<Project name={project.name}
-							 client={project.client}
-							 summary={project.summary}
-							 src={project.logo}
-							 href={project.href}
-							 draft={project.draft} />
+				{#each data.projects as p (p.metadata.title)}
+					<Project metadata={p.metadata} slug={p.slug} />
 				{/each}
 			</div>
 		</div>

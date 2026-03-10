@@ -5,6 +5,7 @@ export type Paper = {
     description: string;
     draft: boolean;
     authors: string[];
+    journal: string;
     date: string;
     links: object;
 };

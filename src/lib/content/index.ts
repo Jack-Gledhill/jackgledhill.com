@@ -12,8 +12,11 @@ export async function readFiles(paths: Record<string, File>) {
         const slug = path.split('/').at(-1)?.replace('.md', '');
 
         if (file && typeof file === 'object' && 'metadata' in file && slug) {
-            file.slug = slug;
-            objs.push(file);
+            objs.push({
+                metadata: file.metadata,
+                default: file.default,
+                slug: slug
+            });
         }
     }
 
