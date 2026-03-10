@@ -65,7 +65,7 @@ The society holds regular socials, collabs and one-shots in addition to the week
         icon={faGlobe}
         colour="bg-green-400">
         <p>
-            In years past, NoDDSoc had a website at [noddsoc.co.uk](https://noddsoc.co.uk) that they used to share information with their members and advertise the society.
+            In years past, NoDDSoc had a website at <a href="https://noddsoc.co.uk" target="_blank">noddsoc.co.uk</a> that they used to share information with their members and advertise the society.
             Unfortunately, it's been inactive for a few years, and the source code has been lost. In light of this, I decided to rebuild the website from the ground up!
         </p>
     </TimelineEvent>

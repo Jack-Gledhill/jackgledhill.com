@@ -116,7 +116,7 @@
 			<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold mb-8">
 				Events & Workshops
 			</h2>
-			<div class="grid lg:grid-cols-2 gap-y-8 lg:gap-8">
+			<div class="flex flex-col gap-y-8 lg:gap-8">
 				{#each data.events as e (e.metadata.title)}
 					<Event metadata={e.metadata} slug={e.slug} />
 				{/each}

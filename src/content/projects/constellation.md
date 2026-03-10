@@ -90,4 +90,4 @@ Constellation has been invaluable in teaching me various skills that can be appl
 Primarily, I've learnt about the basics of [Kubernetes](https://kubernetes.io) and horizontal scaling, along with networking topics like subnetting, VLANs and cybersecurity.
 
 It's been so instrumental, that I've even decided to teach others what I've learnt.
-I've already ran a [workshop on Kubernetes](/about/k8s), and in the future plan to run workshops on subnetting and VLANs under [ShefESH](/about/shefesh).
+I've already ran a [workshop on Kubernetes](/events/k8s), and in the future plan to run workshops on subnetting and VLANs under [ShefESH](/committees/shefesh).
