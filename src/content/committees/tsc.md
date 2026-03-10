@@ -1,4 +1,5 @@
 ---
+draft: false
 title: Technical Services Committee
 description: The Technical Services Committee is a group of volunteer students at the University of Sheffield, who run the events, gigs and club nights at the Students' Union.
 keywords:

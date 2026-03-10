@@ -1,4 +1,5 @@
 ---
+draft: false
 title: NoDDSoc
 description: NoDDSoc is the University of Sheffield's TTRPG society, providing a welcoming community for tabletop RPG enthusiasts. The society hosts regular events, campaigns, and social gatherings for students to engage in D&D and other TTRPGs.
 keywords:

@@ -1,4 +1,5 @@
 ---
+draft: false
 title: SLUGSoc
 description: SLUGSoc is Sheffield's LAN Gaming Society, providing a space for students to enjoy video games together. It hosts regular LANs, socials and tournaments, and is a great way to meet fellow gamers at the University of Sheffield.
 keywords:

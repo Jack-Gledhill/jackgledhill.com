@@ -1,4 +1,5 @@
 ---
+draft: false
 title: Constellation
 description: Constellation is my homelab. It contains a Raspberry Pi Kubernetes cluster, a Proxmox cluster and a TrueNAS server. The homelab serves as a learning tool, as well as providing self-hosting to myself and others.
 keywords:

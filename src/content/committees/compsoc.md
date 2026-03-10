@@ -1,4 +1,5 @@
 ---
+draft: false
 title: CompSoc
 description: Sheffield CompSoc is the University of Sheffield's Computer Science society, providing a platform for students to engage with technology, collaborate on projects, and participate in events. As a First Year Representative, I helped organise events and support new members.
 keywords:

@@ -1,4 +1,5 @@
 ---
+draft: false
 title: ShefESH
 description: ShefESH runs weekly sessions for students to learn about ethical hacking and cybersecurity. It is a community of like-minded individuals at the University of Sheffield who are passionate about technology and security.
 keywords:

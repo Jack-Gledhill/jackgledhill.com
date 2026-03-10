@@ -1,12 +1,10 @@
-<script lang="ts">
+<script>
 	import Announcement from '$lib/components/announcement.svelte';
 	import Committee from '$lib/components/home/committee.svelte';
 	import Event from '$lib/components/home/event.svelte';
 	import Footer from '$lib/components/footer.svelte';
 	import Paper from '$lib/components/home/paper.svelte';
 	import Project from '$lib/components/home/project.svelte';
-
-	import type { PageProps } from './$types';
 
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 	import {
@@ -23,7 +21,7 @@
 		faOrcid
 	} from '@fortawesome/free-brands-svg-icons';
 
-	let { data }: PageProps = $props();
+	let { data } = $props();
 </script>
 
 <Announcement />
@@ -40,38 +38,38 @@
 				<p class="text-xl lg:text-2xl pb-8">Software Engineer</p>
 
 				<div class="text-3xl lg:text-2xl grid grid-cols-3 md:grid-cols-6 gap-8">
-					{#if data.links.discord}
-						<a class="hover:text-slate-400" href={`https://discord.gg/${data.links.discord}`} target="_blank" aria-label="Discord">
+					{#if data.meta.links.discord}
+						<a class="hover:text-slate-400" href={`https://discord.gg/${data.meta.links.discord}`} target="_blank" aria-label="Discord">
 							<FontAwesomeIcon icon={faDiscord} fixedWidth />
 						</a>
 					{/if}
 
-					{#if data.links.github}
-						<a class="hover:text-slate-400" href={`https://github.com/${data.links.github}`} target="_blank" aria-label="GitHub">
+					{#if data.meta.links.github}
+						<a class="hover:text-slate-400" href={`https://github.com/${data.meta.links.github}`} target="_blank" aria-label="GitHub">
 							<FontAwesomeIcon icon={faGithub} fixedWidth />
 						</a>
 					{/if}
 
-					{#if data.links.instagram}
-						<a class="hover:text-slate-400" href={`https://www.instagram.com/${data.links.instagram}`} target="_blank" aria-label="Instagram">
+					{#if data.meta.links.instagram}
+						<a class="hover:text-slate-400" href={`https://www.instagram.com/${data.meta.links.instagram}`} target="_blank" aria-label="Instagram">
 							<FontAwesomeIcon icon={faInstagram} fixedWidth />
 						</a>
 					{/if}
 
-					{#if data.links.linkedin}
-						<a class="hover:text-slate-400" href={`https://www.linkedin.com/company/${data.links.linkedin}`} target="_blank" aria-label="LinkedIn">
+					{#if data.meta.links.linkedin}
+						<a class="hover:text-slate-400" href={`https://www.linkedin.com/company/${data.meta.links.linkedin}`} target="_blank" aria-label="LinkedIn">
 							<FontAwesomeIcon icon={faLinkedin} fixedWidth />
 						</a>
 					{/if}
 
-					{#if data.links.orcid}
-						<a class="hover:text-slate-400" href={`https://orcid.org/${data.links.orcid}`} target="_blank" aria-label="OrcID">
+					{#if data.meta.links.orcid}
+						<a class="hover:text-slate-400" href={`https://orcid.org/${data.meta.links.orcid}`} target="_blank" aria-label="OrcID">
 							<FontAwesomeIcon icon={faOrcid} fixedWidth />
 						</a>
 					{/if}
 
-					{#if data.links.website}
-						<a class="hover:text-slate-400" href={`${data.links.website}`} target="_blank" aria-label="Website">
+					{#if data.meta.links.website}
+						<a class="hover:text-slate-400" href={`${data.meta.links.website}`} target="_blank" aria-label="Website">
 							<FontAwesomeIcon icon={faEarthEurope} fixedWidth />
 						</a>
 					{/if}
@@ -81,7 +79,7 @@
 			<div class="col-span-2 2xl:col-span-4 p-8 leading-8 text-sm bg-slate-800">
 				<h2 class="uppercase font-bold text-2xl text-slate-400">Positions</h2>
 				<ul class="list-disc list-outside pl-4">
-					{#each data.positions as pos (pos.title)}
+					{#each data.meta.positions as pos (pos.title)}
 						<li>
 							{pos.title} @
 							<a class="underline hover:text-slate-400" href={pos.href}>{pos.company}</a>
@@ -93,7 +91,7 @@
 					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href="/cv.pdf" target="_blank">
 						<FontAwesomeIcon icon={faPrint} fixedWidth /> Download my CV
 					</a>
-					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href={`mailto:${data.email}`} target="_blank">
+					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href={`mailto:${data.meta.email}`} target="_blank">
 						<FontAwesomeIcon icon={faEnvelope} fixedWidth /> Send me an email
 					</a>
 					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href="https://blog.jackgledhill.com" target="_blank">
@@ -139,7 +137,7 @@
 				Research
 			</h2>
 			<div class="flex flex-col gap-y-8">
-				{#each data.research as paper (paper.title)}
+				{#each data.papers as paper (paper.title)}
 					<Paper title={paper.title}
 						   journal={paper.journal}
 						   authors={paper.authors}

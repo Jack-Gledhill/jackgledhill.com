@@ -1,4 +1,5 @@
 ---
+draft: false
 title: Kubernetes Workshop
 description: This was an introductory workshop on Kubernetes, planned and ran by Jack Gledhill. The workshop introduces Kubernetes, its uses and how to get started with it. Students learn the basics of container orchestration, setting up a cluster with Docker Desktopm and deploying Pods and Services to the cluster.
 keywords:
