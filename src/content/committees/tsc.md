@@ -11,8 +11,8 @@ keywords:
   - Light programming
   - University of Sheffield
   - Sheffield Students' Union
-start: Dec 2024
-end: present
+start: 2024-12-01
+end: 2025-07-01
 position: Junior Crew Member
 banner: /images/tsc/banner.webp
 logo: /images/tsc/logo.webp

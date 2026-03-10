@@ -9,8 +9,7 @@ keywords:
   - University of Sheffield
   - Sheffield Students' Union
   - Sheffield DnD
-start: March 2025
-end: present
+start: 2025-03-01
 position: Webmaster
 banner: /images/noddsoc/banner.webp
 logo: /images/noddsoc/logo.webp

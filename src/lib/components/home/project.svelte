@@ -1,6 +1,6 @@
 <script>
     import DraftBadge from '$lib/components/draft.svelte';
-    import { isDevelopment } from '$lib/utils/index.js';
+    import { isDevelopment } from '$lib/utils';
 
     let { metadata, slug } = $props();
 </script>
@@ -15,7 +15,6 @@
             <div class="p-4 md:p-8">
                 <DraftBadge draft={metadata.draft} />
                 <h3 class="text-slate-400 font-bold uppercase text-xl lg:text-2xl">{metadata.title}</h3>
-                <p class="text-lg lg:text-xl">{metadata.position}</p>
 
                 <p class="pt-4">{@html metadata.description}</p>
             </div>

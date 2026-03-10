@@ -13,9 +13,7 @@ keywords:
   - Container orchestration
   - Server rack
   - Home server
-position: Personal project
-start: July 2024
-end: present
+date: 2024-07-01
 banner: /images/constellation/banner.webp
 logo: /images/constellation/logo.webp
 links:

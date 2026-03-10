@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Kubernetes Workshop
-description: This was an introductory workshop on Kubernetes, planned and ran by Jack Gledhill. The workshop introduces Kubernetes, its uses and how to get started with it. Students learn the basics of container orchestration, setting up a cluster with Docker Desktopm and deploying Pods and Services to the cluster.
+description: This was an introductory workshop on Kubernetes. The workshop introduces Kubernetes, its uses and how to get started with it. Students learn the basics of container orchestration, setting up a cluster with Docker Desktopm and deploying Pods and Services to the cluster.
 keywords:
   - Kubernetes
   - University of Sheffield
@@ -12,7 +12,7 @@ keywords:
   - Kubernetes Engineer
   - DevOps
   - DevOps Engineer
-start: April 2025
+date: 2025-04-01
 banner: /images/kubernetes/banner.webp
 logo: /images/kubernetes/logo.webp
 links:

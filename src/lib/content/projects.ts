@@ -5,9 +5,7 @@ export type Project = {
     description: string;
     keywords: string[];
     draft: boolean;
-    position: string;
-    start: string;
-    end: string;
+    date: Date;
     banner: string;
     logo: string;
     links: object;
@@ -20,10 +18,14 @@ export type ProjectFile = {
 };
 
 export async function getAllProjects(): Promise<ProjectFile[]> {
-    return await readFiles(
+    const projects = await readFiles(
         import.meta.glob('/src/content/projects/*.md', {
             eager: true
         })
+    );
+
+    return projects.sort(
+        (a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime()
     );
 }
 

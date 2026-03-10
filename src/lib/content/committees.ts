@@ -5,8 +5,8 @@ export type Committee = {
     description: string;
     keywords: string[];
     draft: boolean;
-    start: string;
-    end: string;
+    start: Date;
+    end?: Date;
     position: string;
     banner: string;
     logo: string;
@@ -20,10 +20,14 @@ export type CommitteeFile = {
 }
 
 export async function getAllCommittees(): Promise<CommitteeFile[]> {
-    return await readFiles(
+    const committees = await readFiles(
         import.meta.glob('/src/content/committees/*.md', {
             eager: true
         })
+    );
+
+    return committees.sort(
+        (a, b) => new Date(b.metadata.start).getTime() - new Date(a.metadata.start).getTime()
     );
 }
 

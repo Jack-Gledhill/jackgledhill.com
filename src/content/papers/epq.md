@@ -4,7 +4,7 @@ title: To What Extent Will the Use of Artificial Intelligence Disrupt the UK Wor
 authors:
   - J. Gledhill
 journal: Scarborough Sixth Form College
-date: Nov 2022
+date: 2022-11-01
 links:
   docx: /research/epq.docx
   pdf: /research/epq.pdf

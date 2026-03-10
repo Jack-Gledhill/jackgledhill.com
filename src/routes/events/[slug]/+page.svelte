@@ -2,7 +2,6 @@
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 	import {
 		faCalendarDays,
-		faUserTie,
 		faArrowLeft,
 		faGlobeEurope
 	} from '@fortawesome/free-solid-svg-icons';
@@ -75,12 +74,8 @@
 
         <div class="md:col-span-1">
             <p><FontAwesomeIcon icon={faCalendarDays} fixedWidth />
-                {data.metadata.start} {#if data.metadata.end} - {data.metadata.end} {/if}
+                {data.metadata.date}
             </p>
-
-            {#if data.metadata.position}
-                <p><FontAwesomeIcon icon={faUserTie} fixedWidth /> {data.metadata.position}</p>
-            {/if}
 
             {#if data.metadata.links.discord}
                 <p class="truncate"><FontAwesomeIcon icon={faDiscord} fixedWidth />

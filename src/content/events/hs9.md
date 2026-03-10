@@ -8,7 +8,7 @@ keywords:
   - HackSheffield 9
   - Sheffield hackathon
   - Sheffield CompSoc
-start: November 2024
+date: 2024-11-01
 banner: /images/hacksheffield9/banner.webp
 logo: /images/hacksheffield9/logo.webp
 links:

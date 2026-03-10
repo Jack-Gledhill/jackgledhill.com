@@ -1,6 +1,6 @@
 <script>
-    import { isDevelopment } from '$lib/utils';
     import DraftBadge from '$lib/components/draft.svelte';
+    import { isDevelopment, formatDate } from '$lib/utils';
 
     let { metadata, slug } = $props();
 </script>
@@ -18,7 +18,7 @@
             </h3>
 
             <p class="text-lg lg:text-xl">{metadata.position}</p>
-            <p class="italic text-sm mb-8 lg:mb-0">{metadata.start} - {metadata.end}</p>
+            <p class="italic text-sm mb-8 lg:mb-0">{formatDate(metadata.start)} - {metadata.end ? formatDate(metadata.end) : "present"}</p>
         </div>
     </div>
 {/if}

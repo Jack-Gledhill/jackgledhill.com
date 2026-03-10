@@ -127,7 +127,7 @@
 			</h2>
 			<div class="flex flex-col gap-y-8">
 				{#each data.papers as p (p.metadata.title)}
-					<Paper metadata={p.metadata} />
+					<Paper metadata={p.metadata} content={p.default} />
 				{/each}
 			</div>
 

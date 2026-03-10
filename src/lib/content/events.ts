@@ -5,7 +5,7 @@ export type Event = {
     description: string;
     keywords: string[];
     draft: boolean;
-    start: string;
+    date: Date;
     banner: string;
     logo: string;
     links: object;
@@ -18,10 +18,14 @@ export type EventFile = {
 };
 
 export async function getAllEvents(): Promise<EventFile[]> {
-    return await readFiles(
+    const events = await readFiles(
         import.meta.glob('/src/content/events/*.md', {
             eager: true
         })
+    );
+
+    return events.sort(
+        (a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime()
     );
 }
 

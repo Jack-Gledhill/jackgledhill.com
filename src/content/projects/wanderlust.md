@@ -13,8 +13,7 @@ keywords:
   - Google Gemini
   - Twilio
   - DevPost
-position: HackUPC 2025
-start: May 2025
+date: 2025-05-01
 banner: /images/hackupc25/banner.webp
 logo: /images/hackupc25/logo.webp
 links:

@@ -6,7 +6,7 @@ export type Paper = {
     draft: boolean;
     authors: string[];
     journal: string;
-    date: string;
+    date: Date;
     links: object;
 };
 
@@ -17,10 +17,14 @@ export type PaperFile = {
 };
 
 export async function getAllPapers(): Promise<PaperFile[]> {
-    return await readFiles(
+    const papers = await readFiles(
         import.meta.glob('/src/content/papers/*.md', {
             eager: true
         })
+    );
+
+    return papers.sort(
+        (a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime()
     );
 }
 
