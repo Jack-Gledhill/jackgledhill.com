@@ -15,6 +15,7 @@
 
 	import Announcement from '$lib/components/announcement.svelte';
 	import Footer from '$lib/components/footer.svelte';
+	import { formatDate } from '$lib/utils';
 
 	let { data } = $props();
 </script>
@@ -75,7 +76,7 @@
 
         <div class="md:col-span-1">
             <p><FontAwesomeIcon icon={faCalendarDays} fixedWidth />
-                {data.metadata.start} {#if data.metadata.end} - {data.metadata.end} {/if}
+                {formatDate(data.metadata.start)} {#if data.metadata.end} - {formatDate(data.metadata.end)} {/if}
             </p>
 
             {#if data.metadata.position}

@@ -12,6 +12,7 @@
         faLinkedin
     } from '@fortawesome/free-brands-svg-icons';
 
+    import { formatDate } from '$lib/utils';
     import Announcement from '$lib/components/announcement.svelte';
     import Footer from '$lib/components/footer.svelte';
 
@@ -74,7 +75,7 @@
 
         <div class="md:col-span-1">
             <p><FontAwesomeIcon icon={faCalendarDays} fixedWidth />
-                {data.metadata.date}
+                {formatDate(data.metadata.date)}
             </p>
 
             {#if data.metadata.links.discord}
