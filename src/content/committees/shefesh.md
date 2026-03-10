@@ -1,3 +1,25 @@
+---
+title: ShefESH
+description: ShefESH runs weekly sessions for students to learn about ethical hacking and cybersecurity. It is a community of like-minded individuals at the University of Sheffield who are passionate about technology and security.
+keywords:
+  - Ethical hacking
+  - ShefESH
+  - Sheffield ethical hackers
+  - University of Sheffield
+  - Sheffield Students' Union
+start: March 2025
+end: present
+position: Inclusions Officer
+banner: /images/shefesh/banner.webp
+logo: /images/shefesh/logo.webp
+links:
+  discord: rhfnwgphdx
+  github: ShefESH
+  instagram: _shefesh
+  linkedin: sheffield-ethical-student-hackers
+  website: shefesh.com
+---
+
 <script>
 	import {
 		faCheckToSlot,
@@ -8,24 +30,21 @@
 	import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
 
-<h1>Introduction</h1>
-<p>
-    Sheffield's Ethical Hacking Society (aka ShefESH) provides weekly sessions during term-time to all its members.
-    These sessions cover a wide range of cybersecurity topics, including networking, penetration testing, cryptography and more.
-</p>
+# Introduction
 
-<p>
-    These sessions are typically 1 to 1.5 hours long, and include a quick lecture on the theory, followed by a practical exercise.
-</p>
+Sheffield's Ethical Hacking Society (aka ShefESH) provides weekly sessions during term-time to all its members.
+These sessions cover a wide range of cybersecurity topics, including networking, penetration testing, cryptography and more.
 
-<h2>Responsibilities</h2>
-<ul>
-    <li>Planning and running weekly sessions</li>
-    <li>Making myself available to help members</li>
-    <li>Creating an inclusive environment for all members</li>
-</ul>
+These sessions are typically 1 to 1.5 hours long, and include a quick lecture on the theory, followed by a practical exercise.
 
-<h2>What I've Accomplished</h2>
+## Responsibilities
+
+- Planning and running weekly sessions
+- Making myself available to help members
+- Creating an inclusive environment for all members
+
+## What I've Accomplished
+
 <Timeline>
     <TimelineEvent
         title="Elected as Inclusions Officer"

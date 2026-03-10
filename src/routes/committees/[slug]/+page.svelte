@@ -1,7 +1,4 @@
-<script lang="ts">
-    import type { LayoutProps } from './$types';
-    import { page } from '$app/state';
-
+<script>
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
     import {
         faCalendarDays,
@@ -19,11 +16,11 @@
     import Announcement from '$lib/components/announcement.svelte';
     import Footer from '$lib/components/footer.svelte';
 
-    let { children }: LayoutProps = $props();
+    let { data } = $props();
 </script>
 
 <style>
-    @reference '../../app.css';
+    @reference '../../../app.css';
 
     :global {
         article h1,
@@ -67,60 +64,60 @@
 
 <Announcement />
 
-<div class="w-full h-72 bg-center bg-no-repeat bg-cover border-b-1 border-slate-600" style={`background-image: url(${page.data.banner});`}></div>
+<div class="w-full h-72 bg-center bg-no-repeat bg-cover border-b-1 border-slate-600" style={`background-image: url(${data.meta.banner});`}></div>
 
 <div class="lg:grid lg:grid-cols-4 lg:min-h-screen">
     <div class="lg:col-span-1 p-12 border-b-1 lg:border-b-0 lg:border-r-1 border-slate-600 leading-loose md:max-lg:grid md:max-lg:grid-cols-2 md:max-lg:gap-4">
         <div class="md:col-span-1">
-            <img class="w-1/2 mx-auto rounded-3xl" src={page.data.logo} alt={`${page.data.name} logo`} />
-            <p class="text-center font-bold text-xl max-md:py-8 md:max-lg:pt-8 lg:py-8">{page.data.name}</p>
+            <img class="w-1/2 mx-auto rounded-3xl" src={data.meta.logo} alt={`${data.meta.title} logo`} />
+            <p class="text-center font-bold text-xl max-md:py-8 md:max-lg:pt-8 lg:py-8">{data.meta.title}</p>
         </div>
 
         <div class="md:col-span-1">
             <p><FontAwesomeIcon icon={faCalendarDays} fixedWidth />
-                {page.data.start} {#if page.data.end} - {page.data.end} {/if}
+                {data.meta.start} {#if data.meta.end} - {data.meta.end} {/if}
             </p>
 
-            {#if page.data.position}
-                <p><FontAwesomeIcon icon={faUserTie} fixedWidth /> {page.data.position}</p>
+            {#if data.meta.position}
+                <p><FontAwesomeIcon icon={faUserTie} fixedWidth /> {data.meta.position}</p>
             {/if}
 
-            {#if page.data.links.discord}
+            {#if data.meta.links.discord}
                 <p class="truncate"><FontAwesomeIcon icon={faDiscord} fixedWidth />
-                    <a class="underline hover:text-slate-400" href={`https://discord.gg/${page.data.links.discord}`} target="_blank">
-                        discord.gg/{page.data.links.discord}
+                    <a class="underline hover:text-slate-400" href={`https://discord.gg/${data.meta.links.discord}`} target="_blank">
+                        discord.gg/{data.meta.links.discord}
                     </a>
                 </p>
             {/if}
 
-            {#if page.data.links.instagram}
+            {#if data.meta.links.instagram}
                 <p class="truncate"><FontAwesomeIcon icon={faInstagram} fixedWidth />
-                    <a class="underline hover:text-slate-400" href={`https://www.instagram.com/${page.data.links.instagram}`} target="_blank">
-                        {page.data.links.instagram}
+                    <a class="underline hover:text-slate-400" href={`https://www.instagram.com/${data.meta.links.instagram}`} target="_blank">
+                        {data.meta.links.instagram}
                     </a>
                 </p>
             {/if}
 
-            {#if page.data.links.linkedin}
+            {#if data.meta.links.linkedin}
                 <p class="truncate"><FontAwesomeIcon icon={faLinkedin} fixedWidth />
-                    <a class="underline hover:text-slate-400" href={`https://www.linkedin.com/company/${page.data.links.linkedin}`} target="_blank">
-                        {page.data.links.linkedin}
+                    <a class="underline hover:text-slate-400" href={`https://www.linkedin.com/company/${data.meta.links.linkedin}`} target="_blank">
+                        {data.meta.links.linkedin}
                     </a>
                 </p>
             {/if}
 
-            {#if page.data.links.github}
+            {#if data.meta.links.github}
                 <p class="truncate"><FontAwesomeIcon icon={faGithub} fixedWidth />
-                    <a class="underline hover:text-slate-400" href={`https://github.com/${page.data.links.github}`} target="_blank">
-                        {page.data.links.github}
+                    <a class="underline hover:text-slate-400" href={`https://github.com/${data.meta.links.github}`} target="_blank">
+                        {data.meta.links.github}
                     </a>
                 </p>
             {/if}
 
-            {#if page.data.links.website}
+            {#if data.meta.links.website}
                 <p class="truncate"><FontAwesomeIcon icon={faGlobeEurope} fixedWidth />
-                    <a class="underline hover:text-slate-400" href={`https://${page.data.links.website}`} target="_blank">
-                        {page.data.links.website}
+                    <a class="underline hover:text-slate-400" href={`https://${data.meta.links.website}`} target="_blank">
+                        {data.meta.links.website}
                     </a>
                 </p>
             {/if}
@@ -134,7 +131,7 @@
         </a>
 
         <article>
-            {@render children()}
+            {@render data.content()}
         </article>
     </div>
 </div>

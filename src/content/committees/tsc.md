@@ -1,3 +1,26 @@
+---
+title: Technical Services Committee
+description: The Technical Services Committee is a group of volunteer students at the University of Sheffield, who run the events, gigs and club nights at the Students' Union.
+keywords:
+  - Entertainment
+  - DMX
+  - XLR
+  - Pioneer DJ
+  - Sound engineering
+  - Light programming
+  - University of Sheffield
+  - Sheffield Students' Union
+start: Dec 2024
+end: present
+position: Junior Crew Member
+banner: /images/tsc/banner.webp
+logo: /images/tsc/logo.webp
+links:
+  instagram: tsc_sheffield
+  linkedin: tsc-sheffield
+  website: tsc.sites.sheffield.ac.uk
+---
+
 <script>
 	import {
 		faDoorOpen,
@@ -8,19 +31,18 @@
 	import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
 
-<h1>Introduction</h1>
-<p>
-    TSC is Sheffield Students' Union's tech crew.
-    We're a group of volunteer students who run the SU's events.
-    This includes everything from our club nights, to the gigs in Foundry & Fusion, to the events in the Octagon Centre.
-    You name it, we probably run it.
-</p>
-<p>
-    I found TSC to be a great way to learn new, practical skills in a way that's hard to find elsewhere.
-    The training is free, and the experience is applicable to the rest of the entertainment industry.
-</p>
+# Introduction
 
-<h2>What I've Accomplished</h2>
+TSC is Sheffield Students' Union's tech crew.
+We're a group of volunteer students who run the SU's events.
+This includes everything from our club nights, to the gigs in Foundry & Fusion, to the events in the Octagon Centre.
+You name it, we probably run it.
+
+I found TSC to be a great way to learn new, practical skills in a way that's hard to find elsewhere.
+The training is free, and the experience is applicable to the rest of the entertainment industry.
+
+## What I've Accomplished
+
 <Timeline>
     <TimelineEvent
         title="Joined as a Junior"

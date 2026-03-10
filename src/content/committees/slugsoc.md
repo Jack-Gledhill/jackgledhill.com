@@ -1,3 +1,24 @@
+---
+title: SLUGSoc
+description: SLUGSoc is Sheffield's LAN Gaming Society, providing a space for students to enjoy video games together. It hosts regular LANs, socials and tournaments, and is a great way to meet fellow gamers at the University of Sheffield.
+keywords:
+  - LAN gaming
+  - SLUGSoc
+  - University of Sheffield
+  - Sheffield Students' Union
+start: March 2025
+end: present
+position: Technical Officer
+banner: /images/slugsoc/banner.webp
+logo: /images/slugsoc/logo.webp
+links:
+  discord: VvUCXCT
+  github: SLUGSoc
+  instagram: slugsoc
+  linkedin: university-of-sheffield-lan-gaming-society
+  website: slugsoc.co.uk
+---
+
 <script>
 	import {
 		faCheckToSlot,
@@ -8,22 +29,21 @@
 	import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
 
-<h1>Introduction</h1>
-<p>
-    SLUGSoc is quite a popular society at the University of Sheffield.
-    It focuses primarily on video games, and even has a number of e-sports teams that compete in various leagues.
-</p>
+# Introduction
 
-<h2>Responsibilities</h2>
-<ul>
-    <li>Securing the society's server</li>
-    <li>Ensuring Committee can access our servers</li>
-    <li>Managing the society's Minecraft servers</li>
-    <li>Setting up equipment at our LAN events</li>
-    <li>Writing technical documentation for the Committee</li>
-</ul>
+SLUGSoc is quite a popular society at the University of Sheffield.
+It focuses primarily on video games, and even has a number of e-sports teams that compete in various leagues.
 
-<h2>What I've Accomplished</h2>
+## Responsibilities
+
+- Securing the society's server
+- Ensuring Committee can access our servers
+- Managing the society's Minecraft servers
+- Setting up equipment at our LAN events
+- Writing technical documentation for the Committee
+
+## What I've Accomplished
+
 <Timeline>
     <TimelineEvent
         title="Elected as Technical Officer"

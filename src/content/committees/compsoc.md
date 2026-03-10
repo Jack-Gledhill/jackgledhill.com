@@ -1,3 +1,25 @@
+---
+title: CompSoc
+description: Sheffield CompSoc is the University of Sheffield's Computer Science society, providing a platform for students to engage with technology, collaborate on projects, and participate in events. As a First Year Representative, I helped organise events and support new members.
+keywords:
+  - CompSoc
+  - Sheffield CompSoc
+  - Computer Science Society
+  - University of Sheffield
+  - Sheffield Students' Union
+start: Oct 2024
+end: May 2025
+position: First Year Representative
+banner: /images/compsoc/banner.webp
+logo: /images/compsoc/logo.webp
+links:
+  discord: 3e9GMgc
+  github: shefcompsoc
+  instagram: shefcompsoc
+  linkedin: shefcompsoc
+  website: shefcompsoc.uk
+---
+
 <script>
     import {
         faCheckToSlot,
@@ -12,20 +34,22 @@
     import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
 
-<h1>Introduction</h1>
-<p>Sheffield's Computer Science Society (aka Sheffield CompSoc, or just CompSoc) is a departmental society for students studying under the School of Computer Science at the University of Sheffield.</p>
-<p>While the society does run a lot of technical workshops and events, it also hosts a number of social events. This includes barcrawls, a Christmas party and a Summer Ball.</p>
+# Introduction
+Sheffield's Computer Science Society (aka Sheffield CompSoc, or just CompSoc) is a departmental society for students studying under the School of Computer Science at the University of Sheffield.
 
-<h2>Responsibilities</h2>
-<ul>
-    <li>Promoting events to first year students</li>
-    <li>Organising society socials and events</li>
-    <li>Stewarding barcrawls</li>
-</ul>
+While the society does run a lot of technical workshops and events, it also hosts a number of social events. 
+This includes barcrawls, a Christmas party and a Summer Ball.
 
-<h2>What I've Accomplished</h2>
+## Responsibilities
+
+- Promoting events to first year students
+- Organising society socials and events
+- Stewarding barcrawls
+
+## What I've Accomplished
+
 <Timeline>
-    <TimelineEvent
+    <TimelineEvent 
         title="Elected as First Year Representative"
         subtitle="Oct 2024"
         icon={faCheckToSlot}
@@ -47,7 +71,7 @@
         </p>
 
         <p>
-            You can read more about my time at HackSheffield 9 <a href="/about/hs9" target="_blank">here</a>.
+            You can read more about my time at HackSheffield 9 <a href="/events/hs9" target="_blank">here</a>.
         </p>
     </TimelineEvent>
 
@@ -90,12 +114,12 @@
         icon={faDharmachakra}
         colour="bg-blue-400">
         <p>
-            I spent the summer of 2024 learning Kubernetes and applying it to a real-life project: <a href="/about/constellation" target="_blank">Constellation</a>.
+            I spent the summer of 2024 learning Kubernetes and applying it to a real-life project: <a href="/projects/constellation" target="_blank">Constellation</a>.
             In October 2024, I decided I wanted to help others learn Kubernetes, without the steep learning curve I had to overcome.
         </p>
 
         <p>
-            Read more about the workshop <a href="/about/k8s" target="_blank">here</a>.
+            Read more about the workshop <a href="/events/k8s" target="_blank">here</a>.
         </p>
     </TimelineEvent>
 </Timeline>
