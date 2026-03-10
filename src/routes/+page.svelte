@@ -38,38 +38,38 @@
 				<p class="text-xl lg:text-2xl pb-8">Software Engineer</p>
 
 				<div class="text-3xl lg:text-2xl grid grid-cols-3 md:grid-cols-6 gap-8">
-					{#if data.meta.links.discord}
-						<a class="hover:text-slate-400" href={`https://discord.gg/${data.meta.links.discord}`} target="_blank" aria-label="Discord">
+					{#if data.metadata.links.discord}
+						<a class="hover:text-slate-400" href={`https://discord.gg/${data.metadata.links.discord}`} target="_blank" aria-label="Discord">
 							<FontAwesomeIcon icon={faDiscord} fixedWidth />
 						</a>
 					{/if}
 
-					{#if data.meta.links.github}
-						<a class="hover:text-slate-400" href={`https://github.com/${data.meta.links.github}`} target="_blank" aria-label="GitHub">
+					{#if data.metadata.links.github}
+						<a class="hover:text-slate-400" href={`https://github.com/${data.metadata.links.github}`} target="_blank" aria-label="GitHub">
 							<FontAwesomeIcon icon={faGithub} fixedWidth />
 						</a>
 					{/if}
 
-					{#if data.meta.links.instagram}
-						<a class="hover:text-slate-400" href={`https://www.instagram.com/${data.meta.links.instagram}`} target="_blank" aria-label="Instagram">
+					{#if data.metadata.links.instagram}
+						<a class="hover:text-slate-400" href={`https://www.instagram.com/${data.metadata.links.instagram}`} target="_blank" aria-label="Instagram">
 							<FontAwesomeIcon icon={faInstagram} fixedWidth />
 						</a>
 					{/if}
 
-					{#if data.meta.links.linkedin}
-						<a class="hover:text-slate-400" href={`https://www.linkedin.com/company/${data.meta.links.linkedin}`} target="_blank" aria-label="LinkedIn">
+					{#if data.metadata.links.linkedin}
+						<a class="hover:text-slate-400" href={`https://www.linkedin.com/company/${data.metadata.links.linkedin}`} target="_blank" aria-label="LinkedIn">
 							<FontAwesomeIcon icon={faLinkedin} fixedWidth />
 						</a>
 					{/if}
 
-					{#if data.meta.links.orcid}
-						<a class="hover:text-slate-400" href={`https://orcid.org/${data.meta.links.orcid}`} target="_blank" aria-label="OrcID">
+					{#if data.metadata.links.orcid}
+						<a class="hover:text-slate-400" href={`https://orcid.org/${data.metadata.links.orcid}`} target="_blank" aria-label="OrcID">
 							<FontAwesomeIcon icon={faOrcid} fixedWidth />
 						</a>
 					{/if}
 
-					{#if data.meta.links.website}
-						<a class="hover:text-slate-400" href={`${data.meta.links.website}`} target="_blank" aria-label="Website">
+					{#if data.metadata.links.website}
+						<a class="hover:text-slate-400" href={`${data.metadata.links.website}`} target="_blank" aria-label="Website">
 							<FontAwesomeIcon icon={faEarthEurope} fixedWidth />
 						</a>
 					{/if}
@@ -79,7 +79,7 @@
 			<div class="col-span-2 2xl:col-span-4 p-8 leading-8 text-sm bg-slate-800">
 				<h2 class="uppercase font-bold text-2xl text-slate-400">Positions</h2>
 				<ul class="list-disc list-outside pl-4">
-					{#each data.meta.positions as pos (pos.title)}
+					{#each data.metadata.positions as pos (pos.title)}
 						<li>
 							{pos.title} @
 							<a class="underline hover:text-slate-400" href={pos.href}>{pos.company}</a>
@@ -91,7 +91,7 @@
 					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href="/cv.pdf" target="_blank">
 						<FontAwesomeIcon icon={faPrint} fixedWidth /> Download my CV
 					</a>
-					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href={`mailto:${data.meta.email}`} target="_blank">
+					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href={`mailto:${data.metadata.email}`} target="_blank">
 						<FontAwesomeIcon icon={faEnvelope} fixedWidth /> Send me an email
 					</a>
 					<a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href="https://blog.jackgledhill.com" target="_blank">
