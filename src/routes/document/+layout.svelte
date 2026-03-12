@@ -1,7 +1,4 @@
 <script lang="ts">
-	import Announcement from '$lib/components/announcement.svelte';
-	import Footer from '$lib/components/footer.svelte';
-
 	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 
@@ -52,8 +49,6 @@
     }
 </style>
 
-<Announcement />
-
 <div class="p-4 md:p-16 lg:px-48">
     <a href="/">
         <FontAwesomeIcon icon={faArrowLeft} fixedWidth />
@@ -64,5 +59,3 @@
         {@render children()}
     </article>
 </div>
-
-<Footer />

@@ -13,8 +13,6 @@
 	} from '@fortawesome/free-brands-svg-icons';
 
 	import { formatDate } from '$lib/utils';
-	import Announcement from '$lib/components/announcement.svelte';
-	import Footer from '$lib/components/footer.svelte';
 
 	let { data } = $props();
 </script>
@@ -61,8 +59,6 @@
         }
     }
 </style>
-
-<Announcement />
 
 <div class="w-full h-72 bg-center bg-no-repeat bg-cover border-b-1 border-slate-600" style={`background-image: url(${data.metadata.banner});`}></div>
 
@@ -131,5 +127,3 @@
         </article>
     </div>
 </div>
-
-<Footer />

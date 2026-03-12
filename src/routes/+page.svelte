@@ -1,16 +1,12 @@
 <script>
-	import Announcement from '$lib/components/announcement.svelte';
 	import Committee from '$lib/components/home/committee.svelte';
 	import Event from '$lib/components/home/event.svelte';
-	import Footer from '$lib/components/footer.svelte';
 	import Hero from '$lib/components/home/hero.svelte';
 	import Paper from '$lib/components/home/paper.svelte';
 	import Project from '$lib/components/home/project.svelte';
 
 	let { data } = $props();
 </script>
-
-<Announcement />
 
 <div class="p-4 lg:p-16">
 	<Hero metadata={data.metadata.hero} />
@@ -53,5 +49,3 @@
 		</div>
 	</div>
 </div>
-
-<Footer />
