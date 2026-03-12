@@ -26,7 +26,7 @@
             <FontAwesomeIcon icon={faRobot} />
         </a>
 
-        <a class="hover:text-slate-400" href="/document/copyright" aria-label="Copyright & Attributions">
+        <a class="hover:text-slate-400" href="/copyright" aria-label="Copyright & Attributions">
             <FontAwesomeIcon icon={faCopyright} />
         </a>
     </p>
