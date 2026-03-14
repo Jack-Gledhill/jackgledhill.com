@@ -16,13 +16,11 @@
             <h1 class="font-bold text-3xl md:text-5xl">{metadata.title}</h1>
             <p class="text-xl lg:text-2xl pb-8">{metadata.subtitle}</p>
 
-            <div class="grid md:grid-cols-3 gap-8 text-center text-sm">
+            <div class="grid md:grid-cols-2 gap-8 text-center text-sm">
                 <a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href="/cv.pdf" target="_blank">
                     <FontAwesomeIcon icon={faPrint} fixedWidth /> Download my CV
                 </a>
-                <a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href={`mailto:${metadata.email}`} target="_blank">
-                    <FontAwesomeIcon icon={faEnvelope} fixedWidth /> Send me an email
-                </a>
+
                 <a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href="https://blog.jackgledhill.com" target="_blank">
                     <FontAwesomeIcon icon={faRss} fixedWidth /> Read my blog
                 </a>
