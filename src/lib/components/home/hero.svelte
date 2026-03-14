@@ -16,57 +16,7 @@
             <h1 class="font-bold text-3xl md:text-5xl">{metadata.title}</h1>
             <p class="text-xl lg:text-2xl pb-8">{metadata.subtitle}</p>
 
-            <div class="text-3xl lg:text-2xl grid grid-cols-3 md:grid-cols-6 gap-8">
-                {#if metadata.socials.discord}
-                    <a class="hover:text-slate-400" href={`https://discord.gg/${metadata.socials.discord}`} target="_blank" aria-label="Discord">
-                        <FontAwesomeIcon icon={faDiscord} fixedWidth />
-                    </a>
-                {/if}
-
-                {#if metadata.socials.github}
-                    <a class="hover:text-slate-400" href={`https://github.com/${metadata.socials.github}`} target="_blank" aria-label="GitHub">
-                        <FontAwesomeIcon icon={faGithub} fixedWidth />
-                    </a>
-                {/if}
-
-                {#if metadata.socials.instagram}
-                    <a class="hover:text-slate-400" href={`https://www.instagram.com/${metadata.socials.instagram}`} target="_blank" aria-label="Instagram">
-                        <FontAwesomeIcon icon={faInstagram} fixedWidth />
-                    </a>
-                {/if}
-
-                {#if metadata.socials.linkedin}
-                    <a class="hover:text-slate-400" href={`https://www.linkedin.com/company/${metadata.socials.linkedin}`} target="_blank" aria-label="LinkedIn">
-                        <FontAwesomeIcon icon={faLinkedin} fixedWidth />
-                    </a>
-                {/if}
-
-                {#if metadata.socials.orcid}
-                    <a class="hover:text-slate-400" href={`https://orcid.org/${metadata.socials.orcid}`} target="_blank" aria-label="OrcID">
-                        <FontAwesomeIcon icon={faOrcid} fixedWidth />
-                    </a>
-                {/if}
-
-                {#if metadata.socials.website}
-                    <a class="hover:text-slate-400" href={`${metadata.socials.website}`} target="_blank" aria-label="Website">
-                        <FontAwesomeIcon icon={faEarthEurope} fixedWidth />
-                    </a>
-                {/if}
-            </div>
-        </div>
-
-        <div class="col-span-2 2xl:col-span-4 p-8 leading-8 text-sm bg-slate-800">
-            <h2 class="uppercase font-bold text-2xl text-slate-400">Positions</h2>
-            <ul class="list-disc list-outside pl-4">
-                {#each metadata.positions as p (p.title)}
-                    <li>
-                        {p.title} @
-                        <a class="underline hover:text-slate-400" href={p.href}>{p.company}</a>
-                    </li>
-                {/each}
-            </ul>
-
-            <div class="pt-4 grid md:grid-cols-3 gap-8 text-center text-sm">
+            <div class="grid md:grid-cols-3 gap-8 text-center text-sm">
                 <a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href="/cv.pdf" target="_blank">
                     <FontAwesomeIcon icon={faPrint} fixedWidth /> Download my CV
                 </a>
@@ -77,6 +27,36 @@
                     <FontAwesomeIcon icon={faRss} fixedWidth /> Read my blog
                 </a>
             </div>
+        </div>
+
+        <div class="col-span-2 2xl:col-span-4 p-8 leading-8 text-sm bg-slate-800 flex flex-col gap-4">
+            <section>
+                <h2 class="uppercase font-bold text-2xl text-slate-400">Positions</h2>
+                <ul class="list-disc list-outside pl-4">
+                    {#each metadata.positions as p (p.title)}
+                        <li>
+                            {p.title} @
+                            <a class="underline hover:text-slate-400" href={p.href}>{p.company}</a>
+                        </li>
+                    {/each}
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="uppercase font-bold text-2xl text-slate-400">Contact</h2>
+                <p>
+                    <FontAwesomeIcon icon={faEnvelope} fixedWidth /> <a href={`mailto:${metadata.email}`} class="underline hover:text-slate-400" target="_blank">{metadata.email}</a>
+                </p>
+                <p>
+                    <FontAwesomeIcon icon={faGithub} fixedWidth /> <a href={`https://github.com/${metadata.socials.github}`} class="underline hover:text-slate-400" target="_blank">github.com/{metadata.socials.github}</a>
+                </p>
+                <p>
+                    <FontAwesomeIcon icon={faLinkedin} fixedWidth /> <a href={`https://linkedin.com/in/${metadata.socials.linkedin}`} class="underline hover:text-slate-400" target="_blank">linkedin.com/in/{metadata.socials.linkedin}</a>
+                </p>
+                <p>
+                    <FontAwesomeIcon icon={faOrcid} fixedWidth /> <a href={`https://orcid.org/${metadata.socials.orcid}`} class="underline hover:text-slate-400" target="_blank">orcid.org/{metadata.socials.orcid}</a>
+                </p>
+            </section>
         </div>
     </div>
 </div>
