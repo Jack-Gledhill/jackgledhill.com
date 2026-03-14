@@ -8,26 +8,32 @@
     } from '@fortawesome/free-solid-svg-icons';
 </script>
 
-<div class="bg-slate-950 p-8 grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-8 md:place-content-between text-sm">
-    <p class="text-center md:text-left">
-        Copyright &copy; 2025 Jack Gledhill
-    </p>
+<div class="bg-slate-950 p-8 text-sm flex flex-col gap-8">
+    <div>
+        <img class="max-md:mx-auto h-12" src="/images/emblem.webp" alt="Jack Gledhill's logo" />
+    </div>
 
-    <p class="text-center md:text-right tracking-[1em]">
-        <a class="hover:text-slate-400" href="https://github.com/Jack-Gledhill/jackgledhill.com" aria-label="Source code">
-            <FontAwesomeIcon icon={faGithub} />
-        </a>
+    <div class="grid grid-rows-3 md:grid-rows-none md:grid-cols-2 gap-8 md:place-content-between">
+        <p class="text-center md:text-left">
+            Copyright &copy; 2025 Jack Gledhill
+        </p>
 
-        <a class="hover:text-slate-400" href="/sitemap.xml" aria-label="Sitemap">
-            <FontAwesomeIcon icon={faSitemap} />
-        </a>
+        <p class="text-center md:text-right tracking-[1em]">
+            <a class="hover:text-slate-400" href="https://github.com/Jack-Gledhill/jackgledhill.com" aria-label="Source code">
+                <FontAwesomeIcon icon={faGithub} />
+            </a>
 
-        <a class="hover:text-slate-400" href="/robots.txt" aria-label="Robots.txt">
-            <FontAwesomeIcon icon={faRobot} />
-        </a>
+            <a class="hover:text-slate-400" href="/sitemap.xml" aria-label="Sitemap">
+                <FontAwesomeIcon icon={faSitemap} />
+            </a>
 
-        <a class="hover:text-slate-400" href="/copyright" aria-label="Copyright & Attributions">
-            <FontAwesomeIcon icon={faCopyright} />
-        </a>
-    </p>
+            <a class="hover:text-slate-400" href="/robots.txt" aria-label="Robots.txt">
+                <FontAwesomeIcon icon={faRobot} />
+            </a>
+
+            <a class="hover:text-slate-400" href="/copyright" aria-label="Copyright & Attributions">
+                <FontAwesomeIcon icon={faCopyright} />
+            </a>
+        </p>
+    </div>
 </div>
