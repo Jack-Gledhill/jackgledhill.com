@@ -6,19 +6,23 @@
 </script>
 
 {#if !metadata.draft || isDevelopment()}
-    <div class="grid grid-cols-4 gap-4">
-        <div class="col-span-1 hidden xl:block">
+    <div class="grid grid-cols-5 gap-8">
+        <div class="col-span-1">
             <img class="rounded-lg 2xl:rounded-2xl" src={metadata.logo} alt={`${metadata.title} logo`} />
         </div>
 
-        <div class="col-span-4 lg:col-span-3 content-center">
-            <DraftBadge draft={metadata.draft} />
-            <h3 class="text-xl lg:text-2xl font-bold">
-                <a class="underline hover:text-slate-400" href={`/committees/${slug}`}>{metadata.title}</a>
-            </h3>
+        <div class="col-span-4 flex flex-col gap-4">
+            <div>
+                <DraftBadge draft={metadata.draft} />
+                <h3 class="text-xl lg:text-2xl font-bold">
+                    <a class="underline hover:text-slate-400" href={`/committees/${slug}`}>{metadata.title}</a>
+                </h3>
 
-            <p class="text-lg lg:text-xl">{metadata.position}</p>
-            <p class="italic text-sm mb-8 lg:mb-0">{formatDate(metadata.start)} - {metadata.end ? formatDate(metadata.end) : "present"}</p>
+                <p class="text-lg lg:text-xl text-slate-400">{metadata.position}</p>
+                <p class="italic text-sm">{formatDate(metadata.start)} - {metadata.end ? formatDate(metadata.end) : "present"}</p>
+            </div>
+
+            {@html metadata.description}
         </div>
     </div>
 {/if}
