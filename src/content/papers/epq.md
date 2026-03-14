@@ -6,7 +6,6 @@ authors:
 journal: Scarborough Sixth Form College
 date: 2022-11-01
 links:
-  docx: /research/epq.docx
   pdf: /research/epq.pdf
 ---
 
