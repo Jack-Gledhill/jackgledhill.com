@@ -21,8 +21,6 @@ links:
   github: shefcompsoc/k8s-workshop
 ---
 
-# Introduction
-
 [Kubernetes](https://kubernetes.io) is a container orchestration platform used by companies all over the world to scale their software across entire datacenters.
 It's a highly sought-after skill in the industry, in part because of its steep learning curve that challenges almost everyone that tries to learn it.
 

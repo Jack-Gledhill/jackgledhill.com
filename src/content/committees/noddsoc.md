@@ -32,8 +32,6 @@ links:
 	import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
 
-# Introduction
-
 NoDDSoc is the University of Sheffield's TTRPG society, and is one of the oldest and largest societies in Sheffield!
 The society holds regular socials, collabs and one-shots in addition to the weekly campaigns run by our Game Masters.
 

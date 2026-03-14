@@ -30,8 +30,6 @@ links:
 	import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
 
-# Introduction
-
 SLUGSoc is quite a popular society at the University of Sheffield.
 It focuses primarily on video games, and even has a number of e-sports teams that compete in various leagues.
 

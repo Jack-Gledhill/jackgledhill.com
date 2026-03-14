@@ -31,8 +31,6 @@ links:
 	import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
 
-# Introduction
-
 Sheffield's Ethical Hacking Society (aka ShefESH) provides weekly sessions during term-time to all its members.
 These sessions cover a wide range of cybersecurity topics, including networking, penetration testing, cryptography and more.
 

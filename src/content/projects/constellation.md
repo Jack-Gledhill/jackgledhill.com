@@ -22,8 +22,6 @@ links:
   website: starsystem.dev
 ---
 
-# About the Project
-
 Constellation is a homelab; a collection of consumer and enterprise hardware that I use to learn about various technologies, and provide hosting for services.
 I've been working on the project since Summer 2024, and since then it's seen many, many iterations and refactors.
 I can't go into the project's entire history here, but I can talk about the current state of the project, what I hope to achieve with it in the future, and what I've learnt from it.

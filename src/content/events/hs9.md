@@ -17,8 +17,6 @@ links:
   website: hacksheffield.uk
 ---
 
-# Introduction
-
 HackSheffield is the University of Sheffield's annual hackathon; a weekend of hacking, games and networking!
 In 2024, I got the honour of organising the 9th iteration of HackSheffield, alongside the rest of the team at [CompSoc](/committees/compsoc).
 

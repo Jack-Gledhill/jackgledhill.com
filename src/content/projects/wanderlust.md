@@ -33,8 +33,6 @@ links:
     import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
 
-# About the Project
-
 Wanderlust was a group project created by me and three friends from university.
 The project was submitted for judging at HackUPC 2025, Europe's largest hackathon held at the Universitat Politècnica de Catalunya in Barcelona, Spain.
 
