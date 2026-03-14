@@ -1,6 +1,6 @@
 <script>
     import DraftBadge from '$lib/components/draft.svelte';
-    import { isDevelopment, formatDate } from '$lib/utils';
+    import { isDevelopment, formatDate } from '$lib/utils/index.js';
 		import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 		import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 

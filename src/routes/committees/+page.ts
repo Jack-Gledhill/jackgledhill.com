@@ -10,6 +10,6 @@ export async function load() {
         };
     } catch (e) {
         console.log(e);
-        error(404, "Missing index.md content file");
+        error(404, 'Missing index.md content file');
     }
 }

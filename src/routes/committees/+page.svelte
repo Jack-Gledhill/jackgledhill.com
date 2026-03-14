@@ -1,7 +1,7 @@
 <script>
-	import Committee from '$lib/components/committee.svelte';
+    import Committee from '$lib/components/committee.svelte';
 
-	let { data } = $props();
+    let { data } = $props();
 </script>
 
 <h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold">
