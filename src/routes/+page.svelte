@@ -38,7 +38,7 @@
 				Committees
 			</h2>
 
-			<div class="grid lg:grid-cols-2 gap-8">
+			<div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-8">
 				{#each data.committees as c (c.metadata.title)}
 					<Committee metadata={c.metadata} slug={c.slug} />
 				{/each}
@@ -48,7 +48,7 @@
 				Events & Workshops
 			</h2>
 
-			<div class="grid lg:grid-cols-2 gap-8">
+			<div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-8">
 				{#each data.events as e (e.metadata.title)}
 					<Event metadata={e.metadata} slug={e.slug} />
 				{/each}
@@ -68,7 +68,7 @@
 				Research & Publications
 			</h2>
 
-			<div class="grid lg:grid-cols-2 gap-8">
+			<div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-8">
 				{#each data.papers as p (p.metadata.title)}
 					<Paper metadata={p.metadata} content={p.default} />
 				{/each}
