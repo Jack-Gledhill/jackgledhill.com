@@ -12,6 +12,7 @@ keywords:
   - Kubernetes Engineer
   - DevOps
   - DevOps Engineer
+type: Workshop
 date: 2025-04-01
 banner: /images/kubernetes/banner.webp
 logo: /images/kubernetes/logo.webp

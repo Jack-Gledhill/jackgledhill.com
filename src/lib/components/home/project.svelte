@@ -12,6 +12,7 @@
                 <div class="col-span-4">
                     <DraftBadge draft={metadata.draft} />
                     <h3 class="text-xl lg:text-xl font-bold">{metadata.title}</h3>
+                    <p class="italic text-sm">{formatDate(metadata.date)}</p>
                 </div>
 
                 <div class="col-span-1">

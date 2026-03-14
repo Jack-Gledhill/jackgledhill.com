@@ -12,7 +12,6 @@
                 <div class="col-span-4">
                     <DraftBadge draft={metadata.draft} />
                     <h3 class="text-xl lg:text-xl font-bold">{metadata.title}</h3>
-
                     <p class="text-lg lg:text-xl text-slate-400">{metadata.position}</p>
                     <p class="italic text-sm">{formatDate(metadata.start)} - {metadata.end ? formatDate(metadata.end) : "present"}</p>
                 </div>
