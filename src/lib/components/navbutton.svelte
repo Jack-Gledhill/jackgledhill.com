@@ -5,14 +5,14 @@
 </script>
 
 {#if active}
-    <div class="bg-slate-800 rounded-t-lg border-1 border-b-0 border-slate-700 p-4 text-center">
+    <div class="bg-slate-800 rounded-t-lg border-1 border-b-0 border-slate-700 p-4 text-center" data-sveltekit-noscroll>
         <FontAwesomeIcon {icon} fixedWidth />
         <span class="hidden lg:inline">
             {@render children()}
         </span>
     </div>
 {:else}
-    <a {href} class="bg-slate-900 rounded-t-lg border-1 border-b-0 border-slate-800 p-4 text-center hover:cursor-pointer">
+    <a {href} class="bg-slate-900 rounded-t-lg border-1 border-b-0 border-slate-800 p-4 text-center hover:cursor-pointer" data-sveltekit-noscroll>
         <FontAwesomeIcon {icon} fixedWidth />
         <span class="hidden lg:inline">
             {@render children()}

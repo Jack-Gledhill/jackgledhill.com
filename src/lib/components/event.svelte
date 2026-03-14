@@ -7,7 +7,7 @@
 
 {#if !metadata.draft || isDevelopment()}
     <div class="bg-slate-700 border-1 border-slate-600 rounded-xl p-4 transition-transform duration-300 hover:-translate-y-4">
-        <a href={`/events/${slug}`}>
+        <a href={`/events/${slug}`} data-sveltekit-noscroll>
             <div class="grid grid-cols-5 gap-8">
                 <div class="col-span-4">
                     <DraftBadge draft={metadata.draft} />
