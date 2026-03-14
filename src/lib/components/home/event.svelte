@@ -11,7 +11,7 @@
             <div class="grid grid-cols-5 gap-8">
                 <div class="col-span-4">
                     <DraftBadge draft={metadata.draft} />
-                    <h3 class="text-lg md:text-xl font-bold">{metadata.title}</h3>
+                    <h3 class="text-xl font-bold">{metadata.title}</h3>
                     <p class="text-lg lg:text-xl text-slate-400">{metadata.type}</p>
                     <p class="italic text-sm">{formatDate(metadata.date)}</p>
                 </div>
