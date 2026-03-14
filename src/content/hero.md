@@ -1,7 +1,9 @@
 ---
 title: Jack Gledhill
 subtitle: Software Engineer
-image: /images/portrait.webp
+image: 
+  src: /images/portrait.webp
+  alt: Portrait of Jack surrounded by greenery
 email: me@jackgledhill.com
 socials:
   github: Jack-Gledhill

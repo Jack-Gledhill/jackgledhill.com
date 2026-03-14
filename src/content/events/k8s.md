@@ -14,8 +14,9 @@ keywords:
   - DevOps Engineer
 type: Workshop
 date: 2025-04-01
-banner: /images/kubernetes/banner.webp
-logo: /images/kubernetes/logo.webp
+logo: 
+  src: /images/kubernetes/logo.webp
+  alt: Kubernetes logo
 links:
   github: shefcompsoc/k8s-workshop
 ---

@@ -1,4 +1,4 @@
-import  { readFiles } from '$lib/content';
+import { type Image, readFiles } from '$lib/content';
 
 export type Committee = {
     title: string;
@@ -8,8 +8,7 @@ export type Committee = {
     start: Date;
     end?: Date;
     position: string;
-    banner: string;
-    logo: string;
+    logo: Image;
     links: object;
 }
 

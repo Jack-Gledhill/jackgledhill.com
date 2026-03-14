@@ -10,8 +10,9 @@ keywords:
   - Sheffield CompSoc
 type: Hackathon
 date: 2024-11-01
-banner: /images/hacksheffield9/banner.webp
-logo: /images/hacksheffield9/logo.webp
+logo: 
+  src: /images/hacksheffield9/logo.webp
+  alt: HackSheffield 9 logo
 links:
   website: hacksheffield.uk
 ---

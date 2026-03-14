@@ -11,8 +11,9 @@ keywords:
 start: 2024-10-01
 end: 2025-05-01
 position: First Year Representative
-banner: /images/compsoc/banner.webp
-logo: /images/compsoc/logo.webp
+logo: 
+  src: /images/compsoc/logo.webp
+  alt: CompSoc logo
 links:
   discord: 3e9GMgc
   github: shefcompsoc

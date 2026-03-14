@@ -16,7 +16,7 @@
                 </div>
 
                 <div class="col-span-1">
-                    <img class="rounded-lg 2xl:rounded-2xl" src={metadata.logo} alt={`${metadata.title} logo`} />
+                    <img class="rounded-lg 2xl:rounded-2xl" src={metadata.logo.src} alt={metadata.logo.alt} />
                 </div>
             </div>
 

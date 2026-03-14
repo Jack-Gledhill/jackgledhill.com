@@ -9,7 +9,7 @@
 <div class="w-full bg-slate-800 rounded-lg border-1 border-slate-700 py-4 mb-4 lg:mb-8">
     <div class="bg-slate-700 grid grid-cols-1 lg:grid-cols-5 2xl:grid-cols-9 gap-y-[1px] lg:gap-y-0 lg:gap-x-[1px]">
         <div class="col-span-1 px-8 content-center bg-slate-800">
-            <img class="rounded-full shadow-xl md:max-lg:w-1/2 md:max-lg:mx-auto" src={metadata.image} alt="Portrait of Jack" fetchpriority="high" />
+            <img class="rounded-full shadow-xl md:max-lg:w-1/2 md:max-lg:mx-auto" src={metadata.image.src} alt={metadata.image.alt} fetchpriority="high" />
         </div>
 
         <div class="col-span-2 2xl:col-span-4 content-center px-8 bg-slate-800">

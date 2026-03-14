@@ -14,8 +14,9 @@ keywords:
   - Server rack
   - Home server
 date: 2024-07-01
-banner: /images/constellation/banner.webp
-logo: /images/constellation/logo.webp
+logo: 
+  src: /images/constellation/logo.webp
+  alt: Constellation logo
 links:
   github: constellation-net
   website: starsystem.dev

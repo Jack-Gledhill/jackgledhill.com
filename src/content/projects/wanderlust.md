@@ -14,8 +14,9 @@ keywords:
   - Twilio
   - DevPost
 date: 2025-05-01
-banner: /images/hackupc25/banner.webp
-logo: /images/hackupc25/logo.webp
+logo: 
+  src: /images/hackupc25/logo.webp
+  alt: HackUPC logo
 links:
   github: thejmfc/hackupc25
   website: devpost.com/software/wanderlust-24eodz

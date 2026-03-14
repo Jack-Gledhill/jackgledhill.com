@@ -9,8 +9,9 @@ keywords:
   - Sheffield Students' Union
 start: 2025-03-01
 position: Technical Officer
-banner: /images/slugsoc/banner.webp
-logo: /images/slugsoc/logo.webp
+logo: 
+  src: /images/slugsoc/logo.webp
+  alt: SLUGSoc logo
 links:
   discord: VvUCXCT
   github: SLUGSoc

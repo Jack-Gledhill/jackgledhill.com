@@ -10,8 +10,9 @@ keywords:
   - Sheffield Students' Union
 start: 2025-03-01
 position: Inclusions Officer
-banner: /images/shefesh/banner.webp
-logo: /images/shefesh/logo.webp
+logo: 
+  src: /images/shefesh/logo.webp
+  alt: ShefESH logo
 links:
   discord: rhfnwgphdx
   github: ShefESH
