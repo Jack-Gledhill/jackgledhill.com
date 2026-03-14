@@ -32,5 +32,5 @@ export async function getAllCommittees(): Promise<CommitteeFile[]> {
 }
 
 export async function getCommittee(slug: string): Promise<CommitteeFile> {
-    return await import(`/src/content/committees/${slug}.md`);
+    return await import(`../../content/committees/${slug}.md`);
 }

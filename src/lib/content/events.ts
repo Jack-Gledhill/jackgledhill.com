@@ -30,5 +30,5 @@ export async function getAllEvents(): Promise<EventFile[]> {
 }
 
 export async function getEvent(slug: string): Promise<EventFile> {
-    return await import(`/src/content/events/${slug}.md`);
+    return await import(`../../content/events/${slug}.md`);
 }

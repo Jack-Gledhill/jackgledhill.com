@@ -29,5 +29,5 @@ export async function getAllPapers(): Promise<PaperFile[]> {
 }
 
 export async function getPaper(slug: string): Promise<PaperFile> {
-    return await import(`/src/content/papers/${slug}.md`);
+    return await import(`../../content/papers/${slug}.md`);
 }

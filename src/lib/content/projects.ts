@@ -30,5 +30,5 @@ export async function getAllProjects(): Promise<ProjectFile[]> {
 }
 
 export async function getProject(slug: string): Promise<ProjectFile> {
-    return await import(`/src/content/projects/${slug}.md`);
+    return await import(`../../content/projects/${slug}.md`);
 }
