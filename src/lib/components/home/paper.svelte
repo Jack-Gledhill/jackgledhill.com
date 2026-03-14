@@ -24,8 +24,6 @@
 
         <hr class="my-4 border-slate-600" />
 
-        <div class="text-sm">
-            {@render content()}
-        </div>
+        {@render content()}
     </div>
 {/if}
