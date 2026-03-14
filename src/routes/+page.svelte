@@ -14,10 +14,7 @@
 	<div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-y-4 lg:gap-8">
 		<div class="col-span-1 bg-slate-800 rounded-lg border-1 border-slate-700 p-8 md:max-lg:grid md:max-lg:grid-cols-2 md:max-lg:gap-4">
 			<div class="md:max-lg:col-span-1">
-				<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold">Committees</h2>
-				{#each data.committees as c (c.metadata.title)}
-					<Committee metadata={c.metadata} slug={c.slug} />
-				{/each}
+
 			</div>
 		</div>
 
@@ -28,6 +25,15 @@
 			<div class="flex flex-col gap-y-8 lg:gap-8">
 				{#each data.events as e (e.metadata.title)}
 					<Event metadata={e.metadata} slug={e.slug} />
+				{/each}
+			</div>
+
+			<h2 class="uppercase text-2xl md:text-4xl text-slate-400 font-bold my-8">
+				Committees
+			</h2>
+			<div class="grid grid-cols-2 gap-8">
+				{#each data.committees as c (c.metadata.title)}
+					<Committee metadata={c.metadata} slug={c.slug} />
 				{/each}
 			</div>
 

@@ -6,7 +6,7 @@
 </script>
 
 {#if !metadata.draft || isDevelopment()}
-    <div class="grid grid-cols-4 gap-8 lg:py-4">
+    <div class="grid grid-cols-4 gap-4">
         <div class="col-span-1 hidden xl:block">
             <img class="rounded-lg 2xl:rounded-2xl" src={metadata.logo} alt={`${metadata.title} logo`} />
         </div>
