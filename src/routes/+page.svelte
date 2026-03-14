@@ -68,7 +68,7 @@
 				Research & Publications
 			</h2>
 
-			<div class="flex flex-col gap-8">
+			<div class="grid lg:grid-cols-2 gap-8">
 				{#each data.papers as p (p.metadata.title)}
 					<Paper metadata={p.metadata} content={p.default} />
 				{/each}
