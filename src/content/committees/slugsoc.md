@@ -10,7 +10,7 @@ keywords:
 start: 2025-03-01
 position: Technical Officer
 logo: 
-  src: /images/slugsoc/logo.webp
+  src: /images/slugsoc.webp
   alt: SLUGSoc logo
 links:
   discord: VvUCXCT

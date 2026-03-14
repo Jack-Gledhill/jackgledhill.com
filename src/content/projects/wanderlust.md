@@ -15,7 +15,7 @@ keywords:
   - DevPost
 date: 2025-05-01
 logo: 
-  src: /images/hackupc25/logo.webp
+  src: /images/hackupc25.webp
   alt: HackUPC logo
 links:
   github: thejmfc/hackupc25

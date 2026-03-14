@@ -15,7 +15,7 @@ keywords:
 type: Workshop
 date: 2025-04-01
 logo: 
-  src: /images/kubernetes/logo.webp
+  src: /images/kubernetes.webp
   alt: Kubernetes logo
 links:
   github: shefcompsoc/k8s-workshop

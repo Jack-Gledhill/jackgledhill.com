@@ -12,7 +12,7 @@ start: 2024-10-01
 end: 2025-05-01
 position: First Year Representative
 logo: 
-  src: /images/compsoc/logo.webp
+  src: /images/compsoc.webp
   alt: CompSoc logo
 links:
   discord: 3e9GMgc

@@ -12,7 +12,7 @@ keywords:
 start: 2025-03-01
 position: Webmaster
 logo: 
-  src: /images/noddsoc/logo.webp
+  src: /images/noddsoc.webp
   alt: NoDDSoc logo
 links:
   discord: E6F7Unz

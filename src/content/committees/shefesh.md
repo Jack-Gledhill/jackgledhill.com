@@ -11,7 +11,7 @@ keywords:
 start: 2025-03-01
 position: Inclusions Officer
 logo: 
-  src: /images/shefesh/logo.webp
+  src: /images/shefesh.webp
   alt: ShefESH logo
 links:
   discord: rhfnwgphdx

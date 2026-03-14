@@ -11,7 +11,7 @@ keywords:
 type: Hackathon
 date: 2024-11-01
 logo: 
-  src: /images/hacksheffield9/logo.webp
+  src: /images/hacksheffield9.webp
   alt: HackSheffield 9 logo
 links:
   website: hacksheffield.uk

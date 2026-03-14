@@ -15,7 +15,7 @@ keywords:
   - Home server
 date: 2024-07-01
 logo: 
-  src: /images/constellation/logo.webp
+  src: /images/constellation.webp
   alt: Constellation logo
 links:
   github: constellation-net
