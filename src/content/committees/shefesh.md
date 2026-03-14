@@ -10,8 +10,9 @@ keywords:
   - Sheffield Students' Union
 start: 2025-03-01
 position: Inclusions Officer
-banner: /images/shefesh/banner.webp
-logo: /images/shefesh/logo.webp
+logo: 
+  src: /images/shefesh.webp
+  alt: ShefESH logo
 links:
   discord: rhfnwgphdx
   github: ShefESH
@@ -29,8 +30,6 @@ links:
 	import Timeline from '$lib/components/timeline/timeline.svelte';
 	import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
-
-# Introduction
 
 Sheffield's Ethical Hacking Society (aka ShefESH) provides weekly sessions during term-time to all its members.
 These sessions cover a wide range of cybersecurity topics, including networking, penetration testing, cryptography and more.

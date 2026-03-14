@@ -14,12 +14,13 @@ keywords:
 start: 2024-12-01
 end: 2025-07-01
 position: Junior Crew Member
-banner: /images/tsc/banner.webp
-logo: /images/tsc/logo.webp
+logo: 
+  src: /images/tsc.webp
+  alt: TSC logo
 links:
   instagram: tsc_sheffield
   linkedin: tsc-sheffield
-  website: tsc.sites.sheffield.ac.uk
+  website: tsc.sheffield.ac.uk
 ---
 
 <script>
@@ -31,8 +32,6 @@ links:
 	import Timeline from '$lib/components/timeline/timeline.svelte';
 	import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
-
-# Introduction
 
 TSC is Sheffield Students' Union's tech crew.
 We're a group of volunteer students who run the SU's events.

@@ -14,14 +14,13 @@ keywords:
   - Server rack
   - Home server
 date: 2024-07-01
-banner: /images/constellation/banner.webp
-logo: /images/constellation/logo.webp
+logo: 
+  src: /images/constellation.webp
+  alt: Constellation logo
 links:
   github: constellation-net
   website: starsystem.dev
 ---
-
-# About the Project
 
 Constellation is a homelab; a collection of consumer and enterprise hardware that I use to learn about various technologies, and provide hosting for services.
 I've been working on the project since Summer 2024, and since then it's seen many, many iterations and refactors.

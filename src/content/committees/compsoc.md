@@ -11,8 +11,9 @@ keywords:
 start: 2024-10-01
 end: 2025-05-01
 position: First Year Representative
-banner: /images/compsoc/banner.webp
-logo: /images/compsoc/logo.webp
+logo: 
+  src: /images/compsoc.webp
+  alt: CompSoc logo
 links:
   discord: 3e9GMgc
   github: shefcompsoc
@@ -35,7 +36,6 @@ links:
     import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
 
-# Introduction
 Sheffield's Computer Science Society (aka Sheffield CompSoc, or just CompSoc) is a departmental society for students studying under the School of Computer Science at the University of Sheffield.
 
 While the society does run a lot of technical workshops and events, it also hosts a number of social events. 

@@ -1,13 +1,12 @@
 import { error } from '@sveltejs/kit';
-
-export const prerender = true;
+import { getAllProjects } from '$lib/content';
 
 export async function load() {
     try {
-        const page = await import('/src/content/index.md');
+        const content = await getAllProjects();
 
         return {
-            metadata: page.metadata
+            content: content
         };
     } catch (e) {
         console.log(e);

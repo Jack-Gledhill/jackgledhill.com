@@ -4,6 +4,11 @@ export type File = {
     slug?: string;
 }
 
+export type Image = {
+    src: string;
+    alt: string;
+}
+
 export async function readFiles(paths: Record<string, File>) {
     const objs: File[] = [];
 

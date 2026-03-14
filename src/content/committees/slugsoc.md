@@ -9,8 +9,9 @@ keywords:
   - Sheffield Students' Union
 start: 2025-03-01
 position: Technical Officer
-banner: /images/slugsoc/banner.webp
-logo: /images/slugsoc/logo.webp
+logo: 
+  src: /images/slugsoc.webp
+  alt: SLUGSoc logo
 links:
   discord: VvUCXCT
   github: SLUGSoc
@@ -28,8 +29,6 @@ links:
 	import Timeline from '$lib/components/timeline/timeline.svelte';
 	import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
-
-# Introduction
 
 SLUGSoc is quite a popular society at the University of Sheffield.
 It focuses primarily on video games, and even has a number of e-sports teams that compete in various leagues.

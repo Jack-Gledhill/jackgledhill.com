@@ -10,13 +10,12 @@ keywords:
   - Sheffield CompSoc
 type: Hackathon
 date: 2024-11-01
-banner: /images/hacksheffield9/banner.webp
-logo: /images/hacksheffield9/logo.webp
+logo: 
+  src: /images/hacksheffield9.webp
+  alt: HackSheffield 9 logo
 links:
   website: hacksheffield.uk
 ---
-
-# Introduction
 
 HackSheffield is the University of Sheffield's annual hackathon; a weekend of hacking, games and networking!
 In 2024, I got the honour of organising the 9th iteration of HackSheffield, alongside the rest of the team at [CompSoc](/committees/compsoc).

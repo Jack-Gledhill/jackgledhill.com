@@ -1,4 +1,4 @@
-import { readFiles } from '$lib/content';
+import { type Image, readFiles } from '$lib/content';
 
 export type Event = {
     title: string;
@@ -7,8 +7,7 @@ export type Event = {
     draft: boolean;
     type: string;
     date: Date;
-    banner: string;
-    logo: string;
+    logo: Image;
     links: object;
 };
 

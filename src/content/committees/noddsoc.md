@@ -11,8 +11,9 @@ keywords:
   - Sheffield DnD
 start: 2025-03-01
 position: Webmaster
-banner: /images/noddsoc/banner.webp
-logo: /images/noddsoc/logo.webp
+logo: 
+  src: /images/noddsoc.webp
+  alt: NoDDSoc logo
 links:
   discord: E6F7Unz
   github: Sheffield-NoDDSoc
@@ -30,8 +31,6 @@ links:
 	import Timeline from '$lib/components/timeline/timeline.svelte';
 	import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
-
-# Introduction
 
 NoDDSoc is the University of Sheffield's TTRPG society, and is one of the oldest and largest societies in Sheffield!
 The society holds regular socials, collabs and one-shots in addition to the weekly campaigns run by our Game Masters.

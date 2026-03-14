@@ -14,8 +14,9 @@ keywords:
   - Twilio
   - DevPost
 date: 2025-05-01
-banner: /images/hackupc25/banner.webp
-logo: /images/hackupc25/logo.webp
+logo: 
+  src: /images/hackupc25.webp
+  alt: HackUPC logo
 links:
   github: thejmfc/hackupc25
   website: devpost.com/software/wanderlust-24eodz
@@ -31,8 +32,6 @@ links:
     import Timeline from '$lib/components/timeline/timeline.svelte';
     import TimelineEvent from '$lib/components/timeline/event.svelte';
 </script>
-
-# About the Project
 
 Wanderlust was a group project created by me and three friends from university.
 The project was submitted for judging at HackUPC 2025, Europe's largest hackathon held at the Universitat Politècnica de Catalunya in Barcelona, Spain.

@@ -1,4 +1,4 @@
-import { readFiles } from '$lib/content';
+import { type Image, readFiles } from '$lib/content';
 
 export type Project = {
     title: string;
@@ -6,8 +6,7 @@ export type Project = {
     keywords: string[];
     draft: boolean;
     date: Date;
-    banner: string;
-    logo: string;
+    logo: Image;
     links: object;
 };
 
