@@ -5,6 +5,7 @@ export type Event = {
     description: string;
     keywords: string[];
     draft: boolean;
+    type: string;
     date: Date;
     banner: string;
     logo: string;
