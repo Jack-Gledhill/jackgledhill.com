@@ -27,9 +27,10 @@
     <meta property="og:description" content={page.data.metadata.description} />
     <meta property="og:site_name" content="Jack Gledhill" />
     <meta property="og:locale" content="en_GB" />
-    <meta property="og:image:alt" content="Photo taken by Jack at HackUPC 2025" />
-    <meta property="og:image:width" content="4032" />
-    <meta property="og:image:height" content="3024" />
+    <meta property="og:image" content="/twittercard.webp" />
+    <meta property="og:image:alt" content="Photo of Jack at ICHack 2026" />
+    <meta property="og:image:width" content="5906" />
+    <meta property="og:image:height" content="3937" />
 
     <!-- Twitter -->
     <meta name="twitter:title" content={page.data.metadata.title} />
@@ -37,9 +38,10 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://jackgledhill.com" />
     <meta name="twitter:creator" content="@thejackgledhill" />
-    <meta name="twitter:image:alt" content="Photo taken by Jack at HackUPC 2025" />
-    <meta name="twitter:image:width" content="4032" />
-    <meta name="twitter:image:height" content="3024" />
+    <meta name="twitter:image" content="/twittercard.webp" />
+    <meta name="twitter:image:alt" content="Photo of Jack at ICHack 2026" />
+    <meta name="twitter:image:width" content="5906" />
+    <meta name="twitter:image:height" content="3937" />
 </svelte:head>
 
 <Announcement />
