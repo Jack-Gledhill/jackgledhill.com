@@ -8,6 +8,7 @@ export type Project = {
     date: Date;
     logo: Image;
     links: object;
+    technologies: string[];
 };
 
 export type ProjectFile = {

@@ -20,6 +20,13 @@ logo:
 links:
   github: thejmfc/hackupc25
   website: devpost.com/software/wanderlust-24eodz
+technologies:
+  - Python
+  - Flask
+  - MongoDB
+  - Gemini
+  - Skyscanner
+  - Twilio
 ---
 
 <script>

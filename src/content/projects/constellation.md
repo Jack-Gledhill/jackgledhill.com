@@ -20,6 +20,11 @@ logo:
 links:
   github: constellation-net
   website: starsystem.dev
+technologies:
+  - Kubernetes
+  - Proxmox
+  - TrueNAS
+  - Docker
 ---
 
 Constellation is a homelab; a collection of consumer and enterprise hardware that I use to learn about various technologies, and provide hosting for services.
