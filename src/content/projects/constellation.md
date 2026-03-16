@@ -18,13 +18,15 @@ logo:
   src: /images/constellation.webp
   alt: Constellation logo
 links:
-  github: constellation-net
+  github: Jack-Gledhill
   website: starsystem.dev
 technologies:
   - Kubernetes
+  - ArgoCD
   - Proxmox
   - TrueNAS
   - Docker
+  - Ansible
 ---
 
 Constellation is a homelab; a collection of consumer and enterprise hardware that I use to learn about various technologies, and provide hosting for services.

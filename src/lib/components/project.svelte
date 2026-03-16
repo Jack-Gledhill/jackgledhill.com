@@ -1,8 +1,6 @@
 <script>
     import DraftBadge from '$lib/components/draft.svelte';
-		import { formatDate, isDevelopment } from '$lib/utils/index.js';
-		import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
-		import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
+    import { formatDate, isDevelopment } from '$lib/utils/index.js';
 
     let { metadata, slug } = $props();
 </script>

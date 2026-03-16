@@ -1,0 +1,25 @@
+---
+draft: false
+title: Word Search Solver
+description: An assignment completed as part of the COM2004 module at the University of Sheffield. The project involved building a Python program that took screenshots of word search puzzles and solved them using a combination of Principal Component Analysis (PCA), K-Nearest Neighbours (KNN) and a custom search algorithm to find the words in the puzzle.
+keywords:
+  - Python
+  - NumPy
+  - SciPy
+  - PCA
+  - KNN
+  - COM2004
+  - Data Driven Computing
+  - University of Sheffield
+date: 2025-10-01
+logo: 
+  src: /images/numpy.webp
+  alt: NumPy logo
+links: {}
+technologies:
+  - Python
+  - NumPy
+  - SciPy
+  - PCA
+  - KNN
+---
