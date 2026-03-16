@@ -11,6 +11,7 @@ keywords:
   - GitHub Pages
   - GitHub Actions
 date: 2025-08-01
+type: Personal Project
 logo: 
   src: /images/emblem.webp
   alt: Jack Gledhill's logo - a white hexagonal emblem with a stylised 'J' in the center, in a blue circle

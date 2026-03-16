@@ -6,6 +6,7 @@ export type Project = {
     keywords: string[];
     draft: boolean;
     date: Date;
+    type: string;
     logo: Image;
     links: object;
     technologies: string[];

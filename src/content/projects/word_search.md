@@ -12,6 +12,7 @@ keywords:
   - Data Driven Computing
   - University of Sheffield
 date: 2025-10-01
+type: University Project
 logo: 
   src: /images/numpy.webp
   alt: NumPy logo

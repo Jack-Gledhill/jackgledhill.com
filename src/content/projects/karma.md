@@ -9,6 +9,7 @@ keywords:
   - Functional Programming
   - University of Sheffield
 date: 2025-11-01
+type: University Project
 logo: 
   src: /images/haskell.webp
   alt: Haskell logo

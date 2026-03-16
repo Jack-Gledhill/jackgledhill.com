@@ -13,6 +13,7 @@ keywords:
   - ChromaDB
   - Tailwind CSS
 date: 2026-02-01
+type: Hackathon Project
 logo: 
   src: /images/ichack26.webp
   alt: ICHack 2026 logo

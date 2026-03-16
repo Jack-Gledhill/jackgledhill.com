@@ -11,6 +11,7 @@ keywords:
   - Systems Design & Security
   - University of Sheffield
 date: 2025-10-01
+type: University Project
 logo: 
   src: /images/spring-boot.webp
   alt: Java Spring Boot logo

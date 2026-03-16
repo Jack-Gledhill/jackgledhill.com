@@ -14,6 +14,7 @@ keywords:
   - Server rack
   - Home server
 date: 2024-07-01
+type: Personal Project
 logo: 
   src: /images/constellation.webp
   alt: Constellation logo

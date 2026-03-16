@@ -11,6 +11,7 @@ keywords:
   - Introduction to Software Engineering
   - University of Sheffield
 date: 2024-10-01
+type: University Project
 logo: 
   src: /images/shefmentors.webp
   alt: ShefMentors logo

@@ -14,6 +14,7 @@ keywords:
   - Twilio
   - DevPost
 date: 2025-05-01
+type: Hackathon Project
 logo: 
   src: /images/hackupc25.webp
   alt: HackUPC logo
