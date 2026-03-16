@@ -13,7 +13,9 @@ keywords:
   - Google Gemini
   - Twilio
   - DevPost
-date: 2025-05-01
+date: 
+  start: 2025-05-02
+  end: 2025-05-04
 type: Hackathon Project
 logo: 
   src: /images/hackupc25.webp

@@ -1,6 +1,6 @@
 <script>
     import DraftBadge from '$lib/components/draft.svelte';
-    import { formatDate, isDevelopment } from '$lib/utils/index.js';
+    import { isDevelopment } from '$lib/utils';
 
     let { metadata, slug } = $props();
 </script>
@@ -15,7 +15,7 @@
                     <section>
                         <h3 class="text-xl font-bold">{metadata.title}</h3>
                         <p class="text-lg lg:text-xl text-slate-400">{metadata.type}</p>
-                        <p class="italic text-sm">{formatDate(metadata.date)}</p>
+                        <p class="italic text-sm">{metadata.date.toString()}</p>
                     </section>
 
                     <div class="flex flex-row flex-wrap gap-2 text-sm">

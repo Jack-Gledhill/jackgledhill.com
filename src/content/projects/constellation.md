@@ -13,7 +13,8 @@ keywords:
   - Container orchestration
   - Server rack
   - Home server
-date: 2024-07-01
+date: 
+  start: 2024-06-01
 type: Personal Project
 logo: 
   src: /images/constellation.webp

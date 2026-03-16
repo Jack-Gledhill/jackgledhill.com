@@ -10,7 +10,8 @@ keywords:
   - Cloudflare Pages
   - GitHub Pages
   - GitHub Actions
-date: 2025-08-01
+date: 
+  start: 2025-08-01
 type: Personal Project
 logo: 
   src: /images/emblem.webp

@@ -1,7 +1,7 @@
 <script>
 	import Back from '$lib/components/back.svelte';
     import Links from '$lib/components/links.svelte';
-    import { formatDate } from '$lib/utils/index.js';
+    import { formatDate } from '$lib/models';
 
 	let { data } = $props();
 </script>
@@ -19,5 +19,5 @@
 <Links links={data.metadata.links} />
 
 <article>
-    {@render data.default()}
+    {@render data.content()}
 </article>

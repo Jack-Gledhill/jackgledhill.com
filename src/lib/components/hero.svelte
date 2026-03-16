@@ -1,6 +1,6 @@
 <script>
-	import { faDiscord, faGithub, faInstagram, faLinkedin, faOrcid } from '@fortawesome/free-brands-svg-icons';
-    import { faEarthEurope, faEnvelope, faPrint, faRss } from '@fortawesome/free-solid-svg-icons';
+	import { faGithub, faLinkedin, faOrcid } from '@fortawesome/free-brands-svg-icons';
+    import { faEnvelope, faPrint, faRss } from '@fortawesome/free-solid-svg-icons';
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 
     let { metadata } = $props();

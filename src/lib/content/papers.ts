@@ -1,27 +1,29 @@
 import { readFiles } from '$lib/content';
+import { Paper, type PaperProps } from '$lib/models';
 
-export type Paper = {
-    title: string;
-    description: string;
-    draft: boolean;
-    authors: string[];
-    journal: string;
-    date: Date;
-    links: object;
-};
-
-export type PaperFile = {
+export class PaperFile {
     metadata: Paper;
-    default: any;
+    content: any;
     slug?: string;
-};
+
+    constructor(metadata: object, content: any, slug?: string) {
+        this.metadata = new Paper(metadata as PaperProps);
+        this.content = content;
+        this.slug = slug;
+    }
+}
 
 export async function getAllPapers(): Promise<PaperFile[]> {
-    const papers = await readFiles(
+    const files = await readFiles(
         import.meta.glob('/src/content/papers/*.md', {
             eager: true
         })
     );
+
+    const papers: PaperFile[] = [];
+    for (const f of files) {
+        papers.push(new PaperFile(f.metadata, f.default, f.slug));
+    }
 
     return papers.sort(
         (a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime()
@@ -29,5 +31,6 @@ export async function getAllPapers(): Promise<PaperFile[]> {
 }
 
 export async function getPaper(slug: string): Promise<PaperFile> {
-    return await import(`../../content/papers/${slug}.md`);
+    const file = await import(`../../content/papers/${slug}.md`);
+    return new PaperFile(file.metadata, file.default, slug);
 }

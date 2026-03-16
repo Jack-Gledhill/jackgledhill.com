@@ -10,6 +10,6 @@
 
 <div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-8">
     {#each data.content as c (c.metadata.title)}
-        <Paper metadata={c.metadata} content={c.default} />
+        <Paper metadata={c.metadata} content={c.content} />
     {/each}
 </div>

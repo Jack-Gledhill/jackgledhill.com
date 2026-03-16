@@ -1,28 +1,29 @@
-import { type Image, readFiles } from '$lib/content';
+import { readFiles } from '$lib/content';
+import { Event, type EventProps } from '$lib/models';
 
-export type Event = {
-    title: string;
-    description: string;
-    keywords: string[];
-    draft: boolean;
-    type: string;
-    date: Date;
-    logo: Image;
-    links: object;
-};
-
-export type EventFile = {
+export class EventFile {
     metadata: Event;
-    default: any;
+    content: any;
     slug?: string;
-};
+
+    constructor(metadata: object, content: any, slug?: string) {
+        this.metadata = new Event(metadata as EventProps);
+        this.content = content;
+        this.slug = slug;
+    }
+}
 
 export async function getAllEvents(): Promise<EventFile[]> {
-    const events = await readFiles(
+    const files = await readFiles(
         import.meta.glob('/src/content/events/*.md', {
             eager: true
         })
     );
+
+    const events: EventFile[] = [];
+    for (const f of files) {
+        events.push(new EventFile(f.metadata, f.default, f.slug));
+    }
 
     return events.sort(
         (a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime()
@@ -30,5 +31,6 @@ export async function getAllEvents(): Promise<EventFile[]> {
 }
 
 export async function getEvent(slug: string): Promise<EventFile> {
-    return await import(`../../content/events/${slug}.md`);
+    const file = await import(`../../content/events/${slug}.md`);
+    return new EventFile(file.metadata, file.default, slug);
 }

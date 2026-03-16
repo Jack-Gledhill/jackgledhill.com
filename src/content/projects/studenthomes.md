@@ -12,7 +12,9 @@ keywords:
   - React
   - ChromaDB
   - Tailwind CSS
-date: 2026-02-01
+date: 
+  start: 2026-01-31
+  end: 2026-02-01
 type: Hackathon Project
 logo: 
   src: /images/ichack26.webp
