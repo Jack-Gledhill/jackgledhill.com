@@ -6,7 +6,7 @@ export async function load({ params }) {
         const page = await getProject(params.slug);
         return {
             metadata: page.metadata,
-            default: page.default
+            content: page.content
         };
     } catch {
         error(404, `Could not find ${params.slug}`);

@@ -8,7 +8,8 @@ keywords:
   - Sheffield ethical hackers
   - University of Sheffield
   - Sheffield Students' Union
-start: 2025-03-01
+date:
+  start: 2025-03-01
 position: Inclusions Officer
 logo: 
   src: /images/shefesh.webp

@@ -1,20 +1,14 @@
-export type File = {
-    metadata: any;
-    default: any;
-    slug?: string;
-}
+import type { File } from '$lib/types';
 
-export type Image = {
-    src: string;
-    alt: string;
-}
-
-export async function readFiles(paths: Record<string, File>) {
+export async function readFiles(paths: Record<string, File>): Promise<File[]> {
     const objs: File[] = [];
 
     for (const path in paths) {
         const file = paths[path];
-        const slug = path.split('/').at(-1)?.replace('.md', '');
+        const slug = path
+            .split('/')
+            .at(-1)
+            ?.replace('.md', '');
 
         if (file && typeof file === 'object' && 'metadata' in file && slug) {
             objs.push({

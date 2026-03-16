@@ -1,35 +1,34 @@
-import { type Image, readFiles } from '$lib/content';
+import { readFiles } from '$lib/content';
+import { Committee, type CommitteeProps, compareEnds } from '$lib/models';
 
-export type Committee = {
-    title: string;
-    description: string;
-    keywords: string[];
-    draft: boolean;
-    start: Date;
-    end?: Date;
-    position: string;
-    logo: Image;
-    links: object;
-}
-
-export type CommitteeFile = {
+export class CommitteeFile {
     metadata: Committee;
-    default: any;
+    content: any;
     slug?: string;
+
+    constructor(metadata: object, content: any, slug?: string) {
+        this.metadata = new Committee(metadata as CommitteeProps);
+        this.content = content;
+        this.slug = slug;
+    }
 }
 
 export async function getAllCommittees(): Promise<CommitteeFile[]> {
-    const committees = await readFiles(
+    const files = await readFiles(
         import.meta.glob('/src/content/committees/*.md', {
             eager: true
         })
     );
 
-    return committees.sort(
-        (a, b) => new Date(b.metadata.start).getTime() - new Date(a.metadata.start).getTime()
-    );
+    const committees: CommitteeFile[] = [];
+    for (const f of files) {
+        committees.push(new CommitteeFile(f.metadata, f.default, f.slug));
+    }
+
+    return committees.sort((a, b) => compareEnds(b.metadata.date, a.metadata.date));
 }
 
 export async function getCommittee(slug: string): Promise<CommitteeFile> {
-    return await import(`../../content/committees/${slug}.md`);
+    const file = await import(`../../content/committees/${slug}.md`);
+    return new CommitteeFile(file.metadata, file.default, slug);
 }

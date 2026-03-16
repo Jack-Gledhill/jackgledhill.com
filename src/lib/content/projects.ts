@@ -1,33 +1,34 @@
-import { type Image, readFiles } from '$lib/content';
+import { readFiles } from '$lib/content';
+import { compareEnds, Project, type ProjectProps } from '$lib/models';
 
-export type Project = {
-    title: string;
-    description: string;
-    keywords: string[];
-    draft: boolean;
-    date: Date;
-    logo: Image;
-    links: object;
-};
-
-export type ProjectFile = {
+export class ProjectFile {
     metadata: Project;
-    default: any;
+    content: any;
     slug?: string;
-};
+
+    constructor(metadata: object, content: any, slug?: string) {
+        this.metadata = new Project(metadata as ProjectProps);
+        this.content = content;
+        this.slug = slug;
+    }
+}
 
 export async function getAllProjects(): Promise<ProjectFile[]> {
-    const projects = await readFiles(
+    const files = await readFiles(
         import.meta.glob('/src/content/projects/*.md', {
             eager: true
         })
     );
 
-    return projects.sort(
-        (a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime()
-    );
+    const projects: ProjectFile[] = [];
+    for (const f of files) {
+        projects.push(new ProjectFile(f.metadata, f.default, f.slug));
+    }
+
+    return projects.sort((a, b) => compareEnds(b.metadata.date, a.metadata.date));
 }
 
 export async function getProject(slug: string): Promise<ProjectFile> {
-    return await import(`../../content/projects/${slug}.md`);
+    const file = await import(`../../content/projects/${slug}.md`);
+    return new ProjectFile(file.metadata, file.default);
 }

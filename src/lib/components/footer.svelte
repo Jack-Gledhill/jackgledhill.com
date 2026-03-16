@@ -10,7 +10,7 @@
 
 <div class="bg-slate-950 p-8 text-sm flex flex-col gap-8">
     <div>
-        <img class="max-md:mx-auto h-12" src="/images/emblem.webp" alt="Jack Gledhill's logo" />
+        <img class="max-md:mx-auto h-12" src="/images/wordmark.webp" alt="Jack Gledhill's logo" />
     </div>
 
     <div class="grid grid-rows-3 md:grid-rows-none md:grid-cols-2 gap-8 md:place-content-between">

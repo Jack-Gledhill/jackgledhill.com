@@ -7,7 +7,8 @@ keywords:
   - SLUGSoc
   - University of Sheffield
   - Sheffield Students' Union
-start: 2025-03-01
+date:
+  start: 2025-03-01
 position: Technical Officer
 logo: 
   src: /images/slugsoc.webp

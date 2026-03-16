@@ -8,8 +8,9 @@ keywords:
   - Computer Science Society
   - University of Sheffield
   - Sheffield Students' Union
-start: 2024-10-01
-end: 2025-05-01
+date:
+  start: 2024-10-01
+  end: 2025-05-01
 position: First Year Representative
 logo: 
   src: /images/compsoc.webp
