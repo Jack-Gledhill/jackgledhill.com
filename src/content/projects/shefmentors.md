@@ -23,3 +23,5 @@ technologies:
   - Sequel
   - SQLite
 ---
+
+More details coming soon...

@@ -30,3 +30,5 @@ technologies:
   - React
   - Tailwind CSS
 ---
+
+More details coming soon...

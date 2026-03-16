@@ -18,3 +18,5 @@ technologies:
   - HUnit
   - Monad
 ---
+
+More details coming soon...

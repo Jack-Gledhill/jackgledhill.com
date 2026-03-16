@@ -23,3 +23,5 @@ technologies:
   - PCA
   - KNN
 ---
+
+More details coming soon...

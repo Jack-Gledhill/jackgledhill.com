@@ -24,3 +24,5 @@ technologies:
   - GitHub Pages
   - GitHub Actions
 ---
+
+More details coming soon...
