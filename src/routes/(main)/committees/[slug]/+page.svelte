@@ -1,7 +1,6 @@
 <script>
 	import Back from '$lib/components/back.svelte';
     import Links from '$lib/components/links.svelte';
-    import { formatDates } from '$lib/models';
 
 	let { data } = $props();
 </script>
@@ -13,7 +12,7 @@
 <section class="text-center flex flex-col gap-2">
     <h1 class="text-4xl font-bold">{data.metadata.title}</h1>
     <h2 class="text-slate-400 font-bold text-2xl">{data.metadata.position}</h2>
-    <p class="italic">{formatDates(data.metadata.date)}</p>
+    <p class="italic">{data.metadata.date.toString()}</p>
 </section>
 
 <Links links={data.metadata.links} />
