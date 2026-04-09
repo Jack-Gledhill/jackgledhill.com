@@ -1,10 +1,6 @@
 <script>
 	import '../app.css';
     import { page } from '$app/state';
-
-    import Announcement from '$lib/components/announcement.svelte';
-    import Footer from '$lib/components/footer.svelte';
-
 	let { children } = $props();
 </script>
 
@@ -44,8 +40,4 @@
     <meta name="twitter:image:height" content="3937" />
 </svelte:head>
 
-<Announcement />
-
 {@render children()}
-
-<Footer />

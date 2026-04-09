@@ -2,11 +2,15 @@
 	import '/src/app.css';
 	import { page } from '$app/state';
 
+    import Announcement from '$lib/components/announcement.svelte';
+    import Footer from '$lib/components/footer.svelte';
 	import Hero from '$lib/components/hero.svelte';
 	import Navbar from '$lib/components/navbar.svelte';
 
 	let { children } = $props();
 </script>
+
+<Announcement />
 
 <div class="p-4 lg:p-16">
     <Hero metadata={page.data.hero} />
@@ -17,3 +21,5 @@
         {@render children()}
     </div>
 </div>
+
+<Footer />
