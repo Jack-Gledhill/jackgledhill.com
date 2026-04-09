@@ -1,5 +1,4 @@
 <script>
-	import Announcement from '$lib/components/announcement.svelte';
 	import Footer from '$lib/components/footer.svelte';
 
 	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
@@ -8,8 +7,6 @@
     import { page } from '$app/state';
     let { children } = $props();
 </script>
-
-<Announcement />
 
 <div class="p-8 md:p-12 border-b-1 border-slate-600 bg-slate-800">
     <a href="/">

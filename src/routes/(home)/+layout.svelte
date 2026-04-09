@@ -2,7 +2,6 @@
 	import '/src/app.css';
 	import { page } from '$app/state';
 
-    import Announcement from '$lib/components/announcement.svelte';
     import Footer from '$lib/components/footer.svelte';
 	import Hero from '$lib/components/home/hero.svelte';
 	import Navbar from '$lib/components/home/navbar.svelte';
@@ -38,8 +37,6 @@
     <meta name="twitter:image:width" content="5906" />
     <meta name="twitter:image:height" content="3937" />
 </svelte:head>
-
-<Announcement />
 
 <div class="p-4 lg:p-16">
     <Hero metadata={page.data.hero} />
