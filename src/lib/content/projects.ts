@@ -15,7 +15,7 @@ export class ProjectFile {
 
 export async function getAllProjects(): Promise<ProjectFile[]> {
     const files = await readFiles(
-        import.meta.glob('/src/content/projects/*.md', {
+        import.meta.glob('/src/content/home/projects/*.md', {
             eager: true
         })
     );
@@ -30,7 +30,7 @@ export async function getAllProjects(): Promise<ProjectFile[]> {
 
 export async function getProject(slug: string): Promise<ProjectFile | null> {
     try {
-        const file = await import(`../../content/projects/${slug}.md`);
+        const file = await import(`../../content/home/projects/${slug}.md`);
         return new ProjectFile(file.metadata, file.default);
     } catch {
         return null;
