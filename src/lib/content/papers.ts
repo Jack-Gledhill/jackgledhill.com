@@ -15,7 +15,7 @@ export class PaperFile {
 
 export async function getAllPapers(): Promise<PaperFile[]> {
     const files = await readFiles(
-        import.meta.glob('/src/content/papers/*.md', {
+        import.meta.glob('/src/content/home/papers/*.md', {
             eager: true
         })
     );
@@ -30,7 +30,11 @@ export async function getAllPapers(): Promise<PaperFile[]> {
     );
 }
 
-export async function getPaper(slug: string): Promise<PaperFile> {
-    const file = await import(`../../content/papers/${slug}.md`);
-    return new PaperFile(file.metadata, file.default, slug);
+export async function getPaper(slug: string): Promise<PaperFile | null> {
+    try {
+        const file = await import(`../../content/home/papers/${slug}.md`);
+        return new PaperFile(file.metadata, file.default, slug);
+    } catch {
+        return null;
+    }
 }

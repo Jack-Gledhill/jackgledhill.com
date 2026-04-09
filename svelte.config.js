@@ -6,11 +6,11 @@ export default {
         adapter: adapter({
             pages: 'build',
             assets: 'build',
-            fallback: undefined,
+            fallback: '404.html',
             precompress: false,
             strict: true
         })
     },
     extensions: ['.svelte', '.svx', '.md'],
-    preprocess: [mdsvex({ extensions: ['.svx', '.md'] }), mdsvex()]
+    preprocess: [mdsvex({ extensions: ['.svx', '.md'] })]
 };

@@ -15,7 +15,7 @@ export class EventFile {
 
 export async function getAllEvents(): Promise<EventFile[]> {
     const files = await readFiles(
-        import.meta.glob('/src/content/events/*.md', {
+        import.meta.glob('/src/content/home/events/*.md', {
             eager: true
         })
     );
@@ -30,7 +30,11 @@ export async function getAllEvents(): Promise<EventFile[]> {
     );
 }
 
-export async function getEvent(slug: string): Promise<EventFile> {
-    const file = await import(`../../content/events/${slug}.md`);
-    return new EventFile(file.metadata, file.default, slug);
+export async function getEvent(slug: string): Promise<EventFile | null> {
+    try {
+        const file = await import(`../../content/home/events/${slug}.md`);
+        return new EventFile(file.metadata, file.default, slug);
+    } catch {
+        return null;
+    }
 }
