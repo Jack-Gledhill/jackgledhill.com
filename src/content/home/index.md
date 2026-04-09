@@ -21,6 +21,11 @@ meta:
     - React
     - Svelte
     - Docker
+  banner:
+    src: /twittercard.webp
+    alt: Photo of Jack at ICHack 2026
+    width: 5906
+    height: 3937
 hero:
   title: Jack Gledhill
   subtitle: Software Engineer
