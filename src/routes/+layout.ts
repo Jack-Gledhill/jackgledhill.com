@@ -11,6 +11,6 @@ export async function load() {
             metadata: page.metadata
         };
     } catch {
-        error(404);
+        error(501, "Missing or malformed index.md file");
     }
 }

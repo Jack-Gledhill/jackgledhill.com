@@ -7,8 +7,7 @@ export async function load({ params }) {
             metadata: page.metadata,
             default: page.default
         };
-    } catch (e) {
-        console.log(e);
-        error(404, 'Missing content file');
+    } catch {
+        error(404);
     }
 }

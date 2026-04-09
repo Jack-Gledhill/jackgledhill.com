@@ -9,6 +9,6 @@ export async function load() {
             hero: hero.metadata
         };
     } catch {
-        error(404);
+        error(501, "Missing or malformed hero.md file");
     }
 }
