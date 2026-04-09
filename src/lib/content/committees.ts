@@ -28,7 +28,11 @@ export async function getAllCommittees(): Promise<CommitteeFile[]> {
     return committees.sort((a, b) => compareEnds(b.metadata.date, a.metadata.date));
 }
 
-export async function getCommittee(slug: string): Promise<CommitteeFile> {
-    const file = await import(`../../content/committees/${slug}.md`);
-    return new CommitteeFile(file.metadata, file.default, slug);
+export async function getCommittee(slug: string): Promise<CommitteeFile | null> {
+    try {
+        const file = await import(`../../content/committees/${slug}.md`);
+        return new CommitteeFile(file.metadata, file.default, slug);
+    } catch {
+        return null;
+    }
 }

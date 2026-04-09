@@ -28,7 +28,11 @@ export async function getAllProjects(): Promise<ProjectFile[]> {
     return projects.sort((a, b) => compareEnds(b.metadata.date, a.metadata.date));
 }
 
-export async function getProject(slug: string): Promise<ProjectFile> {
-    const file = await import(`../../content/projects/${slug}.md`);
-    return new ProjectFile(file.metadata, file.default);
+export async function getProject(slug: string): Promise<ProjectFile | null> {
+    try {
+        const file = await import(`../../content/projects/${slug}.md`);
+        return new ProjectFile(file.metadata, file.default);
+    } catch {
+        return null;
+    }
 }
