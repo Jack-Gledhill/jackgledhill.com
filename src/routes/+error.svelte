@@ -45,6 +45,10 @@
     };
 </script>
 
+<svelte:head>
+    <title>Well, this is awkward...</title>
+</svelte:head>
+
 <div class="min-h-screen p-8 lg:px-48 text-center flex flex-col justify-center">
     <div class="grid lg:grid-cols-3 gap-16 items-center">
         <div class="rounded-full mx-auto max-lg:w-3/4 bg-slate-800 border-10  border-slate-600">
