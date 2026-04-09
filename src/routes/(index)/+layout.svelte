@@ -14,13 +14,6 @@
     <title>{page.data.metadata.title}</title>
     <meta name="description" content={page.data.metadata.description} />
     <meta name="keywords" content={page.data.metadata.keywords.join(", ")} />
-    <meta name="copyright" content="Jack Gledhill" />
-    <meta name="language" content="en_GB" />
-    <meta name="robots" content="index,follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#1f6bcb">
-    <meta charset="utf-8" />
-    <link rel="canonical" href="https://jackgledhill.com" />
 
     <!-- OpenGraph -->
     <meta property="og:title" content={page.data.metadata.title} />
