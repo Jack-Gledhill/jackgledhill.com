@@ -1,5 +1,5 @@
 <script>
-    import Paper from '$lib/components/paper.svelte';
+    import Paper from '$lib/components/home/paper.svelte';
 
     let { data } = $props();
 </script>

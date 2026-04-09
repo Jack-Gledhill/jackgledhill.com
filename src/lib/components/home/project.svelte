@@ -1,6 +1,6 @@
 <script>
     import DraftBadge from '$lib/components/draft.svelte';
-    import { isDevelopment } from '$lib/utils';
+    import { isDevelopment } from '$lib/utils/index.ts';
 
     let { metadata, slug } = $props();
 </script>

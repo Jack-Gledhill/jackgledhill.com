@@ -1,5 +1,5 @@
 <script>
-    import Project from '$lib/components/project.svelte';
+    import Project from '$lib/components/home/project.svelte';
 
     let { data } = $props();
 </script>

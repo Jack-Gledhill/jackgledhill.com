@@ -1,5 +1,5 @@
 <script>
-    import Event from '$lib/components/event.svelte';
+    import Event from '$lib/components/home/event.svelte';
 
     let { data } = $props();
 </script>

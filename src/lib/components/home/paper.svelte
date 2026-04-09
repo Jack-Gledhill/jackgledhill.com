@@ -1,7 +1,7 @@
 <script>
     import DraftBadge from '$lib/components/draft.svelte';
-    import { isDevelopment } from '$lib/utils';
-    import { formatDate } from '$lib/models';
+    import { isDevelopment } from '$lib/utils/index.ts';
+    import { formatDate } from '$lib/models/index.ts';
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
     import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 

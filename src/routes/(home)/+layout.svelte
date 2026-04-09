@@ -4,8 +4,8 @@
 
     import Announcement from '$lib/components/announcement.svelte';
     import Footer from '$lib/components/footer.svelte';
-	import Hero from '$lib/components/hero.svelte';
-	import Navbar from '$lib/components/navbar.svelte';
+	import Hero from '$lib/components/home/hero.svelte';
+	import Navbar from '$lib/components/home/navbar.svelte';
 
 	let { children } = $props();
 </script>

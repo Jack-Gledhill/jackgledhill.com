@@ -2,7 +2,7 @@
 	import { page } from '$app/state';
 
 	import { faBookOpen, faChalkboard, faCodeFork, faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons';
-    import NavButton from '$lib/components/navbutton.svelte';
+    import NavButton from '$lib/components/home/navbutton.svelte';
 </script>
 
 <div class="grid grid-cols-4 lg:flex lg:flex-row gap-4 text-2xl lg:text-xl">

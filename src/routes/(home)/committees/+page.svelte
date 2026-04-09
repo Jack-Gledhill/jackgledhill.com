@@ -1,5 +1,5 @@
 <script>
-    import Committee from '$lib/components/committee.svelte';
+    import Committee from '$lib/components/home/committee.svelte';
 
     let { data } = $props();
 </script>
