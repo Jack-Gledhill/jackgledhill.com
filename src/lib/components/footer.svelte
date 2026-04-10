@@ -2,7 +2,7 @@
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
     import { faGithub } from '@fortawesome/free-brands-svg-icons';
     import {
-        faCopyright,
+        faCopyright, faMugHot,
         faRobot,
         faSitemap
     } from '@fortawesome/free-solid-svg-icons';
@@ -33,6 +33,10 @@
 
             <a class="hover:text-slate-400" href="/copyright" aria-label="Copyright & Attributions">
                 <FontAwesomeIcon icon={faCopyright} />
+            </a>
+
+            <a class="hover:text-slate-400" href="/teapot" aria-label="I'm a Teapot">
+                <FontAwesomeIcon icon={faMugHot} />
             </a>
         </p>
     </div>
