@@ -1,5 +1,3 @@
-import type { File } from '$lib/types';
-
 export async function readFiles(paths: Record<string, File>): Promise<File[]> {
     const objs: File[] = [];
 
