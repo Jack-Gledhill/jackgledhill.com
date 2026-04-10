@@ -9,7 +9,17 @@ export default {
             fallback: '404.html',
             precompress: false,
             strict: true
-        })
+        }),
+        prerender: {
+            handleHttpError: ({ status, message }) => {
+                // Ignore 418 errors encountered when building - these are always intentional
+                if (status === 418) {
+                    return;
+                }
+
+                throw new Error(message);
+            }
+        }
     },
     extensions: ['.svelte', '.svx', '.md'],
     preprocess: [mdsvex({ extensions: ['.svx', '.md'] })]
