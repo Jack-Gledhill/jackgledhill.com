@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { build } from '$lib/site.config.ts';
+
     import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
     import { faGithub } from '@fortawesome/free-brands-svg-icons';
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
@@ -29,7 +31,7 @@
                     </a>
                 </button>
 
-                {#if (isBug)}
+                {#if isBug}
                     <button>
                         <a class="max-lg:block rounded-lg p-4 bg-red-500 hover:bg-red-700 transition duration-200 shadow-md" href="https://github.com/Jack-Gledhill/jackgledhill.com/issues/new">
                             <FontAwesomeIcon icon={faGithub} fixedWidth />
@@ -38,6 +40,40 @@
                     </button>
                 {/if}
             </div>
+
+            {#if isBug}
+                <hr class="border-slate-600 mt-4" />
+
+                <div class="text-slate-400 flex flex-row justify-between gap-8">
+                    <div class="text-left">
+                        <p>Build time:</p>
+                        <p>Environment:</p>
+                        <p>Commit:</p>
+                        <p>Release:</p>
+                        <p>SvelteKit Version:</p>
+                    </div>
+
+                    <div class="text-right">
+                        <p>{build.buildTime.toLocaleString()}</p>
+                        <p>{process.env.NODE_ENV}</p>
+                        {@render optionalDebugLink(build.commit, build.repository + "/commit/" + build.commit)}
+                        {@render optionalDebugLink(build.release, build.repository + "/releases/tag/" + build.release)}
+                        <p>{build.svelteKit}</p>
+                    </div>
+                </div>
+            {/if}
         </div>
     </div>
 </div>
+
+{#snippet optionalDebugLink(text?: string, href: string)}
+    <p>
+        {#if text}
+            <a class="underline hover:text-white transition duration-200" {href}>
+                {href}
+            </a>
+        {:else}
+            N/A
+        {/if}
+    </p>
+{/snippet}

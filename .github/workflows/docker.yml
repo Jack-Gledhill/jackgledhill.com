@@ -24,6 +24,9 @@ jobs:
           export REPLACEWITH="_"
           echo "REF=${GITHUB_REF_NAME//${REPLACE}/${REPLACEWITH}}" >> "${GITHUB_ENV}"
 
+      - name: Get current time
+        run: echo "NOW=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
 
@@ -49,6 +52,7 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           build-args: |
+            build_time=${{ env.NOW }}
             version=${{ env.REF }}
             revision=${{ github.sha }}
           tags: ghcr.io/${{ env.REPO }}:${{ github.sha }},ghcr.io/${{ env.REPO }}:${{ env.REF }}
@@ -63,6 +67,7 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           build-args: |
+            build_time=${{ env.NOW }}
             version=${{ env.REF }}
             revision=${{ github.sha }}
           tags: ghcr.io/${{ env.REPO }}:${{ env.REF }}
@@ -77,6 +82,7 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           build-args: |
+            build_time=${{ env.NOW }}
             version=${{ env.REF }}
             revision=${{ github.sha }}
           tags: ghcr.io/${{ env.REPO }}:${{ env.REF }},ghcr.io/${{ env.REPO }}:latest

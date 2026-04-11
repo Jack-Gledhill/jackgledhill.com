@@ -9,19 +9,19 @@ export const pageProps: ErrorPage.Config = {
         title: 'Halt! You got a license for that?',
         message: 'You need to authenticate before you can access this page.',
         emote: '/images/thinking.png',
-        isBug: true
+        isBug: false
     },
     403: {
         title: 'Missing Permissions',
         message: "Sorry pal, looks like you can't access that content.",
         emote: '/images/facepalm.png',
-        isBug: true
+        isBug: false
     },
     404: {
         title: 'Page Not Found',
         message: "Looks like the page you've requested doesn't exist.",
         emote: '/images/thinking.png',
-        isBug: true
+        isBug: false
     },
     418: {
         title: 'Woah! Crazy Easter Egg!',
