@@ -10,7 +10,7 @@ export const build: Config.Build = {
 };
 
 export const env: Config.Environment = {
-    isDev: process.env.NODE_ENV === 'development'
+    isDev: vars.PUBLIC_MODE !== 'production'
 };
 
 export const head: Config.Head = {
