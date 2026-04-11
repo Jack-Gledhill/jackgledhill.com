@@ -3,7 +3,7 @@
 
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
     import type { IconDefinition } from '@fortawesome/fontawesome-common-types';
-    import { faCopyright, faMugHot, faRobot, faSitemap } from '@fortawesome/free-solid-svg-icons';
+    import { faCopyright, faMugHot } from '@fortawesome/free-solid-svg-icons';
     import { faGithub } from '@fortawesome/free-brands-svg-icons';
 </script>
 
@@ -19,8 +19,6 @@
 
         <p class="text-center md:text-right tracking-[1em]">
             {@render link("Source code", faGithub, "https://github.com/Jack-Gledhill/jackgledhill.com")}
-            {@render link("Sitemap", faSitemap, "/sitemap.xml")}
-            {@render link("Robots.txt", faRobot, "/robots.txt")}
             {@render link("Copyright & Attributions", faCopyright, "/copyright")}
             {@render link("I'm a teapot", faMugHot, "/teapot")}
         </p>

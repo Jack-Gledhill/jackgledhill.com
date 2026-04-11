@@ -72,6 +72,7 @@ declare global {
             message: string;
             emote: string;
             isBug: boolean;
+            status: number;
         }
     }
 
