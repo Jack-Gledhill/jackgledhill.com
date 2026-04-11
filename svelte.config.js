@@ -19,7 +19,8 @@ export default {
                 }
 
                 throw new Error(message);
-            }
+            },
+            handleMissingId: 'ignore'
         }
     },
     extensions: ['.svelte', '.svx', '.md'],
