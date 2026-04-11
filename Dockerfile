@@ -14,7 +14,7 @@ LABEL org.opencontainers.image.title="jackgledhill.com"
 LABEL org.opencontainers.image.url="https://jackgledhill.com"
 LABEL org.opencontainers.image.version=$version
 
-ENV NODE_ENV="production"
+ENV PUBLIC_MODE="production"
 ENV PUBLIC_BUILD_TIME=$build_time
 ENV PUBLIC_COMMIT=$revision
 ENV PUBLIC_RELEASE=$version
