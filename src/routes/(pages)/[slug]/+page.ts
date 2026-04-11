@@ -1,13 +1,18 @@
+import { env } from '$lib/site.config.ts';
+import { getPage } from '$lib/mdsvex';
+
 import { error } from '@sveltejs/kit';
 
 export async function load({ params }) {
-    try {
-        const page = await import(`../../../content/pages/${params.slug}.md`);
-        return {
-            metadata: page.metadata,
-            default: page.default
-        };
-    } catch {
+    const page = getPage(params.slug);
+    if (!page) {
         error(404);
+    } else if (page.draft && !env.isDev) {
+        error(502);
+    } else {
+        return {
+            metadata: { ...page },
+            content: page.content,
+        };
     }
 }
