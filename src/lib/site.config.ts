@@ -1,3 +1,14 @@
+import { VERSION as SVELTEKIT_VERSION } from '@sveltejs/kit';
+import { env as vars } from '$env/dynamic/public';
+
+export const build: Config.Build = {
+    buildTime: vars.PUBLIC_BUILD_TIME ? new Date(vars.PUBLIC_BUILD_TIME) : new Date(),
+    commit: vars.PUBLIC_COMMIT,
+    release: vars.PUBLIC_RELEASE,
+    repository: 'https://github.com/Jack-Gledhill/jackgledhill.com',
+    svelteKit: SVELTEKIT_VERSION
+};
+
 export const env: Config.Environment = {
     isDev: process.env.NODE_ENV === 'development'
 };

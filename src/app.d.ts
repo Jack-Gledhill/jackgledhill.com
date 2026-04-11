@@ -31,6 +31,14 @@ declare global {
     }
 
     namespace Config {
+        export interface Build {
+            buildTime: Date;
+            commit?: string;
+            release?: string;
+            repository: string;
+            svelteKit: string;
+        }
+
         export interface Environment {
             isDev: boolean;
         }

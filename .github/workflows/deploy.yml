@@ -33,6 +33,12 @@ jobs:
           node-version: "23.10.x"
 
       - run: npm install
+
+      - name: Set build variables
+        run: |
+          echo "PUBLIC_BUILD_TIME=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
+          echo "PUBLIC_COMMIT=${GITHUB_SHA}" >> "${GITHUB_ENV}"
+          echo "PUBLIC_RELEASE=${GITHUB_REF_NAME}" >> "${GITHUB_ENV}"
       - run: npm run build
 
       - name: Upload artifact
