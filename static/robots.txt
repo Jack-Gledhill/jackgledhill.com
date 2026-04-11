@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot-Image
+Disallow: /
+
 Sitemap: https://jackgledhill.com/sitemap.xml
