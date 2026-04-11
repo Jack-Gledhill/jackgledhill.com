@@ -1,7 +1,7 @@
 ---
+draft: false
 title: Copyright & Attributions
 description: A list of attributions for the various logos and icons used on this website.
-keywords: []
 ---
 
 The Kubernetes logo is copyright &copy; 2025 The Linux Foundation and reproduced here under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license.

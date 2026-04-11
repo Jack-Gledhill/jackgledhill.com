@@ -1,8 +1,10 @@
-import { getAllCommittees } from '$lib/content';
+import { committees, events, projects, papers } from '$lib/mdsvex';
 
 export async function load() {
-    const content = await getAllCommittees();
     return {
-        content: content
+        committees: committees,
+        events: events,
+        projects: projects,
+        papers: papers
     };
 }

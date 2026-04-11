@@ -1,5 +1,5 @@
-<script>
-	let { title = "", description = "", keywords = [], banner = null } = $props();
+<script lang="ts">
+    let { title, description, keywords = [], banner }: Config.Head = $props();
 </script>
 
 <svelte:head>

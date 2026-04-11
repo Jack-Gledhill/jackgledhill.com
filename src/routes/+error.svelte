@@ -1,21 +1,16 @@
 <script lang="ts">
-	import { page } from '$app/state';
-    import { getErrorPageProps } from '$lib/errors';
+    import { pageProps, defaultProps } from '$lib/errors.config.ts';
 
     import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
     import { faGithub } from '@fortawesome/free-brands-svg-icons';
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 
-	const {
-        title,
-        message,
-        emote,
-        bugBtn
-    } = getErrorPageProps(page.status);
+    import { page } from '$app/state';
+	const { title, message, emote, isBug }: ErrorPage.Props = pageProps[page.status] || defaultProps;
 </script>
 
 <svelte:head>
-    <title>Well, this is awkward...</title>
+    <title>{title}</title>
 </svelte:head>
 
 <div class="min-h-screen p-8 lg:px-48 text-center flex flex-col justify-center">
@@ -37,7 +32,7 @@
                     </a>
                 </button>
 
-                {#if (bugBtn)}
+                {#if (isBug)}
                     <button>
                         <a class="max-lg:block rounded-lg p-4 bg-red-500 hover:bg-red-700 transition duration-200 shadow-md" href="https://github.com/Jack-Gledhill/jackgledhill.com/issues/new">
                             <FontAwesomeIcon icon={faGithub} fixedWidth />
