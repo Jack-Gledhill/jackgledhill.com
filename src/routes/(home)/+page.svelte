@@ -21,7 +21,7 @@
     let { data } = $props();
 </script>
 
-<div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-8">
+<div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-4 lg:gap-8">
     {#if page.url.hash === "#events"}
         {#each data.events as e (e.title)}
             {@render card({
@@ -73,7 +73,7 @@
 {#snippet card(meta: CardMetadata, content: Mdsvex.Renderer)}
     {#if !meta.draft || env.isDev}
         <div class="bg-slate-700 border-1 border-slate-600 rounded-xl p-4">
-            <div class="grid grid-cols-5 gap-8">
+            <div class="grid grid-cols-4 md:grid-cols-5 gap-8">
                 <div class="col-span-4 flex flex-col gap-2">
                     {#if meta.draft}
                         <div>
@@ -121,7 +121,7 @@
                 </div>
 
                 {#if meta.logo}
-                    <div class="col-span-1">
+                    <div class="hidden md:block">
                         <img class="rounded-lg 2xl:rounded-2xl" src={meta.logo.src} alt={meta.logo.alt} />
                     </div>
                 {/if}
@@ -132,13 +132,15 @@
             <div class="flex flex-col gap-4">
                 {@render content?.()}
 
-                <div class="flex flex-row flex-wrap gap-2 text-sm">
-                    {#each meta.tags as t (t)}
-                        <div class="bg-slate-800 rounded-full px-3 py-1">
-                            {t}
-                        </div>
-                    {/each}
-                </div>
+                {#if meta.tags}
+                    <div class="flex flex-row flex-wrap gap-2 text-sm">
+                        {#each meta.tags as t (t)}
+                            <div class="bg-slate-800 rounded-full px-3 py-1">
+                                {t}
+                            </div>
+                        {/each}
+                    </div>
+                {/if}
             </div>
         </div>
     {/if}

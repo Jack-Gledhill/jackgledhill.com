@@ -11,7 +11,7 @@
 
     <Navbar />
 
-    <div class="w-full bg-slate-800 rounded-b-lg lg:rounded-tr-lg border-1 border-slate-700 p-8 flex flex-col gap-8">
+    <div class="w-full bg-slate-800 border-1 border-slate-700 rounded-b-lg lg:rounded-tr-lg p-4 lg:p-8">
         {@render children()}
     </div>
 </div>
