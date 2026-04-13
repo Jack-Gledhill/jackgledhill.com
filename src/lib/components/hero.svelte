@@ -3,6 +3,7 @@
     import { hero } from '$lib/site.config.ts';
 
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
+    import type { IconDefinition } from '@fortawesome/fontawesome-common-types';
     import { faEnvelope, faPrint, faRss } from '@fortawesome/free-solid-svg-icons';
 	import { faGithub, faLinkedin, faOrcid } from '@fortawesome/free-brands-svg-icons';
 </script>
@@ -54,7 +55,7 @@
     </div>
 </header>
 
-{#snippet social(name, icon, href)}
+{#snippet social(name: string, icon: IconDefinition, href: string)}
     <p>
         <FontAwesomeIcon icon={icon} fixedWidth />
         <a {href} class="underline hover:text-slate-400" target="_blank">
