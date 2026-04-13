@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Footer from '$lib/components/footer.svelte';
+    import Footer from '$lib/components/footer.svelte';
 
-	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
+	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-    let { children } = $props();
+    let { data } = $props();
 </script>
 
 <div class="p-8 md:py-12 lg:px-72 flex flex-col gap-4">
@@ -14,7 +14,7 @@
     </a>
 
     <article>
-        {@render children()}
+        {@render data.content?.()}
     </article>
 </div>
 

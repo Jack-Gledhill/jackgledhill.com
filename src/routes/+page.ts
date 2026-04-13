@@ -1,6 +1,6 @@
 import { committees, events, projects, papers } from '$lib/mdsvex';
 
-export async function load() {
+export function load() {
     return {
         committees: committees,
         events: events,
