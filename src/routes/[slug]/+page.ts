@@ -3,7 +3,7 @@ import { getPage } from '$lib/mdsvex';
 
 import { error } from '@sveltejs/kit';
 
-export async function load({ params }) {
+export function load({ params }) {
     const page = getPage(params.slug);
     if (!page) {
         error(404);

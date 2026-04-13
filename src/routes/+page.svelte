@@ -1,10 +1,6 @@
 <script lang="ts">
+    import { Card, Footer, Hero, Navbar} from '$lib/components';
     import { DateFormatter } from '$lib/utils';
-
-    import Card from '$lib/components/card.svelte';
-    import Footer from '$lib/components/footer.svelte';
-    import Hero from '$lib/components/hero.svelte';
-    import Navbar from '$lib/components/navbar.svelte';
 
     import { page } from '$app/state';
     let { data } = $props();

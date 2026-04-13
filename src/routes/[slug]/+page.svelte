@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Footer from '$lib/components/footer.svelte';
+    import { Footer } from '$lib/components';
 
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
