@@ -73,7 +73,7 @@
 {#snippet card(meta: CardMetadata, content: Mdsvex.Renderer)}
     {#if !meta.draft || env.isDev}
         <div class="bg-slate-700 border-1 border-slate-600 rounded-xl p-4">
-            <div class="grid grid-cols-4 lg:grid-cols-5 gap-8">
+            <div class="grid grid-cols-4 md:grid-cols-5 gap-8">
                 <div class="col-span-4 flex flex-col gap-2">
                     {#if meta.draft}
                         <div>
@@ -121,7 +121,7 @@
                 </div>
 
                 {#if meta.logo}
-                    <div class="hidden lg:block">
+                    <div class="hidden md:block">
                         <img class="rounded-lg 2xl:rounded-2xl" src={meta.logo.src} alt={meta.logo.alt} />
                     </div>
                 {/if}
