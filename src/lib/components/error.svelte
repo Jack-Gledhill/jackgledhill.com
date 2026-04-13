@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { Button } from '$lib/components';
     import { build } from '$lib/site.config.ts';
 
     import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
@@ -24,20 +25,16 @@
             <p class="text-xl">{message}</p>
 
             <div class="flex flex-col lg:flex-row gap-8 justify-center">
-                <button>
-                    <a class="max-lg:block rounded-lg p-4 bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" href="/">
-                        <FontAwesomeIcon icon={faArrowLeft} fixedWidth />
-                        Back home
-                    </a>
-                </button>
+                <Button colour="blue" href="/">
+                    <FontAwesomeIcon icon={faArrowLeft} fixedWidth />
+                    Back home
+                </Button>
 
                 {#if isBug}
-                    <button>
-                        <a class="max-lg:block rounded-lg p-4 bg-red-500 hover:bg-red-700 transition duration-200 shadow-md" href="https://github.com/Jack-Gledhill/jackgledhill.com/issues/new">
-                            <FontAwesomeIcon icon={faGithub} fixedWidth />
-                            Report a bug
-                        </a>
-                    </button>
+                    <Button colour="red" href="https://github.com/Jack-Gledhill/jackgledhill.com/issues/new">
+                        <FontAwesomeIcon icon={faGithub} fixedWidth />
+                        Report a bug
+                    </Button>
                 {/if}
             </div>
 

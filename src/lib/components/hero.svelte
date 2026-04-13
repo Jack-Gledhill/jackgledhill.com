@@ -1,7 +1,9 @@
 <script lang="ts">
+    import { Button } from '$lib/components';
     import { hero } from '$lib/site.config.ts';
 
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
+    import type { IconDefinition } from '@fortawesome/fontawesome-common-types';
     import { faEnvelope, faPrint, faRss } from '@fortawesome/free-solid-svg-icons';
 	import { faGithub, faLinkedin, faOrcid } from '@fortawesome/free-brands-svg-icons';
 </script>
@@ -17,8 +19,15 @@
             <p class="text-xl lg:text-2xl pb-8">{hero.subtitle}</p>
 
             <div class="grid md:grid-cols-2 gap-8 text-center text-sm">
-                {@render button("Download my CV", faPrint, "/cv.pdf")}
-                {@render button("Read my blog", faRss, "https://blog.jackgledhill.com")}
+                <Button colour="blue" href="/cv.pdf">
+                    <FontAwesomeIcon icon={faPrint} fixedWidth />
+                    Download my CV
+                </Button>
+
+                <Button colour="blue" href="https://blog.jackgledhill.com">
+                    <FontAwesomeIcon icon={faRss} fixedWidth />
+                    Read my blog
+                </Button>
             </div>
         </div>
 
@@ -46,13 +55,7 @@
     </div>
 </header>
 
-{#snippet button(name, icon, href)}
-    <a class="p-4 rounded-lg bg-blue-500 hover:bg-blue-700 transition duration-200 shadow-md" {href} target="_blank">
-        <FontAwesomeIcon icon={icon} fixedWidth /> {name}
-    </a>
-{/snippet}
-
-{#snippet social(name, icon, href)}
+{#snippet social(name: string, icon: IconDefinition, href: string)}
     <p>
         <FontAwesomeIcon icon={icon} fixedWidth />
         <a {href} class="underline hover:text-slate-400" target="_blank">

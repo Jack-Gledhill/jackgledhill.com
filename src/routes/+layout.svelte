@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 	import '../app.css';
-    import Head from '$lib/components/head.svelte';
+    import { Head } from '$lib/components';
 
     import { page } from '$app/state';
 	let { children } = $props();
