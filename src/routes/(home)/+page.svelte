@@ -21,7 +21,7 @@
     let { data } = $props();
 </script>
 
-<div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-8">
+<div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-4 lg:gap-8">
     {#if page.url.hash === "#events"}
         {#each data.events as e (e.title)}
             {@render card({
@@ -132,13 +132,15 @@
             <div class="flex flex-col gap-4">
                 {@render content?.()}
 
-                <div class="flex flex-row flex-wrap gap-2 text-sm">
-                    {#each meta.tags as t (t)}
-                        <div class="bg-slate-800 rounded-full px-3 py-1">
-                            {t}
-                        </div>
-                    {/each}
-                </div>
+                {#if meta.tags}
+                    <div class="flex flex-row flex-wrap gap-2 text-sm">
+                        {#each meta.tags as t (t)}
+                            <div class="bg-slate-800 rounded-full px-3 py-1">
+                                {t}
+                            </div>
+                        {/each}
+                    </div>
+                {/if}
             </div>
         </div>
     {/if}
