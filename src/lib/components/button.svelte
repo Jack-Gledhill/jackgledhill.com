@@ -1,5 +1,5 @@
 <script lang="ts">
-    let { colour, href, children } = $props();
+    let { colour, href, target = "_self", children } = $props();
 
     const classes = {
         blue: ["bg-blue-500", "hover:bg-blue-700"],
@@ -7,6 +7,6 @@
     };
 </script>
 
-<a {href} target="_blank" class={["max-lg:block", "rounded-lg", "p-4", "shadow-md", "transition", "duration-200"].concat(classes[colour]).join(" ")}>
+<a {href} {target} class={["max-lg:block", "rounded-lg", "p-4", "shadow-md", "transition", "duration-200"].concat(classes[colour]).join(" ")}>
     {@render children?.()}
 </a>

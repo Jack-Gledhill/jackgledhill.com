@@ -19,12 +19,12 @@
             <p class="text-xl lg:text-2xl pb-8">{hero.subtitle}</p>
 
             <div class="grid md:grid-cols-2 gap-8 text-center text-sm">
-                <Button colour="blue" href="/cv.pdf">
+                <Button colour="blue" href="/cv.pdf" target="_blank">
                     <FontAwesomeIcon icon={faPrint} fixedWidth />
                     Download my CV
                 </Button>
 
-                <Button colour="blue" href="https://blog.jackgledhill.com">
+                <Button colour="blue" href="https://blog.jackgledhill.com" target="_blank">
                     <FontAwesomeIcon icon={faRss} fixedWidth />
                     Read my blog
                 </Button>
