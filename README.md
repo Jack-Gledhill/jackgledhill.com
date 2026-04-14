@@ -1,12 +1,20 @@
 # jackgledhill.com
 
-This is my portfolio website. It lists all the projects, professional experience and volunteering work that I have done.
-
-This website was my introduction to Svelte, along with more in-depth CI/CD pipelines via GitHub Actions and Cloudflare Pages.
+Welcome to my personal portfolio website.
+This website serves as a directory of my ongoing and past work, both professional and personal.
 
 ## Docker
 
-See [here](https://github.com/Jack-Gledhill/jackgledhill.com/pkgs/container/jackgledhill.com) for a container form of this website. It uses Vite's `preview` command as a server for the assets.
+A Docker image is built and pushed to the GitHub Container Registry on every push to the repository for the following tags:
+
+- `latest`, only when a new release is published
+- The tag of the release, when a new release is published
+- The commit hash, for every push
+- The branch name, for every push to a branch
+
+The Docker image uses Vite's preview server, which is not recommended for production use.
+However, it is sufficient for an it-just-works semi-production deployment.
+The container exposes its web server on port `4173`.
 
 To deploy with Docker Compose, you can either use the [`compose.yml`](/compose.yml) file provided in the repository (which will build on-demand), or use the following (which will always use a stable release):
 
@@ -18,29 +26,3 @@ services:
     - "4173:4173"
   restart: unless-stopped
 ```
-
-## Contributing
-
-This site is written in [Svelte](http://svelte.dev/) and built with [SvelteKit](https://svelte.dev/docs/kit). SvelteKit has been configured to do all rendering at build-time so that the website can be served with static-site hosts like Cloudflare Workers and GitHub Pages.
-
-You can run a live version of the codebase with the following commands, assuming you have `npm` and Node.js v23 installed on your machine:
-```shell
-npm install
-npm run dev
-```
-
-If you wish to contribute to the project, please fork the repository and submit a Pull Request with your changes.
-
-## CI/CD
-
-I've used this repository as a good excuse to dip my feet into CI/CD pipelines. Currently, the following are in place:
-
-- Publishing a release will build and deploy the `main` branch to [production](https://jackgledhill.com) via GitHub Pages
-- Every commit to the `main` branch will be pushed to a public [staging](https://staging.jackgledhill.com) website via Cloudflare Pages
-- Every Pull Request will be published to a staging website via Cloudflare Pages (please see each individual PR for the URL)
-- New releases will trigger a Docker image to be published to `latest`
-- A Docker image is built for every tag with that tag's name
-- Every push will have a Docker image generated, using that commit's hash as the tag
-- Each branch will have a Docker image with the tag equal to the branch name, using the latest commit to that branch
-- Dependabot will watch for potential dependency updates and automatically make Pull Requests when updates are found
-- Dependabot will report potential security vulnerabilities in dependencies to contributors
