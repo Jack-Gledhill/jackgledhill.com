@@ -2,6 +2,7 @@
 !/src/**
 !/static/**
 !/LICENSE
+!/nginx.conf
 !/package.json
 !/package-lock.json
 !/svelte.config.js

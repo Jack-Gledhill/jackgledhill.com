@@ -52,7 +52,7 @@
 
                     <div class="text-right">
                         <p>{build.buildTime.toLocaleString()}</p>
-                        <p>{process.env.MODE}</p>
+                        <p>{build.environment}</p>
                         {@render optionalDebugLink(build.commit, build.repository + "/commit/" + build.commit)}
                         {@render optionalDebugLink(build.release, build.repository + "/releases/tag/" + build.release)}
                         <p>{build.svelteKit}</p>
