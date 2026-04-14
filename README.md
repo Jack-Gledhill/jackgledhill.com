@@ -12,9 +12,8 @@ A Docker image is built and pushed to the GitHub Container Registry on every pus
 - The commit hash, for every push
 - The branch name, for every push to a branch
 
-The Docker image uses Vite's preview server, which is not recommended for production use.
-However, it is sufficient for an it-just-works semi-production deployment.
-The container exposes its web server on port `4173`.
+The Docker image uses a non-privileged version of Nginx to serve the build files.
+Nginx exposes the website on port 8080.
 
 To deploy with Docker Compose, you can either use the [`compose.yml`](/compose.yml) file provided in the repository (which will build on-demand), or use the following (which will always use a stable release):
 
@@ -23,6 +22,6 @@ services:
   container_name: jackgledhill.com
   image: ghcr.io/jack-gledhill/jackgledhill.com:latest
   ports:
-    - "4173:4173"
+    - "8080:8080"
   restart: unless-stopped
 ```

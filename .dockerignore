@@ -1,0 +1,11 @@
+**
+!/src/**
+!/static/**
+!/LICENSE
+!/nginx.conf
+!/package.json
+!/package-lock.json
+!/svelte.config.js
+!/svelte-sitemap.config.ts
+!/tsconfig.json
+!/vite.config.ts

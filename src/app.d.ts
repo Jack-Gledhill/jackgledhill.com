@@ -34,6 +34,7 @@ declare global {
         export interface Build {
             buildTime: Date;
             commit?: string;
+            environment: string;
             release?: string;
             repository: string;
             svelteKit: string;
