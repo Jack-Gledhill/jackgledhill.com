@@ -1,16 +1,17 @@
 import { VERSION as SVELTEKIT_VERSION } from '@sveltejs/kit';
-import { env as vars } from '$env/dynamic/public';
+import { PUBLIC_BUILD_TIME, PUBLIC_COMMIT, PUBLIC_ENVIRONMENT, PUBLIC_RELEASE } from '$env/static/public';
 
 export const build: Config.Build = {
-    buildTime: vars.PUBLIC_BUILD_TIME ? new Date(vars.PUBLIC_BUILD_TIME) : new Date(),
-    commit: vars.PUBLIC_COMMIT,
-    release: vars.PUBLIC_RELEASE,
+    buildTime: PUBLIC_BUILD_TIME ? new Date(PUBLIC_BUILD_TIME) : new Date(),
+    commit: PUBLIC_COMMIT,
+    environment: PUBLIC_ENVIRONMENT || 'development',
+    release: PUBLIC_RELEASE,
     repository: 'https://github.com/Jack-Gledhill/jackgledhill.com',
     svelteKit: SVELTEKIT_VERSION
 };
 
 export const env: Config.Environment = {
-    isDev: vars.PUBLIC_MODE !== 'production'
+    isDev: build.environment !== 'production'
 };
 
 export const head: Config.Head = {

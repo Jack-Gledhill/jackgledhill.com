@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite dev",
-        "build": "vite build",
+        "build": "PUBLIC_BUILD_TIME=$(date +'%Y-%m-%dT%H:%M:%S') vite build",
         "preview": "vite preview --host 0.0.0.0",
         "prepare": "svelte-kit sync || echo ''",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
