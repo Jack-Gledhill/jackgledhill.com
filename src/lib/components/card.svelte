@@ -10,7 +10,7 @@
         draft,
         date,
         links = {},
-        logo = {},
+        logo = '',
         tags = [],
         children
     } = $props();
@@ -66,7 +66,7 @@
 
         {#if logo}
             <div class="hidden md:block">
-                <img class="rounded-lg 2xl:rounded-2xl" src={logo.src} alt={logo.alt} />
+                <enhanced:img class="rounded-lg 2xl:rounded-2xl" src={logo} alt="Decorative logo" />
             </div>
         {/if}
     </div>

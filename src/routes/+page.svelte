@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { cards } from '$lib/assets';
     import { Card, Footer, Hero, Navbar} from '$lib/components';
     import { DateFormatter } from '$lib/utils';
 
@@ -19,7 +20,7 @@
                         subtitle={e.type}
                         draft={e.draft}
                         date={DateFormatter.format(e.date)}
-                        logo={e.logo}
+                        logo={cards[e.slug]}
                         links={e.links}>
                         {@render e.content?.()}
                     </Card>
@@ -31,7 +32,7 @@
                         subtitle={p.type}
                         draft={p.draft}
                         date={DateFormatter.formatRange(p.date)}
-                        logo={p.logo}
+                        logo={cards[p.slug]}
                         links={p.links}
                         tags={p.technologies}>
                         {@render p.content?.()}
@@ -56,7 +57,7 @@
                         subtitle={c.position}
                         draft={c.draft}
                         date={DateFormatter.formatRange(c.date)}
-                        logo={c.logo}
+                        logo={cards[c.slug]}
                         links={c.links}>
                         {@render c.content?.()}
                     </Card>
