@@ -48,7 +48,7 @@ jobs:
       # Triggered by every commit
       # Creates images for the commit's hash and branch name
       - name: Push to commit hash and branch name
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           push: true
@@ -63,7 +63,7 @@ jobs:
       # Only triggered by commits to tags
       # Creates images for the tag name only
       - name: Push to tag name only
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           push: true
@@ -78,7 +78,7 @@ jobs:
       # Only triggered when a release is published
       # Creates images for the tag name and the latest tag
       - name: Push to tag name and latest
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           push: true
