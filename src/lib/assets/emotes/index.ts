@@ -7,23 +7,23 @@ import Thinking from '$lib/assets/emotes/thinking.png?enhanced';
 const emotes = {
     anger: {
         src: Anger,
-        alt: ''
+        alt: "Cartoon character of Jack's likeness with a raised fist and red eyes"
     },
     facepalm: {
         src: Facepalm,
-        alt: ''
+        alt: "Cartoon character of Jack's likeness facepalming"
     },
     sad: {
         src: Sad,
-        alt: ''
+        alt: "Cartoon character of Jack's likeness crying"
     },
     tea: {
         src: Tea,
-        alt: ''
+        alt: "Cartoon character of Jack's likeness winking with a cup of tea"
     },
     thinking: {
         src: Thinking,
-        alt: ''
+        alt: "Cartoon character of Jack's likeness looking confused with a question mark"
     }
 };
 
