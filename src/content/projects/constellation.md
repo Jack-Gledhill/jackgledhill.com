@@ -4,9 +4,7 @@ title: Constellation
 type: Personal Project
 date: 
   start: 2024-06-01
-logo: 
-  src: /images/constellation.webp
-  alt: Constellation logo
+logo: software/constellation
 links:
   github: Jack-Gledhill
   website: starsystem.dev

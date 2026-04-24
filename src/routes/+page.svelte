@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { cards } from '$lib/assets';
+    import { getImage } from '$lib/assets';
     import { Card, Footer, Hero, Navbar} from '$lib/components';
     import { DateFormatter } from '$lib/utils';
 
@@ -11,7 +11,7 @@
     <Hero />
     <Navbar />
 
-    <div class="w-full bg-slate-800 border-1 border-slate-700 rounded-b-lg lg:rounded-tr-lg p-4 lg:p-8">
+    <div class="w-full bg-slate-800 border border-slate-700 rounded-b-lg lg:rounded-tr-lg p-4 lg:p-8">
         <div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-4 lg:gap-8">
             {#if page.url.hash === "#events"}
                 {#each data.events as e (e.title)}
@@ -20,7 +20,7 @@
                         subtitle={e.type}
                         draft={e.draft}
                         date={DateFormatter.format(e.date)}
-                        logo={cards[e.slug]}
+                        logo={getImage(e.logo)}
                         links={e.links}>
                         {@render e.content?.()}
                     </Card>
@@ -32,7 +32,7 @@
                         subtitle={p.type}
                         draft={p.draft}
                         date={DateFormatter.formatRange(p.date)}
-                        logo={cards[p.slug]}
+                        logo={getImage(p.logo)}
                         links={p.links}
                         tags={p.technologies}>
                         {@render p.content?.()}
@@ -57,7 +57,7 @@
                         subtitle={c.position}
                         draft={c.draft}
                         date={DateFormatter.formatRange(c.date)}
-                        logo={cards[c.slug]}
+                        logo={getImage(c.logo)}
                         links={c.links}>
                         {@render c.content?.()}
                     </Card>

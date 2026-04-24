@@ -80,7 +80,7 @@ declare global {
         export interface Props {
             title: string;
             message: string;
-            emote: string;
+            emote: Partials.Image;
             isBug: boolean;
             status?: number;
         }

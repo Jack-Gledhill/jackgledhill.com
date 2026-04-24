@@ -5,9 +5,7 @@ position: First Year Representative
 date:
   start: 2024-10-01
   end: 2025-05-01
-logo: 
-  src: /images/compsoc.webp
-  alt: CompSoc logo
+logo: societies/compsoc
 links:
   discord: 3e9GMgc
   github: shefcompsoc

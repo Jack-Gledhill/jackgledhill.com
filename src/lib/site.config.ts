@@ -5,8 +5,7 @@ import {
     PUBLIC_RELEASE
 } from '$env/static/public';
 
-import Portrait from '$lib/assets/portrait.webp';
-import Wordmark from '$lib/assets/logo/wordmark.webp';
+import { emblem, portraits } from '$lib/assets';
 
 import { VERSION as SVELTEKIT_VERSION } from '@sveltejs/kit';
 
@@ -58,10 +57,7 @@ export const hero: Config.Hero = {
     title: 'Jack Gledhill',
     subtitle: 'Software Engineer',
     email: 'me@jackgledhill.com',
-    image: {
-        src: Portrait,
-        alt: 'Portrait of Jack surrounded by greenery'
-    },
+    image: portraits.gencem,
     socials: {
         github: 'Jack-Gledhill',
         linkedin: 'LinkedIn',
@@ -82,8 +78,5 @@ export const hero: Config.Hero = {
 }
 
 export const footer: Config.Footer = {
-    wordmark: {
-        src: Wordmark,
-        alt: "Jack Gledhill's logo"
-    }
+    wordmark: emblem.wordmark
 };

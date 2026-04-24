@@ -4,9 +4,7 @@ title: ShefESH
 position: Inclusions Officer
 date:
   start: 2025-03-01
-logo: 
-  src: /images/shefesh.webp
-  alt: ShefESH logo
+logo: societies/shefesh
 links:
   discord: rhfnwgphdx
   github: ShefESH

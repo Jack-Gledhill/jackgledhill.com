@@ -5,9 +5,7 @@ position: Junior Crew Member
 date:
   start: 2024-12-01
   end: 2025-07-01
-logo: 
-  src: /images/tsc.webp
-  alt: TSC logo
+logo: societies/tsc
 links:
   instagram: tsc_sheffield
   linkedin: tsc-sheffield
