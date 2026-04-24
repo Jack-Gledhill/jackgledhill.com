@@ -4,9 +4,7 @@ title: jackgledhill.com
 type: Personal Project
 date: 
   start: 2025-08-01
-logo: 
-  src: /images/emblem.webp
-  alt: Jack Gledhill's logo - a white hexagonal emblem with a stylised 'J' in the center, in a blue circle
+logo: emblem/hexagon
 links:
   github: Jack-Gledhill/jackgledhill.com
   website: jackgledhill.com

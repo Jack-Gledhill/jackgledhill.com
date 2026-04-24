@@ -3,9 +3,7 @@ draft: false
 title: Kubernetes Workshop
 type: Workshop
 date: 2025-04-01
-logo: 
-  src: /images/kubernetes.webp
-  alt: Kubernetes logo
+logo: software/kubernetes
 links:
   github: shefcompsoc/k8s-workshop
 ---

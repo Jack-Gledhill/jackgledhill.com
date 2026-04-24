@@ -5,7 +5,7 @@ export interface Committee extends Mdsvex.Entry {
     position: string;
     draft: boolean;
     date: Partials.Date;
-    logo: Partials.Image;
+    logo: string;
     links: Partials.Socials;
 }
 

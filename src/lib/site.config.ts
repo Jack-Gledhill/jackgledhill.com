@@ -1,5 +1,13 @@
+import {
+    PUBLIC_BUILD_TIME,
+    PUBLIC_COMMIT,
+    PUBLIC_ENVIRONMENT,
+    PUBLIC_RELEASE
+} from '$env/static/public';
+
+import { emblem, portraits } from '$lib/assets';
+
 import { VERSION as SVELTEKIT_VERSION } from '@sveltejs/kit';
-import { PUBLIC_BUILD_TIME, PUBLIC_COMMIT, PUBLIC_ENVIRONMENT, PUBLIC_RELEASE } from '$env/static/public';
 
 export const build: Config.Build = {
     buildTime: PUBLIC_BUILD_TIME ? new Date(PUBLIC_BUILD_TIME) : new Date(),
@@ -49,10 +57,7 @@ export const hero: Config.Hero = {
     title: 'Jack Gledhill',
     subtitle: 'Software Engineer',
     email: 'me@jackgledhill.com',
-    image: {
-        src: '/images/portrait.webp',
-        alt: 'Portrait of Jack surrounded by greenery'
-    },
+    image: portraits.gencem,
     socials: {
         github: 'Jack-Gledhill',
         linkedin: 'LinkedIn',
@@ -73,8 +78,5 @@ export const hero: Config.Hero = {
 }
 
 export const footer: Config.Footer = {
-    wordmark: {
-        src: '/images/wordmark.webp',
-        alt: "Jack Gledhill's logo"
-    }
+    wordmark: emblem.wordmark
 };

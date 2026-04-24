@@ -5,18 +5,18 @@
     import { faDiscord, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
     let {
+        children,
         title,
         subtitle,
         draft,
         date,
-        links = {},
-        logo = {},
-        tags = [],
-        children
+        links = undefined,
+        logo = undefined,
+        tags = []
     } = $props();
 </script>
 
-<div class="bg-slate-700 border-1 border-slate-600 rounded-xl p-4">
+<div class="bg-slate-700 border border-slate-600 rounded-xl p-4">
     <div class="grid grid-cols-4 md:grid-cols-5 gap-8">
         <div class="col-span-4 flex flex-col gap-2">
             {#if draft}
@@ -66,7 +66,7 @@
 
         {#if logo}
             <div class="hidden md:block">
-                <img class="rounded-lg 2xl:rounded-2xl" src={logo.src} alt={logo.alt} />
+                <enhanced:img class="rounded-lg 2xl:rounded-2xl" src={logo.src} alt={logo.alt} />
             </div>
         {/if}
     </div>

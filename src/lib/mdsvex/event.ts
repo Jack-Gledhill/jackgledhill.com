@@ -5,7 +5,7 @@ export interface Event extends Mdsvex.Entry {
     type: string;
     draft: boolean;
     date: string;
-    logo: Partials.Image;
+    logo: string;
     links: Partials.Socials;
 }
 

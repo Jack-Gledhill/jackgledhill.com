@@ -5,7 +5,7 @@ export interface Project extends Mdsvex.Entry {
     type: string;
     draft: boolean;
     date: Partials.Date;
-    logo: Partials.Image;
+    logo: string;
     links: Partials.Socials;
     technologies: string[];
 }

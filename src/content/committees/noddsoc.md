@@ -4,9 +4,7 @@ title: NoDDSoc
 position: Webmaster
 date:
   start: 2025-03-01
-logo: 
-  src: /images/noddsoc.webp
-  alt: NoDDSoc logo
+logo: societies/noddsoc
 links:
   discord: E6F7Unz
   github: Sheffield-NoDDSoc

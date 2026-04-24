@@ -5,9 +5,7 @@ type: Hackathon Project
 date: 
   start: 2026-01-31
   end: 2026-02-01
-logo: 
-  src: /images/ichack26.webp
-  alt: ICHack 2026 logo
+logo: hackathons/ichack26
 links:
   github: thejmfc/ichack26
   website: devpost.com/software/studenthomes

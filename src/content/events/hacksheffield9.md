@@ -3,9 +3,7 @@ draft: false
 title: HackSheffield 9
 type: Hackathon
 date: 2024-11-01
-logo: 
-  src: /images/hacksheffield9.webp
-  alt: HackSheffield 9 logo
+logo: hackathons/hacksheffield9
 links:
   website: hacksheffield.uk
 ---

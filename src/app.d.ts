@@ -1,6 +1,7 @@
 // See https://svelte.dev/docs/kit/types#app.d.ts
 // for information about these interfaces
 import type { Snippet, SvelteComponent } from 'svelte';
+import type { Picture } from 'vite';
 
 declare global {
     namespace App {}
@@ -12,7 +13,7 @@ declare global {
         }
 
         export interface Image {
-            src: string;
+            src: string | Picture;
             alt: string;
             width?: string;
             height?: string;
@@ -79,7 +80,7 @@ declare global {
         export interface Props {
             title: string;
             message: string;
-            emote: string;
+            emote: Partials.Image;
             isBug: boolean;
             status?: number;
         }

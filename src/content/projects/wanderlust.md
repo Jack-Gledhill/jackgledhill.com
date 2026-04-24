@@ -5,9 +5,7 @@ type: Hackathon Project
 date: 
   start: 2025-05-02
   end: 2025-05-04
-logo: 
-  src: /images/hackupc25.webp
-  alt: HackUPC logo
+logo: hackathons/hackupc25
 links:
   github: thejmfc/hackupc25
   website: devpost.com/software/wanderlust-24eodz
