@@ -7,8 +7,8 @@ date:
   end: 2026-02-01
 logo: hackathons/ichack26
 links:
+  devpost: software/studenthomes
   github: thejmfc/ichack26
-  website: devpost.com/software/studenthomes
 technologies:
   - Python
   - PyTorch

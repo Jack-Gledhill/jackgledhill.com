@@ -7,8 +7,8 @@ date:
   end: 2025-05-04
 logo: hackathons/hackupc25
 links:
+  devpost: software/wanderlust-24eodz
   github: thejmfc/hackupc25
-  website: devpost.com/software/wanderlust-24eodz
 technologies:
   - Python
   - Flask

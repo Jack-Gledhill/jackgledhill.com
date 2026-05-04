@@ -7,23 +7,23 @@ import TSC from '$lib/assets/societies/tsc.webp?enhanced';
 const societies = {
     compsoc: {
         src: CompSoc,
-        alt: ''
+        alt: "CompSoc's logo - a green keycap with a face"
     },
     noddsoc: {
         src: NoDDSoc,
-        alt: ''
+        alt: "A dragon representing NoDDSoc"
     },
     shefesh: {
         src: ShefESH,
-        alt: ''
+        alt: 'A lock within a coloured circle representing ShefESH'
     },
     slugsoc: {
         src: SLUGSoc,
-        alt: ''
+        alt: "A banner that reads 'SLUGSoc'"
     },
     tsc: {
         src: TSC,
-        alt: ''
+        alt: 'Rainbow coloured sound waves with the Sheffield SU logo at the bottom'
     }
 };
 

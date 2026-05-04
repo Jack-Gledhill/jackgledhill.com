@@ -9,31 +9,31 @@ import SpringBoot from '$lib/assets/software/springboot.webp?enhanced';
 const software = {
     constellation: {
         src: Constellation,
-        alt: 'Constellation logo'
+        alt: 'A star within a red circle'
     },
     haskell: {
         src: Haskell,
-        alt: 'Haskell logo'
+        alt: 'Logo of the Haskell programming language'
     },
     kubernetes: {
         src: Kubernetes,
-        alt: 'Kubernetes logo'
+        alt: 'The Kubernetes logo'
     },
     numpy: {
         src: NumPy,
-        alt: 'NumPy logo'
+        alt: "NumPy's logo"
     },
     rails: {
         src: Rails,
-        alt: 'Ruby on Rails logo'
+        alt: 'The Ruby on Rails logo'
     },
     shefmentors: {
         src: ShefMentors,
-        alt: 'ShefMentors logo'
+        alt: 'The letters S and M with a graduation cap above them'
     },
     springboot: {
         src: SpringBoot,
-        alt: 'Java Spring Boot logo'
+        alt: 'The Java Spring Boot logo'
     }
 };
 
