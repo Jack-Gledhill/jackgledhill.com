@@ -1,5 +1,5 @@
 export function getSlug(path: string): string {
-    return path.split('/').at(-1)?.replace('.md', '') || '';
+    return path.split('/').at(-1)?.replace('.md', '') || path.replace('.md', '');
 }
 
 export function resolveFiles(files: Record<string, unknown>): Mdsvex.Entry[] {
