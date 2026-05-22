@@ -1,6 +1,6 @@
 ---
 draft: false
-title: CompSoc
+title: CompSoc 2024/25
 position: First Year Representative
 date:
   start: 2024-10-01
