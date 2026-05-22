@@ -4,6 +4,7 @@ title: SLUGSoc
 position: Technical Officer
 date:
   start: 2025-03-01
+  end: 2026-04-28
 logo: societies/slugsoc
 links:
   discord: VvUCXCT
