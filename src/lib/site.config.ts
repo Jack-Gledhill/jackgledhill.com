@@ -60,7 +60,7 @@ export const hero: Config.Hero = {
     image: portraits.gencem,
     socials: {
         github: 'Jack-Gledhill',
-        linkedin: 'LinkedIn',
+        linkedin: 'jackgledhill',
         orcid: '0009-0000-3055-0714'
     },
     positions: [
@@ -75,7 +75,7 @@ export const hero: Config.Hero = {
             href: 'https://sheffield.ac.uk'
         }
     ]
-}
+};
 
 export const footer: Config.Footer = {
     wordmark: emblem.wordmark
