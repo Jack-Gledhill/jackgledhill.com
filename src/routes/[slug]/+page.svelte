@@ -1,4 +1,5 @@
 <script lang="ts">
+    import "../../styles/article.css";
     import { Footer } from '$lib/components';
 
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
