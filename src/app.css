@@ -1,6 +1,33 @@
-@import 'tailwindcss';
-@plugin '@tailwindcss/forms';
-@plugin '@tailwindcss/typography';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+
+@theme {
+    --font-sans: Rubik, Tahoma, Arial, sans-serif;
+    --font-serif: Crete Round, Georgia, serif;
+    --font-mono: JetBrains Mono, Courier, monospace;
+
+    /* Credit to javisperez for their Tailwind Color Shades tool that generated these shades:
+       https://javisperez.github.io/tailwindcolorshades */
+    --color-blue-50: oklch(0.97 0.01 257);
+    --color-blue-100: oklch(0.92 0.03 257);
+    --color-blue-200: oklch(0.84 0.06 257);
+    --color-blue-300: oklch(0.74 0.09 257);
+    --color-blue-400: oklch(0.64 0.13 257);
+    --color-blue-500: oklch(0.54 0.17 257);
+    --color-blue-600: oklch(0.47 0.15 257);
+    --color-blue-700: oklch(0.4 0.13 257);
+    --color-blue-800: oklch(0.35 0.11 257);
+    --color-blue-900: oklch(0.26 0.08 257);
+    --color-blue-950: oklch(0.19 0.06 257);
+
+    --color-svelte: #ff3e00;
+    --color-tailwind: #00bcff;
+}
 
 article h1,
 article h2,
