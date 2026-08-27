@@ -1,0 +1,56 @@
+@reference "tailwindcss";
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    @apply font-bold;
+    @apply capitalize;
+}
+
+article h1 {
+    @apply text-center;
+    @apply text-4xl lg:text-6xl;
+    @apply leading-12 lg:leading-20;
+}
+
+article h2 {
+    @apply text-2xl;
+    @apply leading-12 lg:leading-20;
+}
+
+article h3 {
+    @apply text-xl;
+    @apply lg:leading-16;
+}
+
+article > p {
+    @apply text-justify;
+    @apply my-4;
+}
+
+article a {
+    @apply hover:text-slate-400;
+    @apply underline;
+}
+
+article ol,
+article ul {
+    @apply list-inside;
+}
+
+article ol {
+    @apply list-decimal;
+}
+
+article ul {
+    @apply list-disc;
+}
+
+article hr {
+    @apply border-slate-600;
+    @apply my-8;
+    @apply lg:mx-16;
+}
