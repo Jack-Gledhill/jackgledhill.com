@@ -1,5 +1,6 @@
 <script lang="ts">
-    import { build, footer } from '$lib/site.config.ts';
+    import { build } from '$lib/site.config.ts';
+    import wordmark from '$lib/assets/emblem/wordmark.webp?enhanced';
 
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
     import type { IconDefinition } from '@fortawesome/fontawesome-common-types';
@@ -9,7 +10,7 @@
 
 <div class="bg-slate-950 p-8 text-sm flex flex-col gap-8">
     <div>
-        <enhanced:img class="max-md:mx-auto h-12 w-auto" src={footer.wordmark.src} alt={footer.wordmark.alt} />
+        <enhanced:img class="max-md:mx-auto h-12 w-auto" src={wordmark} alt="" />
     </div>
 
     <div class="grid grid-rows-3 md:grid-rows-none md:grid-cols-2 gap-8 md:place-content-between">

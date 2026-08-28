@@ -16,7 +16,7 @@
 <div class="min-h-screen p-8 lg:px-48 text-center flex flex-col justify-center">
     <div class="grid lg:grid-cols-3 gap-16 items-center">
         <div class="rounded-full mx-auto max-lg:w-3/4 bg-slate-800 border-10  border-slate-600">
-            <enhanced:img class="rounded-b-full" src={emote.src} alt={emote.alt} />
+            <enhanced:img class="rounded-b-full" src={emote} alt="" />
         </div>
 
         <div class="lg:col-span-2 flex flex-col gap-8">
@@ -31,7 +31,7 @@
                 </Button>
 
                 {#if isBug}
-                    <Button colour="red" target="_blank" href="https://github.com/Jack-Gledhill/jackgledhill.com/issues/new">
+                    <Button colour="red" target="_blank" href={build.repository + "/issues/new"}>
                         <FontAwesomeIcon icon={faGithub} fixedWidth />
                         Report a bug
                     </Button>
