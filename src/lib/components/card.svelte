@@ -5,9 +5,9 @@
     import { faDiscord, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
     let {
-        children,
         title,
         subtitle,
+        description,
         draft,
         date,
         links = undefined,
@@ -66,7 +66,7 @@
 
         {#if logo}
             <div class="hidden md:block">
-                <enhanced:img class="rounded-lg 2xl:rounded-2xl" src={logo.src} alt={logo.alt} />
+                <enhanced:img class="rounded-lg 2xl:rounded-2xl" src={logo} alt="" />
             </div>
         {/if}
     </div>
@@ -74,7 +74,7 @@
     <hr class="my-4 border-slate-600" />
 
     <div class="flex flex-col gap-4">
-        {@render children?.()}
+        <p>{description}</p>
 
         {#if tags}
             <div class="flex flex-row flex-wrap gap-2 text-sm">

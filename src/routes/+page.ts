@@ -1,10 +1,10 @@
-import { committees, events, projects, papers } from '$lib/mdsvex';
+import { Homepage } from "$lib/content";
 
 export function load() {
     return {
-        committees: committees,
-        events: events,
-        projects: projects,
-        papers: papers
+        committees: Homepage.committees,
+        events: Homepage.events,
+        projects: Homepage.projects,
+        research: Homepage.research
     };
 }
