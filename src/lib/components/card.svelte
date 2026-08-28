@@ -14,6 +14,19 @@
         logo = undefined,
         tags = []
     } = $props();
+
+    const dateFormatter = new Intl.DateTimeFormat("en-GB", {
+        year: "numeric",
+        month: "short"
+    });
+
+    function formatDate(date: Partials.DateRange) {
+        if (date.end === undefined) {
+            return dateFormatter.format(date.start) + " – present";
+        } else {
+            return dateFormatter.formatRange(date.start, date.end);
+        }
+    }
 </script>
 
 <div class="bg-slate-700 border border-slate-600 rounded-xl p-4">
@@ -28,7 +41,7 @@
             <section>
                 <h3 class="text-xl font-bold">{title}</h3>
                 <p class="text-lg lg:text-xl text-slate-400">{subtitle}</p>
-                <p class="italic text-sm">{date}</p>
+                <p class="italic text-sm">{formatDate(date)}</p>
             </section>
 
             {#if links}

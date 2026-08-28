@@ -7,16 +7,9 @@ declare global {
     namespace App {}
 
     namespace Partials {
-        export interface Date {
-            start: string;
-            end?: string;
-        }
-
-        export interface Image {
-            src: string | Picture;
-            alt: string;
-            width?: string;
-            height?: string;
+        export interface DateRange {
+            start: Date;
+            end?: Date;
         }
 
         export interface Socials {
@@ -50,25 +43,6 @@ declare global {
             description: string;
             keywords?: string[];
             banner?: Partials.Image;
-        }
-
-        export interface Hero {
-            title: string;
-            subtitle: string;
-            email: string;
-            image: Partials.Image;
-            socials: Partials.Socials;
-            positions: HeroPosition[];
-        }
-
-        export interface HeroPosition {
-            title: string;
-            company: string;
-            href: string;
-        }
-
-        export interface Footer {
-            wordmark: Partials.Image;
         }
     }
 

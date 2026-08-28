@@ -28,7 +28,7 @@ export namespace Homepage {
         subtitle: string;
         description: string;
         draft: boolean;
-        date: Partials.Date;
+        date: Partials.DateRange;
         logo?: Picture;
         links?: Partials.Socials;
         tags?: string[];
@@ -43,8 +43,8 @@ export namespace Homepage {
                 "As a First Year Representative, I helped organise events and support new members.",
             draft: false,
             date: {
-                start: "2024-10-01",
-                end: "2025-05-01"
+                start: new Date(2024, 9),
+                end: new Date(2025, 4)
             },
             logo: compsoc,
             links: {
@@ -63,7 +63,7 @@ export namespace Homepage {
                 "As Tech Officer, I am responsible for the society's technical resources, including all the tech needs of HackSheffield 11.",
             draft: false,
             date: {
-                start: "2026-04-29"
+                start: new Date(2026, 3)
             },
             logo: compsoc,
             links: {
@@ -82,7 +82,7 @@ export namespace Homepage {
                 "The society hosts regular events, campaigns, and social gatherings for students to engage in D&D and other TTRPGs.",
             draft: false,
             date: {
-                start: "2025-03-01"
+                start: new Date(2025, 2)
             },
             logo: noddsoc,
             links: {
@@ -100,8 +100,8 @@ export namespace Homepage {
                 "It is a community of like-minded individuals at the University of Sheffield who are passionate about technology and security.",
             draft: false,
             date: {
-                start: "2025-03-01",
-                end: "2026-04-20"
+                start: new Date(2025, 2),
+                end: new Date(2026, 3)
             },
             logo: shefesh,
             links: {
@@ -120,8 +120,8 @@ export namespace Homepage {
                 "It hosts regular LANs, socials and tournaments, and is a great way to meet fellow gamers at the University of Sheffield.",
             draft: false,
             date: {
-                start: "2025-03-01",
-                end: "2026-04-28"
+                start: new Date(2025, 2),
+                end: new Date(2026, 3)
             },
             logo: slugsoc,
             links: {
@@ -139,8 +139,8 @@ export namespace Homepage {
                 "The Technical Services Committee is a group of volunteer students at the University of Sheffield, who run the events, gigs and club nights at the Students' Union.",
             draft: false,
             date: {
-                start: "2024-12-01",
-                end: "2025-07-01"
+                start: new Date(2024, 11),
+                end: new Date(2025, 6)
             },
             logo: tsc,
             links: {
@@ -161,7 +161,8 @@ export namespace Homepage {
                 "The event brought together students from across the UK to collaborate on innovative projects over a weekend.",
             draft: false,
             date: {
-                start: "2024-11-01"
+                start: new Date(2024, 10),
+                end: new Date(2024, 10)
             },
             logo: hacksheffield9,
             links: {
@@ -177,7 +178,8 @@ export namespace Homepage {
                 "Students learn the basics of container orchestration, setting up a cluster with Docker Desktop and deploying Pods and Services to the cluster.",
             draft: false,
             date: {
-                start: "2025-04-01"
+                start: new Date(2025, 3),
+                end: new Date(2025, 3)
             },
             logo: kubernetes,
             links: {
@@ -194,7 +196,8 @@ export namespace Homepage {
                 "An invoice and expense management app built for a real client as part of the Software Hut module at the University of Sheffield.",
             draft: false,
             date: {
-                start: "2026-02-09"
+                start: new Date(2026, 1),
+                end: new Date(2026, 5)
             },
             logo: rails,
             tags: [
@@ -217,8 +220,8 @@ export namespace Homepage {
                 "ShefMentors is a Ruby web app, built to connect 1st year students with 3rd and 4th year mentors. ",
             draft: false,
             date: {
-                start: "2024-10-01",
-                end: "2024-12-19"
+                start: new Date(2024, 9),
+                end: new Date(2024, 11)
             },
             logo: shefmentors,
             tags: ["Ruby", "Ruby on Rails", "RSpec", "Capybara", "Sequel", "SQLite"]
@@ -231,8 +234,8 @@ export namespace Homepage {
                 "The project involved building a Python program that took screenshots of word search puzzles and solved them using a combination of Principal Component Analysis (PCA), K-Nearest Neighbours (KNN) and a custom search algorithm to find the words in the puzzle.",
             draft: false,
             date: {
-                start: "2025-10-24",
-                end: "2025-12-16"
+                start: new Date(2025, 9),
+                end: new Date(2025, 11)
             },
             logo: numpy,
             tags: ["Python", "NumPy", "SciPy", "PCA", "KNN"]
@@ -246,8 +249,8 @@ export namespace Homepage {
                 "The app aimed to be an assessment management platform for University administrators to manage and track student assessments and ensure the proper procedures are followed.",
             draft: false,
             date: {
-                start: "2025-10-17",
-                end: "2025-12-11"
+                start: new Date(2025, 9),
+                end: new Date(2025, 11)
             },
             logo: springboot,
             tags: ["Java", "JUnit", "Maven", "Spring Boot", "JPA", "H2", "React", "TailwindCSS"]
@@ -261,8 +264,8 @@ export namespace Homepage {
                 "Doing so meant using State Monad to handle the game state, as well as implementing functions for the game rules and a custom strategy for automated players.",
             draft: false,
             date: {
-                start: "2025-10-31",
-                end: "2025-12-19"
+                start: new Date(2025, 9),
+                end: new Date(2025, 11)
             },
             logo: haskell,
             tags: ["Haskell", "HUnit", "Monad"]
@@ -276,7 +279,7 @@ export namespace Homepage {
                 "The homelab serves as a learning tool, as well as providing self-hosting to myself and others.",
             draft: false,
             date: {
-                start: "2024-06-01"
+                start: new Date(2024, 5)
             },
             logo: constellation,
             links: {
@@ -293,7 +296,7 @@ export namespace Homepage {
                 "jackgledhill.com has seen many iterations over the years, but its current form is a SvelteKit and mdsvex-powered static site, hosted on Cloudflare Pages and GitHub Pages, with GitHub Actions handling the deployment process.",
             draft: false,
             date: {
-                start: "2025-08-01"
+                start: new Date(2025, 7)
             },
             logo: hexagon,
             links: {
@@ -311,8 +314,8 @@ export namespace Homepage {
                 "The app uses the Skyscanner API to find flights, and Google Gemini's API to plan an itinerary for each layover on the way.",
             draft: false,
             date: {
-                start: "2026-04-24",
-                end: "2026-04-26"
+                start: new Date(2026, 3),
+                end: new Date(2026, 3)
             },
             logo: hackupc26,
             links: {
@@ -329,8 +332,8 @@ export namespace Homepage {
                 "The platform took a user's preferences via natural language and provided housing recommendations based on an automated assessment of each house's suitability.",
             draft: false,
             date: {
-                start: "2026-01-31",
-                end: "2026-02-01"
+                start: new Date(2026, 1),
+                end: new Date(2026, 1)
             },
             logo: ichack26,
             links: {
@@ -357,8 +360,8 @@ export namespace Homepage {
                 "It uses the Gemini API to suggest a destination, the Skyscanner API to find flights and MongoDB as a backend.",
             draft: false,
             date: {
-                start: "2025-05-02",
-                end: "2025-05-04"
+                start: new Date(2025, 4),
+                end: new Date(2025, 4)
             },
             logo: hackupc25,
             links: {
@@ -378,7 +381,8 @@ export namespace Homepage {
                 "This paper investigates the potential impact of Artificial Intelligence on jobs in the UK based on an analysis of current trends and industry projections.",
             draft: false,
             date: {
-                start: "2022-11-01"
+                start: new Date(2022, 10),
+                end: new Date(2022, 10)
             },
             links: {
                 pdf: "/research/epq.pdf"
@@ -393,7 +397,8 @@ export namespace Homepage {
                 "The project analysed various load balancing algorithms used in industry and evaluated the circumstances where an engineering team may favour them.",
             draft: false,
             date: {
-                start: "2024-05-01"
+                start: new Date(2024, 4),
+                end: new Date(2024, 4)
             },
             links: {
                 pdf: "/research/001cef.pdf"
