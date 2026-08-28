@@ -31,7 +31,7 @@
                 </Button>
 
                 {#if isBug}
-                    <Button colour="red" target="_blank" href="https://github.com/Jack-Gledhill/jackgledhill.com/issues/new">
+                    <Button colour="red" target="_blank" href={build.repository + "/issues/new"}>
                         <FontAwesomeIcon icon={faGithub} fixedWidth />
                         Report a bug
                     </Button>
