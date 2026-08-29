@@ -10,7 +10,7 @@
 
 <div class="bg-slate-950 p-8 text-sm flex flex-col gap-8">
     <div>
-        <enhanced:img class="max-md:mx-auto h-12 w-auto" src={wordmark} alt="" />
+        <enhanced:img alt="" class="max-md:mx-auto h-12 w-auto" src={wordmark} />
     </div>
 
     <div class="grid grid-rows-3 md:grid-rows-none md:grid-cols-2 gap-8 md:place-content-between">
@@ -18,9 +18,15 @@
             <p class="text-slate-400">Version {build.release || 'dev'}</p>
             <p>
                 Made with
-                {@render madeWith("Svelte", faSvelte, "#ff3e00", "https://svelte.dev")}
+                <a class="hover:text-svelte!" href="https://svelte.dev" target="_blank"
+                   title="Svelte">
+                    <FontAwesomeIcon icon={faSvelte} />
+                </a>
                 and
-                {@render madeWith("TailwindCSS", faTailwindCss, "#00bcff", "https://tailwindcss.com")}
+                <a class="hover:text-tailwind!" href="https://tailwindcss.com" target="_blank"
+                   title="Tailwind">
+                    <FontAwesomeIcon icon={faTailwindCss} />
+                </a>
             </p>
         </div>
 
@@ -36,13 +42,7 @@
 </div>
 
 {#snippet link(label: string, icon: IconDefinition, href: string)}
-    <a class="hover:text-slate-400" {href} aria-label={label}>
+    <a {href} title={label}>
         <FontAwesomeIcon {icon} />
-    </a>
-{/snippet}
-
-{#snippet madeWith(label: string, icon: IconDefinition, colour: string, href: string)}
-    <a style:--color={colour} class="hover:text-(--color) transition duration-200" {href} aria-label={label} target="_blank">
-        <FontAwesomeIcon icon={icon} />
     </a>
 {/snippet}

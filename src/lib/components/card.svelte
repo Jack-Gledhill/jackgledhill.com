@@ -15,19 +15,29 @@
         tags = []
     } = $props();
 
-    const dateFormatter = new Intl.DateTimeFormat("en-GB", {
-        year: "numeric",
-        month: "short"
+    const dateFormatter = new Intl.DateTimeFormat('en-GB', {
+        year: 'numeric',
+        month: 'short'
     });
 
     function formatDate(date: Partials.DateRange) {
         if (date.end === undefined) {
-            return dateFormatter.format(date.start) + " – present";
+            return dateFormatter.format(date.start) + ' – present';
         } else {
             return dateFormatter.formatRange(date.start, date.end);
         }
     }
 </script>
+
+<style>
+    @reference "tailwindcss";
+
+    a[role="button"] {
+        @apply bg-slate-600 hover:bg-blue-500;
+        @apply shadow-none;
+        @apply px-2 py-1;
+    }
+</style>
 
 <div class="bg-slate-700 border border-slate-600 rounded-xl p-4">
     <div class="grid grid-cols-4 md:grid-cols-5 gap-8">
@@ -102,7 +112,7 @@
 </div>
 
 {#snippet link(name: string, icon: IconDefinition, href: string)}
-    <a class="bg-slate-600 hover:bg-blue-500 rounded-lg px-2 py-1 transition duration-200" {href}>
+    <a role="button" {href}>
         <FontAwesomeIcon icon={icon} fixedWidth /> {name}
     </a>
 {/snippet}
