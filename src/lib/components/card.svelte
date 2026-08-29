@@ -53,38 +53,6 @@
                 <p class="text-lg lg:text-xl text-slate-400">{subtitle}</p>
                 <p class="italic text-sm">{formatDate(date)}</p>
             </section>
-
-            {#if links}
-                <div class="flex flex-row flex-wrap gap-2">
-                    {#if links.pdf}
-                        {@render link("PDF", faFilePdf, links.pdf)}
-                    {/if}
-
-                    {#if links.github}
-                        {@render link("GitHub", faGithub, "https://github.com/" + links.github)}
-                    {/if}
-
-                    {#if links.devpost}
-                        {@render link("Devpost", faFlagCheckered, "https://devpost.com/" + links.devpost)}
-                    {/if}
-
-                    {#if links.discord}
-                        {@render link("Discord", faDiscord, "https://discord.gg/" + links.discord)}
-                    {/if}
-
-                    {#if links.instagram}
-                        {@render link("Instagram", faInstagram, "https://instagram.com/" + links.instagram)}
-                    {/if}
-
-                    {#if links.linkedin}
-                        {@render link("LinkedIn", faLinkedin, "https://linkedin.com/in/" + links.linkedin)}
-                    {/if}
-
-                    {#if links.website}
-                        {@render link("Website", faLink, "https://" + links.website)}
-                    {/if}
-                </div>
-            {/if}
         </div>
 
         {#if logo}
@@ -99,8 +67,41 @@
     <div class="flex flex-col gap-4">
         <p>{description}</p>
 
-        {#if tags}
-            <div class="flex flex-row flex-wrap gap-2 text-sm">
+        {#if links}
+            <div class="flex flex-row flex-wrap gap-2">
+                {#if links.pdf}
+                    {@render link("PDF", faFilePdf, links.pdf)}
+                {/if}
+
+                {#if links.github}
+                    {@render link("GitHub", faGithub, "https://github.com/" + links.github)}
+                {/if}
+
+                {#if links.devpost}
+                    {@render link("Devpost", faFlagCheckered, "https://devpost.com/" + links.devpost)}
+                {/if}
+
+                {#if links.discord}
+                    {@render link("Discord", faDiscord, "https://discord.gg/" + links.discord)}
+                {/if}
+
+                {#if links.instagram}
+                    {@render link("Instagram", faInstagram, "https://instagram.com/" + links.instagram)}
+                {/if}
+
+                {#if links.linkedin}
+                    {@render link("LinkedIn", faLinkedin, "https://linkedin.com/in/" + links.linkedin)}
+                {/if}
+
+                {#if links.website}
+                    {@render link("Website", faLink, "https://" + links.website)}
+                {/if}
+            </div>
+        {/if}
+
+        {#if tags.length > 0}
+            <div class="flex flex-row flex-wrap gap-2 text-sm items-center">
+                <p class="font-bold">Tags:</p>
                 {#each tags as t (t)}
                     <div class="bg-slate-800 rounded-full px-3 py-1">
                         {t}
