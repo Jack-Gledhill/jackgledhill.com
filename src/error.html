@@ -1,32 +1,35 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Well this is awkward...</title>
-	<meta name="language" content="en_GB" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta charset="utf-8" />
+    <title>Well this is awkward...</title>
+    <meta charset="utf-8" />
+    <meta content="Jack Gledhill" name="copyright" />
+    <meta content="en_GB" name="language" />
+    <meta content="index,follow" name="robots" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="#1f6bcb" name="theme-color">
+    <link href="https://jackgledhill.com" rel="canonical" />
 
-	<!-- Google fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap">
+    <!-- Favicon and banners -->
+    <link href="%sveltekit.assets%/favicon.webp" rel="icon" />
+    <link href="%sveltekit.assets%/favicon.webp" rel="apple-touch-icon" />
 
-	<!-- Pre-built Tailwind -->
-	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="app.css" rel="stylesheet" />
+    <link href="styles/error.css" rel="stylesheet" />
 </head>
-<body data-sveltekit-preload-data="hover" class="bg-slate-900 text-slate-200 font-[JetBrains_Mono]">
-	<div class="min-h-screen p-8 lg:px-48 text-center flex flex-col justify-center">
-		<div class="grid lg:grid-cols-3 gap-16 items-center">
-			<div class="rounded-full mx-auto max-lg:w-3/4 bg-slate-800 border-10  border-slate-600">
-				<img class="rounded-b-full" src="/src/lib/assets/emotes/facepalm.png" alt="Decorative emoji in Jack's likeness" />
-			</div>
+<body data-sveltekit-preload-data="hover">
+<div class="min-h-screen p-8 lg:px-48 text-center flex flex-col justify-center">
+    <div class="grid lg:grid-cols-3 gap-16 items-center">
+        <div class="rounded-full mx-auto max-lg:w-3/4 bg-slate-800 border-10 border-slate-600">
+            <img alt="" src="/src/lib/assets/emotes/facepalm.webp" />
+        </div>
 
-			<div class="lg:col-span-2 flex flex-col gap-8">
-				<h1 class="text-8xl font-bold">%sveltekit.status%</h1>
-				<h2 class="text-4xl font-bold">SvelteKit Rendering Error</h2>
-				<p class="text-xl">You'll want to check the console logs to see what the problem is.</p>
-			</div>
-		</div>
-	</div>
+        <div class="lg:col-span-2 flex flex-col gap-8">
+            <h1>%sveltekit.status%</h1>
+            <h2>SvelteKit Rendering Error</h2>
+            <p>%sveltekit.error.message%</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>

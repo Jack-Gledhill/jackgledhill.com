@@ -1,7 +1,6 @@
 // See https://svelte.dev/docs/kit/types#app.d.ts
 // for information about these interfaces
-import type { Snippet, SvelteComponent } from 'svelte';
-import type { Picture } from 'vite';
+import type { Snippet } from "svelte";
 
 declare global {
     namespace App {}
@@ -37,27 +36,6 @@ declare global {
         export interface Environment {
             isDev: boolean;
         }
-
-        export interface Head {
-            title: string;
-            description: string;
-            keywords?: string[];
-            banner?: Partials.Image;
-        }
-    }
-
-    namespace ErrorPage {
-        export interface Config {
-            [code: number]: Props;
-        }
-
-        export interface Props {
-            title: string;
-            message: string;
-            emote: Picture;
-            isBug: boolean;
-            status?: number;
-        }
     }
 
     namespace Mdsvex {
@@ -75,8 +53,8 @@ declare global {
     }
 }
 
-declare module '*.md' {
-    export default class Comp extends SvelteComponent {};
+declare module "*.md" {
+    export default class Comp extends SvelteComponent {}
     export const metadata: Record<string, unknown>;
 }
 
