@@ -43,7 +43,7 @@
         "svelte": "^5.55.9",
         "svelte-check": "^4.4.8",
         "svelte-sitemap": "^4.0.4",
-        "tailwindcss": "^4.1.11",
+        "tailwindcss": "4.3",
         "typescript": "^6.0.3",
         "typescript-eslint": "^8.59.2",
         "vite": "^8.2.2"

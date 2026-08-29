@@ -34,6 +34,9 @@ body {
     @apply font-sans;
     @apply bg-slate-900;
     @apply text-slate-200;
+    @apply accent-blue-500;
+    @apply caret-blue-500;
+    @apply scheme-dark;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,6 +45,18 @@ h1, h2, h3, h4, h5, h6 {
 
 button, a {
     @apply transition-colors ease-linear duration-150 delay-0;
+}
+
+/* ==================== */
+/* SCROLLBAR            */
+/* ==================== */
+::-webkit-scrollbar {
+    @apply w-2;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-blue-500;
+    @apply rounded-full;
 }
 
 /* ==================== */
