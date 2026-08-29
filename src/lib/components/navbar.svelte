@@ -3,7 +3,7 @@
 
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
     import type { IconDefinition } from '@fortawesome/fontawesome-common-types';
-    import { faBookOpen, faChalkboard, faCodeFork, faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons';
+    import { faBookOpen, faBriefcase, faCodeFork } from '@fortawesome/free-solid-svg-icons';
 </script>
 
 <style>
@@ -35,8 +35,7 @@
 {/snippet}
 
 <nav class="grid grid-cols-4 lg:flex lg:flex-row gap-4 text-2xl lg:text-xl">
-    {@render navButton("Committees", "#committees", faHandHoldingHeart, page.url.hash === "#committees" || page.url.hash === "")}
-    {@render navButton("Events", "#events", faChalkboard, page.url.hash === "#events")}
+    {@render navButton("Experience", "#experience", faBriefcase, page.url.hash === "#experience" || page.url.hash === "")}
     {@render navButton("Projects", "#projects", faCodeFork, page.url.hash === "#projects")}
     {@render navButton("Research", "#research", faBookOpen, page.url.hash === "#research")}
 </nav>
