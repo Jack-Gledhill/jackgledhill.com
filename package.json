@@ -45,7 +45,7 @@
         "svelte-sitemap": "^4.0.4",
         "tailwindcss": "4.3",
         "typescript": "^6.0.3",
-        "typescript-eslint": "^8.59.2",
+        "typescript-eslint": "^8.68.0",
         "vite": "^8.2.2"
     }
 }
