@@ -1,5 +1,5 @@
 <script lang="ts">
-    import portrait from '$lib/assets/portraits/gencem.webp?enhanced';
+    import wave from '$lib/assets/emotes/wave.webp?enhanced';
 
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
     import type { IconDefinition } from '@fortawesome/fontawesome-common-types';
@@ -10,8 +10,9 @@
 <header class="w-full bg-slate-800 rounded-lg border border-slate-700 py-4 mb-4 lg:mb-8">
     <div class="bg-slate-700 grid grid-cols-1 lg:grid-cols-5 2xl:grid-cols-9 gap-y-px lg:gap-y-0 lg:gap-x-px">
         <div class="col-span-1 px-8 max-lg:py-8 content-center bg-slate-800">
-            <enhanced:img alt="Jack surrounded by greenery" class="rounded-full shadow-xl md:max-lg:w-1/2 md:max-lg:mx-auto"
-                          fetchpriority="high" src={portrait} />
+            <div class="rounded-full md:max-lg:mx-auto md:max-lg:w-1/2 bg-slate-900 border-10 border-slate-600">
+                <enhanced:img alt="" class="rounded-b-full" fetchpriority="high" src={wave} />
+            </div>
         </div>
 
         <div class="col-span-2 2xl:col-span-4 content-center px-8 max-lg:py-8 bg-slate-800">
