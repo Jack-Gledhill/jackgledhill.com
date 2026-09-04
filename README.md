@@ -97,6 +97,18 @@ services:
   restart: unless-stopped
 ```
 
+### Building
+
+Building the website (either by `npm run build` or `docker build`) will bake several environment variables into the dist
+files, providing metadata about when, where and how the build was created. These variables are as follows.
+
+| Variable             | Available                                   | Description                                                                                                                                                                                                                              |
+|----------------------|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `PUBLIC_BUILD_TIME`  | Anywhere                                    | An ISO 8601 timestamp indicating when the build was generated.                                                                                                                                                                           |
+| `PUBLIC_ENVIRONMENT` | Anywhere                                    | A string indicating the environment the build was generated in. Should be `production` when deployed by GitHub Pages, `staging` when deployed by Cloudflare Pages, `audit` when being tested by CI/CD and `development` everywhere else. |
+| `PUBLIC_COMMIT`      | GitHub Pages, Cloudflare Pages, GHCR images | The hash of the latest commit of the current branch when the project was built. Only present in GitHub/Cloudflare Pages builds and public Docker images.                                                                                 |
+| `PUBLIC_RELEASE`     | GitHub Pages, Cloudflare Pages, GHCR images | The name of the branch in Cloudflare Pages and public Docker builds or the name of the latest tag/release in GitHub Pages builds. Empty otherwise.                                                                                       |
+
 ### Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this project.
