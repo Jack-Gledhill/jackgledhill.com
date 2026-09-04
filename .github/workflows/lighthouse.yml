@@ -1,0 +1,36 @@
+name: Lighthouse Audit
+
+on: push
+
+concurrency:
+  group: lighthouse
+  cancel-in-progress: true # Will cancel ongoing jobs if two jobs end up running simultaneously
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "24.14.1"
+
+      - run: npm install
+
+      - name: Set build variables
+        run: |
+          echo "PUBLIC_COMMIT=${GITHUB_SHA}" >> "${GITHUB_ENV}"
+          echo "PUBLIC_ENVIRONMENT=audit" >> "${GITHUB_ENV}"
+          echo "PUBLIC_RELEASE=${GITHUB_REF_NAME}" >> "${GITHUB_ENV}"
+
+      - run: npm run build
+
+      - name: Run Lighthouse audit
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          configPath: ./github/lighthouserc.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
