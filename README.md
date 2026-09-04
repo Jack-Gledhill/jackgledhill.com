@@ -112,3 +112,10 @@ files, providing metadata about when, where and how the build was created. These
 ### Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this project.
+
+---
+
+## License
+
+All code in this repository is released under the [Mozilla Public License](https://www.mozilla.org/en-GB/MPL/) 2.0
+unless otherwise specified. For full terms of the license, please see [LICENSE](LICENSE).
