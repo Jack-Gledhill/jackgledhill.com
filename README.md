@@ -33,6 +33,8 @@ jackgledhill.com
 
 ## Contributing
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this project.
+
 ## Development
 
 ### Docker
