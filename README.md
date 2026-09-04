@@ -35,6 +35,13 @@ jackgledhill.com
 published. Staging and preview builds are also hosted and deployed by Cloudflare Pages whenever a commit is pushed to
 the repository.
 
+### Publishing
+
+New versions of the website are published
+by [creating a new release](https://github.com/Jack-Gledhill/jackgledhill.com/releases/new). Tag names should always
+adhere to the [Semantic Versioning](https://semver.org/) specification, and the release title should be the same as the
+tag name.
+
 ---
 
 ## Content Management
