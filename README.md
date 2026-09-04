@@ -29,6 +29,14 @@ jackgledhill.com
 
 ---
 
+## Hosting
+
+[jackgledhill.com](https://jackgledhill.com) is served via GitHub Pages and automatically updated when a new release is
+published. Staging and preview builds are also hosted and deployed by Cloudflare Pages whenever a commit is pushed to
+the repository.
+
+---
+
 ## Content Management
 
 ## Contributing
