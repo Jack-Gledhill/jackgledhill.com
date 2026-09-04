@@ -2,6 +2,9 @@ name: Lighthouse Audit
 
 on: push
 
+permissions:
+  contents: read
+
 concurrency:
   group: lighthouse
   cancel-in-progress: true # Will cancel ongoing jobs if two jobs end up running simultaneously
