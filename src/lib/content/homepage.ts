@@ -33,6 +33,10 @@ export namespace Homepage {
         tags?: string[];
     }
 
+    export function sortCards(cards: Card[]): Card[] {
+        return cards.sort((a, b) => b.date.start.getTime() - a.date.start.getTime());
+    }
+
     export const experience: Card[] = [
         {
             title: "Sheffield Students' Union",
@@ -247,7 +251,7 @@ export namespace Homepage {
             },
             logo: constellation,
             links: {
-                github: "Jack-Gledhill",
+                github: "Jack-Gledhill/constellation",
                 website: "starsystem.dev"
             },
             tags: ["Constellation", "ArgoCD", "Proxmox", "TrueNAS", "Docker", "Ansible"]
@@ -370,7 +374,7 @@ export namespace Homepage {
                 end: new Date(2024, 4)
             },
             links: {
-                pdf: "/research/001cef.pdf"
+                pdf: "/research/fce001.pdf"
             },
             tags: ["J. Gledhill"]
         }
