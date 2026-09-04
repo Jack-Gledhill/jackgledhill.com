@@ -52,10 +52,6 @@ interface in [`/src/lib/content/homepage.ts`](/src/lib/content/homepage.ts).
 
 ---
 
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this project.
-
 ## Development
 
 ### Local Installation
@@ -93,3 +89,7 @@ services:
     - "8080:8080"
   restart: unless-stopped
 ```
+
+### Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this project.
