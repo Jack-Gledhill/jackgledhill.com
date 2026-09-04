@@ -39,6 +39,19 @@ the repository.
 
 ## Content Management
 
+Much of the website's content is static, meaning it is hard-coded into the page/component's source file. However, some
+content is better suited to being managed in a more structured way - the best example of this is the list of work
+experience, projects and research papers on the homepage. These works all follow the same, rigid structure and can be
+cleanly defined as TypeScript objects.
+
+### Homepage Cards
+
+All cards on the homepage are defined in [`/src/lib/content/homepage.ts`](/src/lib/content/homepage.ts) and rendered by
+the [card.svelte](/src/lib/components/card.svelte) component. Cards all use the same structure, defined by the `Card`
+interface in [`/src/lib/content/homepage.ts`](/src/lib/content/homepage.ts).
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this project.
