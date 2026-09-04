@@ -14,6 +14,21 @@ This website serves as a directory of my ongoing and past work, both professiona
 
 ---
 
+## Repository Structure
+
+```
+jackgledhill.com
+├── .github/            # Actions workflows, templates and configurations
+├── src                 # Website source code
+│   └── lib/
+│       ├── assets/     # Images used in the website, optimised at build time
+│       ├── components/ # Svelte components used in the website
+│       └── content/    # TypeScript library for managing content
+└── static/             # Static files hosted at the website's root
+```
+
+---
+
 ## Content Management
 
 ## Contributing
