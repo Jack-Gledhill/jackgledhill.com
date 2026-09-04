@@ -58,6 +58,17 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this pr
 
 ## Development
 
+### Local Installation
+
+Setup is very simple. Assuming you have Node.js v24>= installed, just run the following:
+
+```shell
+npm i
+npm run dev
+```
+
+Then go to [localhost:5173](http://localhost:5173) in your browser to view the website.
+
 ### Docker
 
 A Docker image is built and pushed to the GitHub Container Registry on every push to the repository for the following
