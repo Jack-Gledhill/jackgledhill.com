@@ -4,7 +4,7 @@
 
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
     import type { IconDefinition } from '@fortawesome/fontawesome-common-types';
-    import { faCopyright, faMugHot } from '@fortawesome/free-solid-svg-icons';
+    import { faMugHot } from '@fortawesome/free-solid-svg-icons';
     import { faGithub, faSvelte, faTailwindCss } from '@fortawesome/free-brands-svg-icons';
 </script>
 
@@ -33,7 +33,6 @@
         <div class="text-center md:text-right flex flex-col gap-2">
             <p class="tracking-[1em]">
                 {@render link("Source code", faGithub, build.repository)}
-                {@render link("Copyright & Attributions", faCopyright, "/copyright")}
                 {@render link("I'm a teapot", faMugHot, "/teapot")}
             </p>
             <p>Copyright &copy; {new Date().getFullYear()} Jack Gledhill</p>
