@@ -1,25 +1,3 @@
-import hexagon from "$lib/assets/emblem/hexagon.webp?enhanced";
-
-import bfriend from "$lib/assets/logos/bfriend.webp?enhanced";
-import digitalZest from "$lib/assets/logos/digitalzest.webp?enhanced";
-import ssu from "$lib/assets/logos/ssu.webp?enhanced";
-import streamcord from "$lib/assets/logos/streamcord.webp?enhanced";
-
-import constellation from "$lib/assets/logos/constellation.webp?enhanced";
-import haskell from "$lib/assets/logos/haskell.webp?enhanced";
-import kubernetes from "$lib/assets/logos/kubernetes.webp?enhanced";
-import numpy from "$lib/assets/logos/numpy.webp?enhanced";
-import rails from "$lib/assets/logos/rails.webp?enhanced";
-import shefmentors from "$lib/assets/logos/shefmentors.webp?enhanced";
-import springboot from "$lib/assets/logos/springboot.webp?enhanced";
-
-import hacksheffield9 from "$lib/assets/logos/hacksheffield9.webp?enhanced";
-import hackupc25 from "$lib/assets/logos/hackupc25.webp?enhanced";
-import hackupc26 from "$lib/assets/logos/hackupc26.webp?enhanced";
-import ichack26 from "$lib/assets/logos/ichack26.webp?enhanced";
-
-import type { Picture } from "vite";
-
 // eslint-disable-next-line @typescript-eslint/no-namespace
 export namespace Homepage {
     interface Card {
@@ -28,7 +6,6 @@ export namespace Homepage {
         description: string;
         draft: boolean;
         date: Partials.DateRange;
-        logo?: Picture;
         links?: Partials.Socials;
         tags?: string[];
     }
@@ -50,7 +27,6 @@ export namespace Homepage {
             date: {
                 start: new Date(2025, 8)
             },
-            logo: ssu,
             links: {
                 github: "sheffieldsu",
                 website: "https://su.sheffield.ac.uk"
@@ -69,7 +45,6 @@ export namespace Homepage {
                 start: new Date(2025, 6),
                 end: new Date(2025, 8)
             },
-            logo: bfriend,
             links: {
                 website: "https://letsbfriend.org.uk"
             }
@@ -86,7 +61,6 @@ export namespace Homepage {
                 start: new Date(2025, 3),
                 end: new Date(2025, 3)
             },
-            logo: kubernetes,
             links: {
                 github: "shefcompsoc/k8s-workshop"
             },
@@ -105,7 +79,6 @@ export namespace Homepage {
                 start: new Date(2024, 10),
                 end: new Date(2024, 10)
             },
-            logo: hacksheffield9,
             links: {
                 website: "hacksheffield.uk"
             }
@@ -124,7 +97,6 @@ export namespace Homepage {
                 start: new Date(2022, 5),
                 end: new Date(2023, 6)
             },
-            logo: digitalZest,
             links: {
                 website: "https://digitalzest.co.uk"
             },
@@ -143,7 +115,6 @@ export namespace Homepage {
                 start: new Date(2021, 2),
                 end: new Date(2022, 5)
             },
-            logo: streamcord,
             links: {
                 website: "https://streamcord.io"
             },
@@ -163,7 +134,6 @@ export namespace Homepage {
                 start: new Date(2026, 1),
                 end: new Date(2026, 5)
             },
-            logo: rails,
             tags: [
                 "Ruby",
                 "Ruby on Rails",
@@ -187,7 +157,6 @@ export namespace Homepage {
                 start: new Date(2024, 9),
                 end: new Date(2024, 11)
             },
-            logo: shefmentors,
             tags: ["Ruby", "Ruby on Rails", "RSpec", "Capybara", "Sequel", "SQLite"]
         },
         {
@@ -203,7 +172,6 @@ export namespace Homepage {
                 start: new Date(2025, 9),
                 end: new Date(2025, 11)
             },
-            logo: numpy,
             tags: ["Python", "NumPy", "SciPy", "PCA", "KNN"]
         },
         {
@@ -219,7 +187,6 @@ export namespace Homepage {
                 start: new Date(2025, 9),
                 end: new Date(2025, 11)
             },
-            logo: springboot,
             tags: ["Java", "JUnit", "Maven", "Spring Boot", "JPA", "H2", "React", "TailwindCSS"]
         },
         {
@@ -235,7 +202,6 @@ export namespace Homepage {
                 start: new Date(2025, 9),
                 end: new Date(2025, 11)
             },
-            logo: haskell,
             tags: ["Haskell", "HUnit", "Monad"]
         },
         {
@@ -249,7 +215,6 @@ export namespace Homepage {
             date: {
                 start: new Date(2024, 5)
             },
-            logo: constellation,
             links: {
                 github: "Jack-Gledhill/constellation",
                 website: "starsystem.dev"
@@ -267,7 +232,6 @@ export namespace Homepage {
             date: {
                 start: new Date(2025, 7)
             },
-            logo: hexagon,
             links: {
                 github: "Jack-Gledhill/jackgledhill.com",
                 website: "jackgledhill.com"
@@ -287,7 +251,6 @@ export namespace Homepage {
                 start: new Date(2026, 3),
                 end: new Date(2026, 3)
             },
-            logo: hackupc26,
             links: {
                 devpost: "software/sidequest-1sfapj",
                 github: "thejmfc/hackupc26"
@@ -306,7 +269,6 @@ export namespace Homepage {
                 start: new Date(2026, 1),
                 end: new Date(2026, 1)
             },
-            logo: ichack26,
             links: {
                 devpost: "software/studenthomes",
                 github: "thejmfc/ichack26"
@@ -335,7 +297,6 @@ export namespace Homepage {
                 start: new Date(2025, 4),
                 end: new Date(2025, 4)
             },
-            logo: hackupc25,
             links: {
                 devpost: "software/wanderlust-24eodz",
                 github: "thejmfc/hackupc25"

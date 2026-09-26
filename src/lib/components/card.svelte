@@ -54,12 +54,6 @@
                 <p class="italic text-sm">{formatDate(date)}</p>
             </section>
         </div>
-
-        {#if logo}
-            <div class="hidden md:block">
-                <enhanced:img class="rounded-lg 2xl:rounded-2xl" src={logo} alt="" />
-            </div>
-        {/if}
     </div>
 
     <hr class="my-4 border-slate-600" />
