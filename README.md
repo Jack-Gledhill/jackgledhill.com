@@ -117,5 +117,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this pr
 
 ## License
 
-All code in this repository is released under the [Mozilla Public License](https://www.mozilla.org/en-GB/MPL/) 2.0
+The Jack Gledhill logo, wordmark and emotes are licensed under
+the [CC BY-NC-ND 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/) and may not be
+reproduced without proper attribution or for commercial purposes.
+
+All other material in this repository is released under
+the [Mozilla Public License 2.0](https://www.mozilla.org/en-GB/MPL/)
 unless otherwise specified. For full terms of the license, please see [LICENSE](LICENSE).
