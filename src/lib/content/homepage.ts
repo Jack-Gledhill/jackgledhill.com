@@ -124,6 +124,38 @@ export namespace Homepage {
 
     export const projects: Card[] = [
         {
+            title: "Detour",
+            subtitle: "Hackathon Project",
+            description:
+                "An LLM-powered iOS app that gamifies urban exploration. When a user opens the app, the Claude API takes the user's current location and gives the user clues for a nearby location. The user must then find the spot and snap a photo to complete the quest.",
+            draft: true,
+            date: {
+                start: new Date(2026, 11),
+                end: new Date(2026, 11)
+            },
+            links: {
+                devpost: "software/detour-v8gjw5",
+                github: "thejmfc/durhack26"
+            },
+            tags: ["Swift", "iOS"]
+        },
+        {
+            title: "Lunar-tic",
+            subtitle: "Hackathon Project",
+            description:
+                "When astronauts get lost on the moon, they can't just open Google Maps to find their way back. Lunar-tic aims to provide lunar navigation using 3D scans of the moon's surface instead of relying on a satellite network. Should the user find themselves lost on the moon, they can snap a photo of their surroundings and Lunar-tic will analyse the image features to estimate where on the moon the photo came from. In some cases, Lunar-tic is accurate to within 30 metres of the user's location.",
+            draft: false,
+            date: {
+                start: new Date(2026, 11),
+                end: new Date(2026, 11)
+            },
+            links: {
+                devpost: "software/jesus-take-the-wheel",
+                github: "thejmfc/durhack26"
+            },
+            tags: ["Python"]
+        },
+        {
             title: "Software Hut Project",
             subtitle: "University Project",
             description:
